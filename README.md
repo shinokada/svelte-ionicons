@@ -5,6 +5,10 @@ Ionicon components for Svelte
 - [Ionicons](https://ionic.io/ionicons)
 - [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
 
+## Icon list
+
+[Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/icon-list.md)
+
 ## Installation
 
 ```sh
