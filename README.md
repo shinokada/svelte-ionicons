@@ -48,3 +48,5 @@ npm i -D svelte-ionicons
 <BarcodeSharp size="40" />
 <BarcodeOutline size="40" />
 ```
+
+[REPL](https://svelte.dev/repl/7e3373ecc2ec47d2b2136e7e01bf2e5e?version=3.48.0)
