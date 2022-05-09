@@ -1,38 +1,46 @@
-# create-svelte
+# Svelte-Ionicons
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Ionicon components for Svelte
 
-## Creating a project
+- [Ionicons](https://ionic.io/ionicons)
+- [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Installation
 
-```bash
-# create a new project in the current directory
-npm init svelte
-
-# create a new project in my-app
-npm init svelte my-app
+```sh
+npm i -D svelte-ionicons
 ```
 
-## Developing
+## Usages
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```html
+<script>
+  import {
+    AddSharp,
+    Analytics,
+    Apps,
+    Bandage,
+    BonfireOutline,
+    Book,
+    Walk,
+    WalkOutline,
+    WalkSharp,
+    Barcode,
+    BarcodeSharp,
+    BarcodeOutline,
+  } from "svelte-ionicons";
+</script>
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+<AddSharp size="40" />
+<Analytics size="40" />
+<Apps size="40" />
+<Bandage size="40" />
+<BonfireOutline size="40" />
+<Book size="40" />
+<Walk size="40" />
+<WalkOutline size="40" />
+<WalkSharp size="40" />
+<Barcode size="40" />
+<BarcodeSharp size="40" />
+<BarcodeOutline size="40" />
 ```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
