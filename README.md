@@ -65,3 +65,14 @@ This supports all CSS frameworks.
 // Bootstrap
 <AddSharp size="40" class="position-absolute top-0 px-1" />
 ```
+
+## Other icons
+
+- [Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
+- [Svelte-Ionicons](https://www.npmjs.com/package/svelte-ionicons)
+- [Svelte-Awesome-Icons](https://www.npmjs.com/package/svelte-awesome-icons)
+- [Svelte-heros](https://github.com/shinokada/svelte-heros)
+- [Svelte-lucide](https://github.com/shinokada/svelte-lucide)
+- [Svelte-flags](https://www.npmjs.com/package/svelte-flags)
+- [Svlete-simples](https://github.com/shinokada/svelte-simples)
+- [Svelte-feathers](https://github.com/shinokada/svelte-feathers)
