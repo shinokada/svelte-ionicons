@@ -1,5 +1,7 @@
 # Svelte-Ionicons
 
+Svelte-Ionicons support all CSS frameworks.
+
 Ionicon components for Svelte
 
 - [Ionicons](https://ionic.io/ionicons)
@@ -50,3 +52,16 @@ npm i -D svelte-ionicons
 ```
 
 [REPL](https://svelte.dev/repl/7e3373ecc2ec47d2b2136e7e01bf2e5e?version=3.48.0)
+
+## class
+
+Use the `class` prop to add additional CSS.
+This supports all CSS frameworks.
+
+```
+// Tailwind CSS
+<AddSharp size="40" class="px-5 text-blue-500 dark:text-red-300" />
+
+// Bootstrap
+<AddSharp size="40" class="position-absolute top-0 px-1" />
+```
