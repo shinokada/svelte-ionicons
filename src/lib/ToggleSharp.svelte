@@ -1,1 +1,17 @@
-<script>export let size="24";export let ariaLabel="toggle sharp" </script><svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 512 512" width={size} height={size} class={$$props.class} {...$$restProps} aria-label={ariaLabel}><title>ionicons-v5-k</title><path d="M368,112H144a144,144,0,0,0,0,288H368a144,144,0,0,0,0-288Zm0,230a86,86,0,1,1,86-86A85.88,85.88,0,0,1,368,342Z"/></svg>
+<script>
+	export let size = '24';
+	export let ariaLabel = 'toggle sharp';
+</script>
+
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	viewBox="0 0 512 512"
+	width={size}
+	height={size}
+	class={$$props.class}
+	{...$$restProps}
+	aria-label={ariaLabel}
+	><title>ionicons-v5-k</title><path
+		d="M368,112H144a144,144,0,0,0,0,288H368a144,144,0,0,0,0-288Zm0,230a86,86,0,1,1,86-86A85.88,85.88,0,0,1,368,342Z"
+	/></svg
+>

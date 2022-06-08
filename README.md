@@ -18,7 +18,6 @@ Ionicon components for Svelte
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion8.webp" />
 </p>
 
-
 ## Icon list
 
 [Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/icon-list.md)
@@ -33,20 +32,20 @@ npm i -D svelte-ionicons
 
 ```html
 <script>
-  import {
-    AddSharp,
-    Analytics,
-    Apps,
-    Bandage,
-    BonfireOutline,
-    Book,
-    Walk,
-    WalkOutline,
-    WalkSharp,
-    Barcode,
-    BarcodeSharp,
-    BarcodeOutline,
-  } from "svelte-ionicons";
+	import {
+		AddSharp,
+		Analytics,
+		Apps,
+		Bandage,
+		BonfireOutline,
+		Book,
+		Walk,
+		WalkOutline,
+		WalkSharp,
+		Barcode,
+		BarcodeSharp,
+		BarcodeOutline
+	} from 'svelte-ionicons';
 </script>
 
 <AddSharp size="40" />

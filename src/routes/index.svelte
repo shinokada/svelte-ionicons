@@ -1,18 +1,18 @@
 <script>
-  import {
-    AddSharp,
-    Analytics,
-    Apps,
-    Bandage,
-    BonfireOutline,
-    Book,
-    Walk,
-    WalkOutline,
-    WalkSharp,
-    Barcode,
-    BarcodeSharp,
-    BarcodeOutline,
-  } from "$lib/index";
+	import {
+		AddSharp,
+		Analytics,
+		Apps,
+		Bandage,
+		BonfireOutline,
+		Book,
+		Walk,
+		WalkOutline,
+		WalkSharp,
+		Barcode,
+		BarcodeSharp,
+		BarcodeOutline
+	} from '$lib/index';
 </script>
 
 <AddSharp size="40" />
