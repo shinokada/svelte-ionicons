@@ -7,6 +7,18 @@ Ionicon components for Svelte
 - [Ionicons](https://ionic.io/ionicons)
 - [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
 
+<p align="center">
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion1.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion2.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion3.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion4.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion5.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion6.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion7.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion8.webp" />
+</p>
+
+
 ## Icon list
 
 [Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/icon-list.md)
