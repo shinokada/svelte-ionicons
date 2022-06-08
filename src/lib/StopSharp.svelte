@@ -1,1 +1,1 @@
-<script>export let size="24";</script><svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 512 512" width={size} height={size} class={$$props.class} ><title>ionicons-v5-c</title><rect x="80" y="80" width="352" height="352"/></svg>
+<script>export let size="24";export let ariaLabel="stop sharp" </script><svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 512 512" width={size} height={size} class={$$props.class} {...$$restProps} aria-label={ariaLabel}><title>ionicons-v5-c</title><rect x="80" y="80" width="352" height="352"/></svg>
