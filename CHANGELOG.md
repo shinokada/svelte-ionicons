@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.7](https://github.com/shinokada/svelte-ionicons/compare/v0.1.6...v0.1.7) (2022-06-08)
+
+
+### Features
+
+* add $$restProps and aria-label ([a87c3d9](https://github.com/shinokada/svelte-ionicons/commit/a87c3d90e6b3ead5e459bec269d847a8eb1a19d1))
+
 ### [0.1.6](https://github.com/shinokada/svelte-ionicons/compare/v0.1.5...v0.1.6) (2022-06-08)
 
 ### [0.1.5](https://github.com/shinokada/svelte-ionicons/compare/v0.1.4...v0.1.5) (2022-05-18)
