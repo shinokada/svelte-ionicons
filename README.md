@@ -64,17 +64,67 @@ npm i -D svelte-ionicons
 
 [REPL](https://svelte.dev/repl/7e3373ecc2ec47d2b2136e7e01bf2e5e?version=3.48.0)
 
+
+## Props
+
+| Name      | Default   |
+| --------- | --------- |
+| size      | 15        |
+| class     |           |
+| ariaLabel | file name |
+
+## Size
+
+Use the `size` prop to change the size of icons.
+
+```html
+<WalkSharp size="30" />
+<WalkSharp size="40" />
+<WalkSharp size="50" />
+```
+
 ## class
 
 Use the `class` prop to add additional CSS.
 This supports all CSS frameworks.
 
-```
+```html
 // Tailwind CSS
-<AddSharp size="40" class="px-5 text-blue-500 dark:text-red-300" />
+<AddSharp size="40" class="px-5" />
 
 // Bootstrap
 <AddSharp size="40" class="position-absolute top-0 px-1" />
+```
+
+
+## aria-label
+
+All icons have aria-label. For example `Bandage` has `aria-label="bandage"`. 
+Use `ariaLabel` prop to modify the `aria-label` value. 
+
+```html
+<Bandage ariaLabel="bandage icon">
+```
+
+## Passing down other attributes
+
+You can pass other attibutes as well.
+
+```html
+<Bandage tabindex="0">
+```
+
+## Import all
+
+Use `import * as Icon from 'svelte-heros`.
+
+```html
+<script>
+  import * as Icon from "svelte-ionicons";
+</script>
+
+<Icon.Bandage size="30" />
+<Icon.WalkSharp size="40" class="mx-4" />
 ```
 
 ## Other icons
