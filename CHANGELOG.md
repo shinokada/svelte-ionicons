@@ -4,14 +4,13 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [0.2.0](https://github.com/shinokada/svelte-ionicons/compare/v0.1.8...v0.2.0) (2022-06-08)
 
-
 ### ⚠ BREAKING CHANGES
 
-* update README, add restProps, and aria-label
+- update README, add restProps, and aria-label
 
 ### Features
 
-* update README, add restProps, and aria-label ([39291d8](https://github.com/shinokada/svelte-ionicons/commit/39291d8d9f50beb922e359d9c0ae6613b5559b8d))
+- update README, add restProps, and aria-label ([39291d8](https://github.com/shinokada/svelte-ionicons/commit/39291d8d9f50beb922e359d9c0ae6613b5559b8d))
 
 ### [0.1.8](https://github.com/shinokada/svelte-ionicons/compare/v0.1.7...v0.1.8) (2022-06-08)
 

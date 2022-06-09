@@ -64,7 +64,6 @@ npm i -D svelte-ionicons
 
 [REPL](https://svelte.dev/repl/7e3373ecc2ec47d2b2136e7e01bf2e5e?version=3.48.0)
 
-
 ## Props
 
 | Name      | Default   |
@@ -96,14 +95,13 @@ This supports all CSS frameworks.
 <AddSharp size="40" class="position-absolute top-0 px-1" />
 ```
 
-
 ## aria-label
 
-All icons have aria-label. For example `Bandage` has `aria-label="bandage"`. 
-Use `ariaLabel` prop to modify the `aria-label` value. 
+All icons have aria-label. For example `Bandage` has `aria-label="bandage"`.
+Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
-<Bandage ariaLabel="bandage icon">
+<Bandage ariaLabel="bandage icon"></Bandage>
 ```
 
 ## Passing down other attributes
@@ -111,7 +109,7 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 You can pass other attibutes as well.
 
 ```html
-<Bandage tabindex="0">
+<Bandage tabindex="0"></Bandage>
 ```
 
 ## Import all
@@ -120,7 +118,7 @@ Use `import * as Icon from 'svelte-heros`.
 
 ```html
 <script>
-  import * as Icon from "svelte-ionicons";
+	import * as Icon from 'svelte-ionicons';
 </script>
 
 <Icon.Bandage size="30" />
