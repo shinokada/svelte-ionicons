@@ -1,17 +1,17 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'footsteps outline';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	id="icons"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><path
 		d="M200,246.84c8.81,58.62-7.33,90.67-52.91,97.41-50.65,7.49-71.52-26.44-80.33-85.06-11.85-78.88,16-127.94,55.71-131.1C158.61,125.22,191.18,188.23,200,246.84Z"
 		fill="none"

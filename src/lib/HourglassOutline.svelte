@@ -1,16 +1,16 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'hourglass outline';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><title>ionicons-v5-i</title><path
 		d="M145.61,464H366.39c19.8,0,35.55-16.29,33.42-35.06C386.06,308,304,310,304,256s83.11-51,95.8-172.94c2-18.78-13.61-35.06-33.41-35.06H145.61c-19.8,0-35.37,16.28-33.41,35.06C124.89,205,208,201,208,256s-82.06,52-95.8,172.94C110.06,447.71,125.81,464,145.61,464Z"
 		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"

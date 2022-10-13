@@ -1,16 +1,16 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'today sharp';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><path
 		d="M32,456a24,24,0,0,0,24,24H456a24,24,0,0,0,24-24V176H32Zm80-238.86a9.14,9.14,0,0,1,9.14-9.14H230.86a9.14,9.14,0,0,1,9.14,9.14V326.86a9.14,9.14,0,0,1-9.14,9.14H121.14a9.14,9.14,0,0,1-9.14-9.14Z"
 	/><path

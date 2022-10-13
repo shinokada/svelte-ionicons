@@ -16,6 +16,7 @@ Ionicon components for Svelte
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion6.webp" />
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion7.webp" />
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion8.webp" />
+<img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion9.webp" />
 </p>
 
 ## Icon list

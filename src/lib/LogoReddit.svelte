@@ -1,16 +1,16 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'logo reddit';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><title>ionicons-v5_logos</title><path
 		d="M324,256a36,36,0,1,0,36,36A36,36,0,0,0,324,256Z"
 	/><circle cx="188" cy="292" r="36" transform="translate(-97.43 94.17) rotate(-22.5)" /><path

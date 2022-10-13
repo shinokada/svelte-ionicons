@@ -1,16 +1,16 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'hammer sharp';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><title>ionicons-v5-i</title><path
 		d="M294.28,256.9l-54.42-54.41a12,12,0,0,0-17,0L12.45,401a12,12,0,0,0-.27,17.2l66.05,66.28a12,12,0,0,0,17.22-.23L294.26,273.89A12,12,0,0,0,294.28,256.9Z"
 	/><path

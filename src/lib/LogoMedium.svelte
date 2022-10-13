@@ -1,6 +1,6 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'logo medium';
+	export let color = 'currentColor';
 </script>
 
 <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -11,11 +11,11 @@
 	x="0px"
 	y="0px"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	style="enable-background:new 0 0 512 512;"
 	xml:space="preserve"
 >

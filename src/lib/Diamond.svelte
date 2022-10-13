@@ -1,17 +1,17 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'diamond';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	id="icons"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><path
 		d="M121.72,32A4,4,0,0,0,118,37.56l2.3,5.43L161,137.89a4,4,0,0,0,6.88.82L243,38.4a4,4,0,0,0-3.2-6.4Z"
 	/><path

@@ -1,6 +1,6 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'logo behance';
+	export let color = 'currentColor';
 </script>
 
 <svg
@@ -8,11 +8,11 @@
 	data-name="Layer 1"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><path d="M344.1,233.6c-28.9,0-32.9,28.8-32.9,28.8h61.4S373,233.6,344.1,233.6Z" /><path
 		d="M204.8,262.4H150.4v50h51.7c7.8-.2,22.4-2.4,22.4-24.3C224.5,262.1,204.8,262.4,204.8,262.4Z"
 	/><path

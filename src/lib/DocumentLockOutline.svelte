@@ -1,17 +1,17 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'document lock outline';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	id="icons"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><path
 		d="M288,304V286c0-16.63-14.26-30-32-30s-32,13.37-32,30v18"
 		fill="none"

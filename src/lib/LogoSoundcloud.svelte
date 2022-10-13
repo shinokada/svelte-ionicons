@@ -1,6 +1,6 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'logo soundcloud';
+	export let color = 'currentColor';
 </script>
 
 <svg
@@ -8,11 +8,11 @@
 	data-name="Layer 1"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><path
 		d="M5.8,278a2.11,2.11,0,0,0-2,2L0,308.64,3.74,336.8a2.12,2.12,0,0,0,2.05,2,2.14,2.14,0,0,0,2-2h0l4.44-28.17L7.83,280a2.14,2.14,0,0,0-2-2Z"
 	/><path

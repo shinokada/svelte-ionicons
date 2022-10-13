@@ -1,17 +1,17 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'alarm outline';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
-	><title>ionicons-v5-a</title><path
+	><path
 		d="M416.07,272a160,160,0,1,0-160,160A160,160,0,0,0,416.07,272Z"
 		style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"
 	/><path

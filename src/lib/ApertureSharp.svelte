@@ -1,17 +1,17 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'aperture sharp';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
-	><title>ionicons-v5-a</title><polygon points="216 48 345.49 176.18 345.49 48 216 48" /><polygon
+	><polygon points="216 48 345.49 176.18 345.49 48 216 48" /><polygon
 		points="181.47 58.38 80 134 256 134 181.47 58.38"
 	/><polygon points="336 344 464 344 464 216 336 344" /><polygon
 		points="454 182 378 80 378 256 454 182"

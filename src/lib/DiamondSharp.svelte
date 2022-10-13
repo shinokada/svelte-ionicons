@@ -1,17 +1,17 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'diamond sharp';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	id="icons"
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><polygon points="396.31 32 264 32 348.19 144.26 396.31 32" /><polygon
 		points="115.69 32 163.81 144.26 248 32 115.69 32"
 	/><polygon points="256 74.67 192 160 320 160 256 74.67" /><polygon

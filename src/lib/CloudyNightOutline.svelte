@@ -1,16 +1,16 @@
 <script>
 	export let size = '24';
-	export let ariaLabel = 'cloudy night outline';
+	export let color = 'currentColor';
 </script>
 
 <svg
 	xmlns="http://www.w3.org/2000/svg"
 	viewBox="0 0 512 512"
+	{...$$restProps}
 	width={size}
 	height={size}
+	fill={color}
 	class={$$props.class}
-	{...$$restProps}
-	aria-label={ariaLabel}
 	><title>ionicons-v5-m</title><path
 		d="M388.31,272c47.75,0,89.77-27.77,107.69-68.92-14.21,6.18-30.9,8.61-47.38,8.61A116.31,116.31,0,0,1,332.31,95.38c0-16.48,2.43-33.17,8.61-47.38C299.77,65.92,272,107.94,272,155.69a116.31,116.31,0,0,0,3.44,28.18"
 		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
