@@ -18,9 +18,9 @@
 		height="320"
 		rx="40"
 		ry="40"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><polyline
 		points="112 160 256 272 400 160"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

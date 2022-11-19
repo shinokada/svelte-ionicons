@@ -16,6 +16,6 @@
 		y1="256"
 		x2="112"
 		y2="256"
-		style="fill:none;stroke:#000;stroke-linecap:square;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:square;stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

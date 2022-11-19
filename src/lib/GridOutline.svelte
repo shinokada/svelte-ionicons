@@ -18,7 +18,7 @@
 		height="176"
 		rx="20"
 		ry="20"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="288"
 		y="48"
@@ -26,7 +26,7 @@
 		height="176"
 		rx="20"
 		ry="20"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="48"
 		y="288"
@@ -34,7 +34,7 @@
 		height="176"
 		rx="20"
 		ry="20"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="288"
 		y="288"
@@ -42,6 +42,6 @@
 		height="176"
 		rx="20"
 		ry="20"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

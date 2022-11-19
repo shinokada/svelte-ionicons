@@ -15,28 +15,28 @@
 		cx="128"
 		cy="256"
 		r="48"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><circle
 		cx="384"
 		cy="112"
 		r="48"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><circle
 		cx="384"
 		cy="400"
 		r="48"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><line
 		x1="169.83"
 		y1="279.53"
 		x2="342.17"
 		y2="376.47"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><line
 		x1="342.17"
 		y1="135.53"
 		x2="169.83"
 		y2="232.47"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

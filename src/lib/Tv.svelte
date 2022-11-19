@@ -18,6 +18,6 @@
 		y1="416"
 		x2="384"
 		y2="416"
-		style="stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+		style="stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
 	/></svg
 >

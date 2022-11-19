@@ -18,7 +18,7 @@
 		height="320"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="384"
 		y="336"
@@ -26,7 +26,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="384"
 		y="256"
@@ -34,7 +34,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="384"
 		y="176"
@@ -42,7 +42,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="384"
 		y="96"
@@ -50,7 +50,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="48"
 		y="336"
@@ -58,7 +58,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="48"
 		y="256"
@@ -66,7 +66,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="48"
 		y="176"
@@ -74,7 +74,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="48"
 		y="96"
@@ -82,7 +82,7 @@
 		height="80"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="128"
 		y="96"
@@ -90,7 +90,7 @@
 		height="160"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="128"
 		y="256"
@@ -98,6 +98,6 @@
 		height="160"
 		rx="28"
 		ry="28"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

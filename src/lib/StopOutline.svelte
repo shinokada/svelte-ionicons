@@ -18,6 +18,6 @@
 		height="320"
 		rx="24"
 		ry="24"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

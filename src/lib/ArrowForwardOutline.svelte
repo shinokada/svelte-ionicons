@@ -13,12 +13,12 @@
 	class={$$props.class}
 	><polyline
 		points="268 112 412 256 268 400"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"
 	/><line
 		x1="392"
 		y1="256"
 		x2="100"
 		y2="256"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:48px"
 	/></svg
 >

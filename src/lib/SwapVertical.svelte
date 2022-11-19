@@ -13,21 +13,21 @@
 	class={$$props.class}
 	><title>ionicons-v5-b</title><polyline
 		points="464 208 352 96 240 208"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><line
 		x1="352"
 		y1="113.13"
 		x2="352"
 		y2="416"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><polyline
 		points="48 304 160 416 272 304"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><line
 		x1="160"
 		y1="398"
 		x2="160"
 		y2="96"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

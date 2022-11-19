@@ -13,6 +13,6 @@
 	class={$$props.class}
 	><title>ionicons-v5-e</title><polyline
 		points="416 128 192 384 96 288"
-		style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:44px"
+		style="fill:none;stroke:{color};stroke-linecap:square;stroke-miterlimit:10;stroke-width:44px"
 	/></svg
 >

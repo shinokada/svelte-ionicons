@@ -13,7 +13,7 @@
 	class={$$props.class}
 	><title>ionicons-v5-f</title><path
 		d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z"
-		style="fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-miterlimit:10;stroke-width:32px"
 	/><path
 		d="M333.2,297.69c18.28-23.39,27.06-47.43,26.79-73.37-.31-31.06-25.22-56.33-55.53-56.33-20.4,0-35,10.64-44.11,20.42a5.93,5.93,0,0,1-8.7,0c-9.11-9.78-23.71-20.42-44.11-20.42L206,168a4,4,0,0,0-2.75,6.84l124,123.21A3.92,3.92,0,0,0,333.2,297.69Z"
 	/><path

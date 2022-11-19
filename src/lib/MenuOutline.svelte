@@ -16,18 +16,18 @@
 		y1="160"
 		x2="432"
 		y2="160"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
 	/><line
 		x1="80"
 		y1="256"
 		x2="432"
 		y2="256"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
 	/><line
 		x1="80"
 		y1="352"
 		x2="432"
 		y2="352"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
 	/></svg
 >

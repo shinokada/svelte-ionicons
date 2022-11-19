@@ -18,13 +18,13 @@
 		height="416"
 		rx="32"
 		ry="32"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><rect
 		x="160.01"
 		y="112"
 		width="191.99"
 		height="64"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><circle cx="168" cy="248" r="24" /><circle cx="256" cy="248" r="24" /><circle
 		cx="344"
 		cy="248"

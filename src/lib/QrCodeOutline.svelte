@@ -39,7 +39,7 @@
 		height="176"
 		rx="16"
 		ry="16"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><rect x="96" y="96" width="80" height="80" rx="8" ry="8" /><rect
 		x="48"
 		y="48"
@@ -47,7 +47,7 @@
 		height="176"
 		rx="16"
 		ry="16"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/><rect x="96" y="336" width="80" height="80" rx="8" ry="8" /><rect
 		x="48"
 		y="288"
@@ -55,6 +55,6 @@
 		height="176"
 		rx="16"
 		ry="16"
-		style="fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
 	/></svg
 >

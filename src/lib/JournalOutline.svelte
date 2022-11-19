@@ -18,12 +18,12 @@
 		height="416"
 		rx="48"
 		ry="48"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
 	/><line
 		x1="320"
 		y1="48"
 		x2="320"
 		y2="464"
-		style="fill:none;stroke:#000;stroke-linejoin:round;stroke-width:60px"
+		style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:60px"
 	/></svg
 >

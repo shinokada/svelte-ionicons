@@ -13,9 +13,9 @@
 	class={$$props.class}
 	><title>ionicons-v5-c</title><polyline
 		points="352 144 464 144 464 256"
-		style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"
 	/><polyline
 		points="48 368 192 224 288 320 448 160"
-		style="fill:none;stroke:#000;stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"
+		style="fill:none;stroke:{color};stroke-linecap:square;stroke-miterlimit:10;stroke-width:32px"
 	/></svg
 >
