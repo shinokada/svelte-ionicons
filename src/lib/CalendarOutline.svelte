@@ -13,7 +13,7 @@
 	class={$$props.class}
 	><rect
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linejoin="round"
 		stroke-width="32"
 		x="48"
@@ -35,7 +35,7 @@
 		r="24"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linejoin="round"
 		stroke-width="32"
 		stroke-linecap="round"
@@ -45,7 +45,7 @@
 		y2="80"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linejoin="round"
 		stroke-width="32"
 		stroke-linecap="round"
@@ -55,7 +55,7 @@
 		y2="80"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linejoin="round"
 		stroke-width="32"
 		x1="464"

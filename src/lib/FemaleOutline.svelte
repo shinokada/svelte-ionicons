@@ -16,7 +16,7 @@
 		cy="184"
 		r="152"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="32"
@@ -26,7 +26,7 @@
 		x2="256"
 		y2="480"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="32"
@@ -36,7 +36,7 @@
 		x2="198"
 		y2="416"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="32"
