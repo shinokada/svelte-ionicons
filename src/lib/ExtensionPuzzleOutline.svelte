@@ -13,7 +13,7 @@
 	class={$$props.class}
 	><path
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="32"

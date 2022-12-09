@@ -17,7 +17,7 @@
 		cy="256"
 		r="208"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 	/><circle cx="288" cy="200" r="24" /><circle cx="296" cy="128" r="24" /><circle

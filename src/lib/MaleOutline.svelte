@@ -16,14 +16,14 @@
 		cy="296"
 		r="152"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="32"
 	/><polyline
 		points="448 160 448 64 352 64"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="32"
@@ -33,7 +33,7 @@
 		x2="448"
 		y2="64"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-linecap="round"
 		stroke-linejoin="round"
 		stroke-width="32"

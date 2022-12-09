@@ -17,7 +17,7 @@
 		cy="256"
 		r="208"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 	/><line
@@ -26,7 +26,7 @@
 		x2="403.08"
 		y2="403.08"
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 	/></svg
