@@ -1,47 +1,35 @@
 {
-	"name": "svelte-ionicons",
-	"version": "0.2.6",
-	"description": "Ionicon components for Sveltejs",
-	"author": {
-		"name": "Shinichi Okada",
-		"email": "connect@codewithshin.com",
-		"url": "https://blog.codewithshin.com"
-	},
-	"bugs": "https://github.com/shinokada/svelte-ionicons/issues",
-	"homepage": "https://github.com/shinokada/svelte-ionicons",
-	"license": "MIT",
+	"name": "svelte-ionicons-new",
+	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"build": "vite build",
-		"package": "vite package",
-		"preview": "vite preview",
-		"lint": "prettier --check --plugin-search-dir=. .",
-		"format": "prettier --write --plugin-search-dir=. .",
-		"check": "svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch"
+		"build": "svelte-kit sync && svelte-package",
+		"prepublishOnly": "echo 'Did you mean to publish `./package/`, instead of `./`?' && exit 1",
+		"test": "playwright test",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:unit": "vitest",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "1.0.0-next.577",
-		"prettier": "2.6.2",
-		"prettier-plugin-svelte": "^2.9.0",
+		"@sveltejs/kit": "next",
+		"@sveltejs/package": "next",
+		"@typescript-eslint/eslint-plugin": "^5.45.0",
+		"@typescript-eslint/parser": "^5.45.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
 		"svelte": "^3.54.0",
-		"svelte-check": "^2.10.2",
-		"svelte-preprocess": "^4.10.7",
-		"svelte2tsx": "^0.5.22",
+		"svelte-check": "^2.9.2",
 		"tslib": "^2.4.1",
-		"typescript": "~4.6.4",
-		"vite": "3.2.5"
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0",
+		"vitest": "^0.25.3"
 	},
-	"type": "module",
-	"keywords": [
-		"svelte",
-		"sveltekit",
-		"ionicons",
-		"icons"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/shinokada/svelte-ionicons.git"
-	}
+	"type": "module"
 }
