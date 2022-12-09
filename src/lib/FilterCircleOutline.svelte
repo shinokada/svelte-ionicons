@@ -13,13 +13,13 @@
 	class={$$props.class}
 	><path
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-width="32"
 		stroke-miterlimit="10"
 		d="M448,256c0-106-86-192-192-192S64,150,64,256s86,192,192,192S448,362,448,256Z"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-width="32"
 		stroke-linecap="round"
 		stroke-linejoin="round"
@@ -29,7 +29,7 @@
 		y2="208"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-width="32"
 		stroke-linecap="round"
 		stroke-linejoin="round"
@@ -39,7 +39,7 @@
 		y2="272"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-width="32"
 		stroke-linecap="round"
 		stroke-linejoin="round"

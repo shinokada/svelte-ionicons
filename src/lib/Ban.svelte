@@ -13,14 +13,14 @@
 	class={$$props.class}
 	><circle
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="48"
 		cx="256"
 		cy="256"
 		r="200"
 	/><line
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="48"
 		x1="114.58"

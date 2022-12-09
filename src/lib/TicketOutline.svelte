@@ -13,13 +13,13 @@
 	class={$$props.class}
 	><path
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 		d="M366.05,146a46.7,46.7,0,0,1-2.42-63.42,3.87,3.87,0,0,0-.22-5.26L319.28,33.14a3.89,3.89,0,0,0-5.5,0l-70.34,70.34a23.62,23.62,0,0,0-5.71,9.24h0a23.66,23.66,0,0,1-14.95,15h0a23.7,23.7,0,0,0-9.25,5.71L33.14,313.78a3.89,3.89,0,0,0,0,5.5l44.13,44.13a3.87,3.87,0,0,0,5.26.22,46.69,46.69,0,0,1,65.84,65.84,3.87,3.87,0,0,0,.22,5.26l44.13,44.13a3.89,3.89,0,0,0,5.5,0l180.4-180.39a23.7,23.7,0,0,0,5.71-9.25h0a23.66,23.66,0,0,1,14.95-15h0a23.62,23.62,0,0,0,9.24-5.71l70.34-70.34a3.89,3.89,0,0,0,0-5.5l-44.13-44.13a3.87,3.87,0,0,0-5.26-.22A46.7,46.7,0,0,1,366.05,146Z"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 		stroke-linecap="round"
@@ -29,7 +29,7 @@
 		y2="123.93"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 		stroke-linecap="round"
@@ -39,7 +39,7 @@
 		y2="173.46"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 		stroke-linecap="round"
@@ -49,7 +49,7 @@
 		y2="217.48"
 	/><line
 		fill="none"
-		stroke="#000"
+		stroke={color}
 		stroke-miterlimit="10"
 		stroke-width="32"
 		stroke-linecap="round"
