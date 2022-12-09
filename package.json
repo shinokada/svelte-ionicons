@@ -1,6 +1,6 @@
 {
 	"name": "svelte-ionicons",
-	"version": "0.2.5",
+	"version": "0.2.6",
 	"description": "Ionicon components for Sveltejs",
 	"author": {
 		"name": "Shinichi Okada",
