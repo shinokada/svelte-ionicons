@@ -1,6 +1,15 @@
 {
 	"name": "svelte-ionicons-new",
 	"version": "0.2.7",
+	"description": "Ionicons components for Svelte",
+	"author": {
+		"name": "Shinichi Okada",
+		"email": "connect@codewithshin.com",
+		"url": "https://blog.codewithshin.com"
+	},
+	"bugs": "https://github.com/shinokada/svelte-ionicons/issues",
+	"homepage": "https://github.com/shinokada/svelte-ionicons",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-kit sync && svelte-package",
@@ -10,13 +19,14 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"package:publish": "standard-version && git push --follow-tags origin main && npm run build && npm publish ./package"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
-		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "next",
-		"@sveltejs/package": "next",
+		"@sveltejs/adapter-auto": "^1.0.0",
+		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/package": "^1.0.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"eslint": "^8.28.0",
@@ -31,5 +41,16 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"Ionicons",
+		"svg icons",
+		"icons"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/shinokada/svelte-ionicons"
+	}
 }
