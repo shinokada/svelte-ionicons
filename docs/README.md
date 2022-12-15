@@ -1,11 +1,17 @@
-# Svelte-Ionicons
+<h1 align="center">Svelte-Ionicons</h1>
 
-Svelte-Ionicons support all CSS frameworks.
+<p align="center">
+<a href="https://shinokada.github.io/svelte-ionicons/">Svelte-Ionicons</a>
+</p>
 
-Ionicon components for Svelte
+<p align="center">
+<a href="https://www.npmjs.com/package/svelte-ionicons" rel="nofollow"><img src="https://img.shields.io/npm/v/svelte-ionicons" alt="npm"></a>
+<a href="https://twitter.com/shinokada" rel="nofollow"><img src="https://img.shields.io/badge/created%20by-@shinokada-4BBAAB.svg" alt="Created by Shin Okada"></a>
+<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/github/license/shinokada/svelte-ionicons" alt="License"></a>
+<a href="https://www.npmjs.com/package/svelte-ionicons" rel="nofollow"><img src="https://img.shields.io/npm/dw/svelte-ionicons.svg" alt="npm"></a>
+</p>
 
-- [Ionicons](https://ionic.io/ionicons)
-- [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
+Ionicon components for Svelte/SveltKit. Svelte-Ionicons support all CSS frameworks.
 
 <p align="center">
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion1.webp" />
@@ -19,15 +25,16 @@ Ionicon components for Svelte
 <img width="450" src="https://raw.githubusercontent.com/shinokada/svelte-ionicons/main/static/images/ion9.webp" />
 </p>
 
-## Icon list
-
-[Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/icon-list.md)
-
 ## Installation
 
 ```sh
 npm i -D svelte-ionicons
 ```
+
+## Icon list
+
+[Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/docs/icon-list.md)
+
 
 ## Usages
 
@@ -125,6 +132,12 @@ Use `import * as Icon from 'svelte-heros`.
 <Icon.Bandage size="30" />
 <Icon.WalkSharp size="40" class="mx-4" />
 ```
+
+## Original source
+
+
+- [Ionicons](https://ionic.io/ionicons)
+- [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
 
 ## Other icons
 
