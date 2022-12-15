@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.9](https://github.com/shinokada/svelte-ionicons/compare/v0.2.8...v0.2.9) (2022-12-15)
+
+
+### Bug Fixes
+
+* add lib dir ([92db397](https://github.com/shinokada/svelte-ionicons/commit/92db397ae95316c9ba419c4e0f8f6e93e8319592))
+
 ### [0.2.8](https://github.com/shinokada/svelte-ionicons/compare/v0.2.7...v0.2.8) (2022-12-15)
 
 
