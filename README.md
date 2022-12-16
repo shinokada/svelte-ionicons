@@ -33,7 +33,7 @@ npm i -D svelte-ionicons
 
 ## Icon list
 
-[Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/docs/icon-list.md)
+[Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/icon-list.md)
 
 
 ## Usages
@@ -70,7 +70,7 @@ npm i -D svelte-ionicons
 <BarcodeOutline size="40" />
 ```
 
-[REPL](https://svelte.dev/repl/7e3373ecc2ec47d2b2136e7e01bf2e5e?version=3.48.0)
+[REPL](https://svelte.dev/repl/7e3373ecc2ec47d2b2136e7e01bf2e5e)
 
 ## Props
 
