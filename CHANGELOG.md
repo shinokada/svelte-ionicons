@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.10](https://github.com/shinokada/svelte-ionicons/compare/v0.2.9...v0.2.10) (2022-12-16)
+
+
+### Bug Fixes
+
+* move files from docs to root since npmjs does not show README. ([06c416f](https://github.com/shinokada/svelte-ionicons/commit/06c416f5a103ab0f0669739c2d3ef4fdda55d8a3))
+
 ### [0.2.9](https://github.com/shinokada/svelte-ionicons/compare/v0.2.8...v0.2.9) (2022-12-15)
 
 
