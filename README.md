@@ -1,7 +1,7 @@
 <h1 align="center">Svelte-Ionicons</h1>
 
 <p align="center">
-<a href="https://shinokada.github.io/svelte-ionicons/">Svelte-Ionicons</a>
+<a href="https://svelte-ionicons.codewithshin.com/">Svelte-Ionicons</a>
 </p>
 
 <p align="center">
