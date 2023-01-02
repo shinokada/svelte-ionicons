@@ -33,8 +33,7 @@ npm i -D svelte-ionicons
 
 ## Icon list
 
-[Icon list](https://github.com/shinokada/svelte-ionicons/blob/main/icon-list.md)
-
+[Icon list](icon-list.md)
 
 ## Usages
 
