@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.12](https://github.com/shinokada/svelte-ionicons/compare/v0.2.11...v0.2.12) (2023-01-30)
+
+
+### Features
+
+* add pwa ([a2d4156](https://github.com/shinokada/svelte-ionicons/commit/a2d4156205dda961adcb6dc0933f4d1e1186f735))
+
+
+### Bug Fixes
+
+* icon list link ([befe686](https://github.com/shinokada/svelte-ionicons/commit/befe6867166b2d12c6a1dd6084df2fc0196073d7))
+
 ### [0.2.11](https://github.com/shinokada/svelte-ionicons/compare/v0.2.10...v0.2.11) (2022-12-25)
 
 
