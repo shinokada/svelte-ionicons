@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.14](https://github.com/shinokada/svelte-ionicons/compare/v0.2.13...v0.2.14) (2023-01-31)
+
+
+### Bug Fixes
+
+* add .nojekyll file ([56c4413](https://github.com/shinokada/svelte-ionicons/commit/56c441364b48938a8e8aa1bc19518caa17a5394c))
+* add icon-images page ([0137d4a](https://github.com/shinokada/svelte-ionicons/commit/0137d4aea909587452c746ec8784ea5afe1ae1f2))
+
 ### [0.2.13](https://github.com/shinokada/svelte-ionicons/compare/v0.2.12...v0.2.13) (2023-01-30)
 
 
