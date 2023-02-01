@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.15](https://github.com/shinokada/svelte-ionicons/compare/v0.2.14...v0.2.15) (2023-02-01)
+
+
+### Bug Fixes
+
+* add optimized image ([45722e1](https://github.com/shinokada/svelte-ionicons/commit/45722e1c2342077cc80553a2d26f17dab47b4e0c))
+* badges target, height, and add links to crossOriginLinks ([bcfc992](https://github.com/shinokada/svelte-ionicons/commit/bcfc9921ac42e42486580f4948c0d36bbfb57d68))
+* favicon link ([5582a93](https://github.com/shinokada/svelte-ionicons/commit/5582a936fd1ef6b079e04eb2487b73c9cbb3e886))
+
 ### [0.2.14](https://github.com/shinokada/svelte-ionicons/compare/v0.2.13...v0.2.14) (2023-01-31)
 
 
