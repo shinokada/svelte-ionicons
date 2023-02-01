@@ -15,7 +15,7 @@
 Ionicon components for Svelte/SveltKit. Svelte-Ionicons support all CSS frameworks.
 
 <p align="center">
-<img width="650" src="/static/images/ionicons-650-1050.png" />
+<img width="650" src="/static/images/ionicons-650-1050-optimized.png" />
 </p>
 
 ## Installation
