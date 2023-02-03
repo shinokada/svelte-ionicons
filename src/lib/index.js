@@ -1,2666 +1,1332 @@
-import StarHalf from './StarHalf.svelte';
-import Exit from './Exit.svelte';
-import FitnessOutline from './FitnessOutline.svelte';
-import ChevronUp from './ChevronUp.svelte';
-import CheckmarkCircleSharp from './CheckmarkCircleSharp.svelte';
-import MicOffCircleSharp from './MicOffCircleSharp.svelte';
-import InformationCircleOutline from './InformationCircleOutline.svelte';
-import BagCheckSharp from './BagCheckSharp.svelte';
-import VolumeLowOutline from './VolumeLowOutline.svelte';
-import LogoPlaystation from './LogoPlaystation.svelte';
-import LogoIonitron from './LogoIonitron.svelte';
-import PricetagsOutline from './PricetagsOutline.svelte';
-import TabletPortraitSharp from './TabletPortraitSharp.svelte';
-import LockClosedSharp from './LockClosedSharp.svelte';
-import HelpCircleOutline from './HelpCircleOutline.svelte';
-import Planet from './Planet.svelte';
-import ShareSocial from './ShareSocial.svelte';
-import PlaySkipForwardCircle from './PlaySkipForwardCircle.svelte';
-import EyeOff from './EyeOff.svelte';
-import LogoLaravel from './LogoLaravel.svelte';
-import Podium from './Podium.svelte';
-import ExpandOutline from './ExpandOutline.svelte';
-import CubeSharp from './CubeSharp.svelte';
-import GameController from './GameController.svelte';
-import ArrowForward from './ArrowForward.svelte';
-import TrophySharp from './TrophySharp.svelte';
-import RestaurantSharp from './RestaurantSharp.svelte';
-import EaselOutline from './EaselOutline.svelte';
-import EllipsisVerticalCircleSharp from './EllipsisVerticalCircleSharp.svelte';
-import ScanOutline from './ScanOutline.svelte';
-import ArrowUndoOutline from './ArrowUndoOutline.svelte';
-import HourglassOutline from './HourglassOutline.svelte';
-import ArrowDown from './ArrowDown.svelte';
-import Toggle from './Toggle.svelte';
-import CloudDone from './CloudDone.svelte';
-import LogoReact from './LogoReact.svelte';
-import BrushSharp from './BrushSharp.svelte';
-import TriangleSharp from './TriangleSharp.svelte';
-import CaretForwardCircleSharp from './CaretForwardCircleSharp.svelte';
-import SquareSharp from './SquareSharp.svelte';
-import LogoWhatsapp from './LogoWhatsapp.svelte';
-import Enter from './Enter.svelte';
-import BeakerOutline from './BeakerOutline.svelte';
-import ChevronUpSharp from './ChevronUpSharp.svelte';
-import LinkOutline from './LinkOutline.svelte';
-import ListSharp from './ListSharp.svelte';
-import LogIn from './LogIn.svelte';
-import BonfireOutline from './BonfireOutline.svelte';
-import BookOutline from './BookOutline.svelte';
-import Dice from './Dice.svelte';
-import MusicalNotesOutline from './MusicalNotesOutline.svelte';
-import LaptopSharp from './LaptopSharp.svelte';
-import VideocamSharp from './VideocamSharp.svelte';
-import EllipsisHorizontalCircleSharp from './EllipsisHorizontalCircleSharp.svelte';
-import LogoTwitch from './LogoTwitch.svelte';
-import PintSharp from './PintSharp.svelte';
-import LogoSoundcloud from './LogoSoundcloud.svelte';
-import CalendarClearOutline from './CalendarClearOutline.svelte';
-import CloudCircleOutline from './CloudCircleOutline.svelte';
-import BatteryFull from './BatteryFull.svelte';
-import ReturnDownBackSharp from './ReturnDownBackSharp.svelte';
-import TvSharp from './TvSharp.svelte';
-import NavigateSharp from './NavigateSharp.svelte';
-import Earth from './Earth.svelte';
-import CheckmarkDone from './CheckmarkDone.svelte';
-import CropOutline from './CropOutline.svelte';
-import ReorderFourOutline from './ReorderFourOutline.svelte';
-import LogoGooglePlaystore from './LogoGooglePlaystore.svelte';
-import Briefcase from './Briefcase.svelte';
-import FishSharp from './FishSharp.svelte';
-import ScaleOutline from './ScaleOutline.svelte';
-import Walk from './Walk.svelte';
-import FootballOutline from './FootballOutline.svelte';
-import CheckmarkDoneCircleSharp from './CheckmarkDoneCircleSharp.svelte';
-import HeartDislikeOutline from './HeartDislikeOutline.svelte';
-import PulseSharp from './PulseSharp.svelte';
-import EarOutline from './EarOutline.svelte';
-import ShareSharp from './ShareSharp.svelte';
-import Reader from './Reader.svelte';
-import Browsers from './Browsers.svelte';
-import HammerOutline from './HammerOutline.svelte';
-import Help from './Help.svelte';
-import EllipsisVerticalCircleOutline from './EllipsisVerticalCircleOutline.svelte';
-import LogoNpm from './LogoNpm.svelte';
-import Laptop from './Laptop.svelte';
-import Sad from './Sad.svelte';
-import TrashBinSharp from './TrashBinSharp.svelte';
-import Flag from './Flag.svelte';
-import GitCompare from './GitCompare.svelte';
-import MedicalOutline from './MedicalOutline.svelte';
-import MoonSharp from './MoonSharp.svelte';
-import LogoEdge from './LogoEdge.svelte';
-import Diamond from './Diamond.svelte';
-import Woman from './Woman.svelte';
-import PlayOutline from './PlayOutline.svelte';
-import HandRight from './HandRight.svelte';
-import Build from './Build.svelte';
-import RadioSharp from './RadioSharp.svelte';
-import Open from './Open.svelte';
-import SwapVertical from './SwapVertical.svelte';
-import ImageSharp from './ImageSharp.svelte';
-import MailUnreadOutline from './MailUnreadOutline.svelte';
-import TrailSignOutline from './TrailSignOutline.svelte';
-import LogoSass from './LogoSass.svelte';
-import MusicalNote from './MusicalNote.svelte';
-import CreateSharp from './CreateSharp.svelte';
-import CaretBack from './CaretBack.svelte';
-import HandLeft from './HandLeft.svelte';
-import StopCircleOutline from './StopCircleOutline.svelte';
-import ChevronBackCircle from './ChevronBackCircle.svelte';
-import GolfSharp from './GolfSharp.svelte';
-import PricetagsSharp from './PricetagsSharp.svelte';
-import Shapes from './Shapes.svelte';
-import Globe from './Globe.svelte';
-import PlaySkipBackCircle from './PlaySkipBackCircle.svelte';
-import CaretDownSharp from './CaretDownSharp.svelte';
-import ChatbubbleEllipses from './ChatbubbleEllipses.svelte';
-import PlayForwardSharp from './PlayForwardSharp.svelte';
-import CloudOfflineSharp from './CloudOfflineSharp.svelte';
-import ShareSocialOutline from './ShareSocialOutline.svelte';
-import Barbell from './Barbell.svelte';
-import ShieldOutline from './ShieldOutline.svelte';
-import RadioButtonOnSharp from './RadioButtonOnSharp.svelte';
-import AddCircleOutline from './AddCircleOutline.svelte';
-import DuplicateOutline from './DuplicateOutline.svelte';
-import FilterOutline from './FilterOutline.svelte';
-import BulbOutline from './BulbOutline.svelte';
-import ChevronUpCircleOutline from './ChevronUpCircleOutline.svelte';
-import SparklesSharp from './SparklesSharp.svelte';
-import ImageOutline from './ImageOutline.svelte';
-import Newspaper from './Newspaper.svelte';
-import CloudOffline from './CloudOffline.svelte';
-import BagHandle from './BagHandle.svelte';
-import GitPullRequestSharp from './GitPullRequestSharp.svelte';
-import StopCircleSharp from './StopCircleSharp.svelte';
-import MicCircleSharp from './MicCircleSharp.svelte';
-import LogoAppleAr from './LogoAppleAr.svelte';
-import SyncSharp from './SyncSharp.svelte';
-import RefreshCircleSharp from './RefreshCircleSharp.svelte';
-import Megaphone from './Megaphone.svelte';
-import BarbellSharp from './BarbellSharp.svelte';
-import FileTray from './FileTray.svelte';
-import PlayForwardCircleSharp from './PlayForwardCircleSharp.svelte';
-import ScanCircleSharp from './ScanCircleSharp.svelte';
-import ShuffleOutline from './ShuffleOutline.svelte';
-import PlaySkipBack from './PlaySkipBack.svelte';
-import LogoBuffer from './LogoBuffer.svelte';
-import ArrowDownOutline from './ArrowDownOutline.svelte';
-import FlagOutline from './FlagOutline.svelte';
-import ArrowUndoCircle from './ArrowUndoCircle.svelte';
-import CloseCircleSharp from './CloseCircleSharp.svelte';
-import RepeatOutline from './RepeatOutline.svelte';
-import LogoLinkedin from './LogoLinkedin.svelte';
-import FootballSharp from './FootballSharp.svelte';
-import ApertureOutline from './ApertureOutline.svelte';
-import GitPullRequest from './GitPullRequest.svelte';
-import StatsChartSharp from './StatsChartSharp.svelte';
-import Terminal from './Terminal.svelte';
-import ThumbsDown from './ThumbsDown.svelte';
-import NavigateOutline from './NavigateOutline.svelte';
-import HelpCircleSharp from './HelpCircleSharp.svelte';
-import LockOpenOutline from './LockOpenOutline.svelte';
-import AlertCircleSharp from './AlertCircleSharp.svelte';
-import LogoAlipay from './LogoAlipay.svelte';
-import SaveSharp from './SaveSharp.svelte';
-import BatteryHalfSharp from './BatteryHalfSharp.svelte';
-import VideocamOff from './VideocamOff.svelte';
-import ReaderSharp from './ReaderSharp.svelte';
-import Link from './Link.svelte';
-import AnalyticsOutline from './AnalyticsOutline.svelte';
-import EyedropSharp from './EyedropSharp.svelte';
-import LogoClosedCaptioning from './LogoClosedCaptioning.svelte';
-import EllipseSharp from './EllipseSharp.svelte';
-import Contrast from './Contrast.svelte';
-import PlayForwardCircleOutline from './PlayForwardCircleOutline.svelte';
-import FingerPrintOutline from './FingerPrintOutline.svelte';
-import VolumeLow from './VolumeLow.svelte';
-import ListCircleOutline from './ListCircleOutline.svelte';
-import VolumeMuteSharp from './VolumeMuteSharp.svelte';
-import LogoNoSmoking from './LogoNoSmoking.svelte';
-import ArrowUp from './ArrowUp.svelte';
-import CheckmarkDoneCircle from './CheckmarkDoneCircle.svelte';
-import ReorderFourSharp from './ReorderFourSharp.svelte';
-import SpeedometerOutline from './SpeedometerOutline.svelte';
-import Water from './Water.svelte';
-import OptionsSharp from './OptionsSharp.svelte';
-import EaselSharp from './EaselSharp.svelte';
-import PersonRemove from './PersonRemove.svelte';
-import BatteryChargingOutline from './BatteryChargingOutline.svelte';
-import Library from './Library.svelte';
-import CropSharp from './CropSharp.svelte';
-import MedkitOutline from './MedkitOutline.svelte';
-import BarChart from './BarChart.svelte';
-import EllipsisVerticalOutline from './EllipsisVerticalOutline.svelte';
-import StorefrontOutline from './StorefrontOutline.svelte';
-import CaretBackCircleOutline from './CaretBackCircleOutline.svelte';
-import LogoHackernews from './LogoHackernews.svelte';
-import InvertModeOutline from './InvertModeOutline.svelte';
-import BookSharp from './BookSharp.svelte';
-import LogoFlickr from './LogoFlickr.svelte';
-import PlaySkipForwardSharp from './PlaySkipForwardSharp.svelte';
-import PlaySkipForwardCircleSharp from './PlaySkipForwardCircleSharp.svelte';
-import CaretUp from './CaretUp.svelte';
-import FingerPrint from './FingerPrint.svelte';
-import Trophy from './Trophy.svelte';
-import Chatbubbles from './Chatbubbles.svelte';
-import BeerOutline from './BeerOutline.svelte';
-import BagRemoveSharp from './BagRemoveSharp.svelte';
-import LogInSharp from './LogInSharp.svelte';
-import MaleFemale from './MaleFemale.svelte';
-import ReorderThree from './ReorderThree.svelte';
-import LogoYoutube from './LogoYoutube.svelte';
-import PlaySkipBackSharp from './PlaySkipBackSharp.svelte';
-import LogoDribbble from './LogoDribbble.svelte';
-import TennisballOutline from './TennisballOutline.svelte';
-import FolderOpenOutline from './FolderOpenOutline.svelte';
-import Ellipse from './Ellipse.svelte';
-import Save from './Save.svelte';
-import Flash from './Flash.svelte';
-import LogoChrome from './LogoChrome.svelte';
-import BusinessSharp from './BusinessSharp.svelte';
-import LogoWordpress from './LogoWordpress.svelte';
-import GiftSharp from './GiftSharp.svelte';
-import Rainy from './Rainy.svelte';
-import HeartOutline from './HeartOutline.svelte';
-import AtCircleSharp from './AtCircleSharp.svelte';
-import Thermometer from './Thermometer.svelte';
-import LogoSteam from './LogoSteam.svelte';
-import Bandage from './Bandage.svelte';
-import PartlySunnySharp from './PartlySunnySharp.svelte';
-import CodeDownloadOutline from './CodeDownloadOutline.svelte';
-import PrismOutline from './PrismOutline.svelte';
-import BowlingBallSharp from './BowlingBallSharp.svelte';
-import ChevronBackCircleSharp from './ChevronBackCircleSharp.svelte';
-import IdCard from './IdCard.svelte';
-import CarSportSharp from './CarSportSharp.svelte';
-import BagOutline from './BagOutline.svelte';
-import SnowSharp from './SnowSharp.svelte';
-import FilmSharp from './FilmSharp.svelte';
-import SearchCircleOutline from './SearchCircleOutline.svelte';
-import ThermometerOutline from './ThermometerOutline.svelte';
-import KeypadSharp from './KeypadSharp.svelte';
-import Albums from './Albums.svelte';
-import ArrowBack from './ArrowBack.svelte';
-import ShapesOutline from './ShapesOutline.svelte';
-import NutritionOutline from './NutritionOutline.svelte';
-import CaretDownCircleOutline from './CaretDownCircleOutline.svelte';
-import CameraOutline from './CameraOutline.svelte';
-import Aperture from './Aperture.svelte';
-import BusOutline from './BusOutline.svelte';
-import LogoFirebase from './LogoFirebase.svelte';
-import Apps from './Apps.svelte';
-import ShieldHalfSharp from './ShieldHalfSharp.svelte';
-import MaleFemaleSharp from './MaleFemaleSharp.svelte';
-import BatteryChargingSharp from './BatteryChargingSharp.svelte';
-import ReorderTwoSharp from './ReorderTwoSharp.svelte';
-import FlashOff from './FlashOff.svelte';
-import IceCreamOutline from './IceCreamOutline.svelte';
-import TransgenderSharp from './TransgenderSharp.svelte';
-import InformationCircleSharp from './InformationCircleSharp.svelte';
-import LogoHtml5 from './LogoHtml5.svelte';
-import BalloonOutline from './BalloonOutline.svelte';
-import PauseOutline from './PauseOutline.svelte';
-import RefreshCircleOutline from './RefreshCircleOutline.svelte';
-import StarSharp from './StarSharp.svelte';
-import EllipsisHorizontalSharp from './EllipsisHorizontalSharp.svelte';
-import NewspaperOutline from './NewspaperOutline.svelte';
-import TrendingDown from './TrendingDown.svelte';
-import SubwaySharp from './SubwaySharp.svelte';
-import CodeSlashSharp from './CodeSlashSharp.svelte';
-import TelescopeOutline from './TelescopeOutline.svelte';
-import Scan from './Scan.svelte';
-import MegaphoneOutline from './MegaphoneOutline.svelte';
-import CodeSlash from './CodeSlash.svelte';
-import Umbrella from './Umbrella.svelte';
-import ReturnUpForwardOutline from './ReturnUpForwardOutline.svelte';
-import FootstepsSharp from './FootstepsSharp.svelte';
-import GitBranchSharp from './GitBranchSharp.svelte';
-import EyeSharp from './EyeSharp.svelte';
-import Ribbon from './Ribbon.svelte';
-import RemoveCircleSharp from './RemoveCircleSharp.svelte';
-import MusicalNotesSharp from './MusicalNotesSharp.svelte';
-import NotificationsCircle from './NotificationsCircle.svelte';
-import ResizeSharp from './ResizeSharp.svelte';
-import LogoReddit from './LogoReddit.svelte';
-import Power from './Power.svelte';
-import FastFoodSharp from './FastFoodSharp.svelte';
-import CaretUpCircleSharp from './CaretUpCircleSharp.svelte';
-import Journal from './Journal.svelte';
-import ReloadSharp from './ReloadSharp.svelte';
-import CaretForwardCircle from './CaretForwardCircle.svelte';
-import FileTrayStackedOutline from './FileTrayStackedOutline.svelte';
-import DocumentAttachSharp from './DocumentAttachSharp.svelte';
-import ChevronBackCircleOutline from './ChevronBackCircleOutline.svelte';
-import Repeat from './Repeat.svelte';
-import LogoAppleAppstore from './LogoAppleAppstore.svelte';
-import MicOutline from './MicOutline.svelte';
-import GitNetworkSharp from './GitNetworkSharp.svelte';
-import Basket from './Basket.svelte';
-import PhoneLandscapeSharp from './PhoneLandscapeSharp.svelte';
-import ArrowBackCircle from './ArrowBackCircle.svelte';
-import Cafe from './Cafe.svelte';
-import FunnelSharp from './FunnelSharp.svelte';
-import BandageSharp from './BandageSharp.svelte';
-import Documents from './Documents.svelte';
-import PhonePortraitSharp from './PhonePortraitSharp.svelte';
-import ShieldCheckmark from './ShieldCheckmark.svelte';
-import TerminalOutline from './TerminalOutline.svelte';
-import EllipsisHorizontal from './EllipsisHorizontal.svelte';
-import BatteryCharging from './BatteryCharging.svelte';
-import PieChart from './PieChart.svelte';
-import Bed from './Bed.svelte';
-import ReturnDownForwardOutline from './ReturnDownForwardOutline.svelte';
-import UnlinkOutline from './UnlinkOutline.svelte';
-import LogoWechat from './LogoWechat.svelte';
-import Shuffle from './Shuffle.svelte';
-import LaptopOutline from './LaptopOutline.svelte';
-import ChevronDownOutline from './ChevronDownOutline.svelte';
-import GitCommitSharp from './GitCommitSharp.svelte';
-import PlayBackCircleSharp from './PlayBackCircleSharp.svelte';
-import FilterSharp from './FilterSharp.svelte';
-import HelpBuoyOutline from './HelpBuoyOutline.svelte';
-import LogoYen from './LogoYen.svelte';
-import ChevronForwardCircleSharp from './ChevronForwardCircleSharp.svelte';
-import CafeSharp from './CafeSharp.svelte';
-import BagAdd from './BagAdd.svelte';
-import Map from './Map.svelte';
-import ChevronDownCircleOutline from './ChevronDownCircleOutline.svelte';
-import CalendarOutline from './CalendarOutline.svelte';
-import LocateSharp from './LocateSharp.svelte';
-import ArchiveSharp from './ArchiveSharp.svelte';
-import EggOutline from './EggOutline.svelte';
-import CaretBackSharp from './CaretBackSharp.svelte';
-import Heart from './Heart.svelte';
-import RibbonSharp from './RibbonSharp.svelte';
-import LogoMarkdown from './LogoMarkdown.svelte';
-import FolderOpenSharp from './FolderOpenSharp.svelte';
-import LogoInstagram from './LogoInstagram.svelte';
-import TabletPortrait from './TabletPortrait.svelte';
-import CaretDown from './CaretDown.svelte';
-import ArrowDownCircleSharp from './ArrowDownCircleSharp.svelte';
-import FlashOffSharp from './FlashOffSharp.svelte';
-import RemoveSharp from './RemoveSharp.svelte';
-import AirplaneSharp from './AirplaneSharp.svelte';
-import FileTrayOutline from './FileTrayOutline.svelte';
-import ContrastOutline from './ContrastOutline.svelte';
-import BarbellOutline from './BarbellOutline.svelte';
-import Attach from './Attach.svelte';
-import LogoStackoverflow from './LogoStackoverflow.svelte';
-import SendOutline from './SendOutline.svelte';
-import ChevronForwardSharp from './ChevronForwardSharp.svelte';
-import AddCircleSharp from './AddCircleSharp.svelte';
-import LogoUsd from './LogoUsd.svelte';
-import ExtensionPuzzleOutline from './ExtensionPuzzleOutline.svelte';
-import Baseball from './Baseball.svelte';
-import LogoWebComponent from './LogoWebComponent.svelte';
-import CalendarNumber from './CalendarNumber.svelte';
-import VideocamOutline from './VideocamOutline.svelte';
-import FemaleOutline from './FemaleOutline.svelte';
-import BasketOutline from './BasketOutline.svelte';
-import ShirtSharp from './ShirtSharp.svelte';
-import Backspace from './Backspace.svelte';
-import BusSharp from './BusSharp.svelte';
-import BaseballSharp from './BaseballSharp.svelte';
-import Transgender from './Transgender.svelte';
-import BoatOutline from './BoatOutline.svelte';
-import InvertMode from './InvertMode.svelte';
-import CloseOutline from './CloseOutline.svelte';
-import GameControllerOutline from './GameControllerOutline.svelte';
-import CallOutline from './CallOutline.svelte';
-import FastFood from './FastFood.svelte';
-import HeartCircle from './HeartCircle.svelte';
-import SnowOutline from './SnowOutline.svelte';
-import ReloadCircleSharp from './ReloadCircleSharp.svelte';
-import RocketOutline from './RocketOutline.svelte';
-import Remove from './Remove.svelte';
-import UnlinkSharp from './UnlinkSharp.svelte';
-import Location from './Location.svelte';
-import FlashlightSharp from './FlashlightSharp.svelte';
-import TimerOutline from './TimerOutline.svelte';
-import Receipt from './Receipt.svelte';
-import TicketOutline from './TicketOutline.svelte';
-import FileTrayFull from './FileTrayFull.svelte';
-import BrowsersOutline from './BrowsersOutline.svelte';
-import StorefrontSharp from './StorefrontSharp.svelte';
-import PeopleSharp from './PeopleSharp.svelte';
-import BedOutline from './BedOutline.svelte';
-import Wallet from './Wallet.svelte';
-import EllipsisVerticalCircle from './EllipsisVerticalCircle.svelte';
-import Triangle from './Triangle.svelte';
-import CheckmarkCircleOutline from './CheckmarkCircleOutline.svelte';
-import ThermometerSharp from './ThermometerSharp.svelte';
-import ChatboxOutline from './ChatboxOutline.svelte';
-import SyncCircleSharp from './SyncCircleSharp.svelte';
-import ThumbsDownOutline from './ThumbsDownOutline.svelte';
-import MailOutline from './MailOutline.svelte';
-import PencilSharp from './PencilSharp.svelte';
-import ThumbsUpOutline from './ThumbsUpOutline.svelte';
-import TrendingUpOutline from './TrendingUpOutline.svelte';
-import Infinite from './Infinite.svelte';
-import CaretDownOutline from './CaretDownOutline.svelte';
-import CubeOutline from './CubeOutline.svelte';
-import Compass from './Compass.svelte';
-import PaperPlaneSharp from './PaperPlaneSharp.svelte';
-import WifiSharp from './WifiSharp.svelte';
-import GitMerge from './GitMerge.svelte';
-import CodeDownloadSharp from './CodeDownloadSharp.svelte';
-import ArrowUndoCircleOutline from './ArrowUndoCircleOutline.svelte';
-import VideocamOffSharp from './VideocamOffSharp.svelte';
-import SyncOutline from './SyncOutline.svelte';
-import SearchCircle from './SearchCircle.svelte';
-import PauseSharp from './PauseSharp.svelte';
-import InformationCircle from './InformationCircle.svelte';
-import HeartDislikeCircleSharp from './HeartDislikeCircleSharp.svelte';
-import FlameSharp from './FlameSharp.svelte';
-import HardwareChipSharp from './HardwareChipSharp.svelte';
-import ChatboxSharp from './ChatboxSharp.svelte';
-import LogoDiscord from './LogoDiscord.svelte';
-import MicOffSharp from './MicOffSharp.svelte';
-import Thunderstorm from './Thunderstorm.svelte';
-import Close from './Close.svelte';
-import AtOutline from './AtOutline.svelte';
-import LogoFigma from './LogoFigma.svelte';
-import Leaf from './Leaf.svelte';
-import PlayBackOutline from './PlayBackOutline.svelte';
-import StopwatchSharp from './StopwatchSharp.svelte';
-import BandageOutline from './BandageOutline.svelte';
-import Train from './Train.svelte';
-import StopwatchOutline from './StopwatchOutline.svelte';
-import GitBranch from './GitBranch.svelte';
-import CaretUpCircle from './CaretUpCircle.svelte';
-import StatsChartOutline from './StatsChartOutline.svelte';
-import LogoXbox from './LogoXbox.svelte';
-import BagAddSharp from './BagAddSharp.svelte';
-import CloudCircleSharp from './CloudCircleSharp.svelte';
-import ListCircleSharp from './ListCircleSharp.svelte';
-import MicCircle from './MicCircle.svelte';
-import ScanCircleOutline from './ScanCircleOutline.svelte';
-import PlayBackSharp from './PlayBackSharp.svelte';
-import GitBranchOutline from './GitBranchOutline.svelte';
-import ChatbubblesOutline from './ChatbubblesOutline.svelte';
-import LogOut from './LogOut.svelte';
-import Hammer from './Hammer.svelte';
-import RocketSharp from './RocketSharp.svelte';
-import TerminalSharp from './TerminalSharp.svelte';
-import AtCircle from './AtCircle.svelte';
-import ChatbubbleSharp from './ChatbubbleSharp.svelte';
-import Beer from './Beer.svelte';
-import TrendingUpSharp from './TrendingUpSharp.svelte';
-import TrashSharp from './TrashSharp.svelte';
-import CarSharp from './CarSharp.svelte';
-import Calculator from './Calculator.svelte';
-import CodeSlashOutline from './CodeSlashOutline.svelte';
-import CloudyOutline from './CloudyOutline.svelte';
-import MedalSharp from './MedalSharp.svelte';
-import PrismSharp from './PrismSharp.svelte';
-import LogoGithub from './LogoGithub.svelte';
-import IdCardSharp from './IdCardSharp.svelte';
-import CaretDownCircleSharp from './CaretDownCircleSharp.svelte';
-import LeafSharp from './LeafSharp.svelte';
-import CallSharp from './CallSharp.svelte';
-import Tennisball from './Tennisball.svelte';
-import WalkSharp from './WalkSharp.svelte';
-import GlassesOutline from './GlassesOutline.svelte';
-import ArrowDownSharp from './ArrowDownSharp.svelte';
-import RainySharp from './RainySharp.svelte';
-import DocumentLockOutline from './DocumentLockOutline.svelte';
-import Headset from './Headset.svelte';
-import RadioButtonOffSharp from './RadioButtonOffSharp.svelte';
-import NavigateCircle from './NavigateCircle.svelte';
-import ManSharp from './ManSharp.svelte';
-import FileTrayFullSharp from './FileTrayFullSharp.svelte';
-import MicSharp from './MicSharp.svelte';
-import Person from './Person.svelte';
-import CloudDoneSharp from './CloudDoneSharp.svelte';
-import PersonOutline from './PersonOutline.svelte';
-import ArrowRedoSharp from './ArrowRedoSharp.svelte';
-import CarOutline from './CarOutline.svelte';
-import BatteryDeadOutline from './BatteryDeadOutline.svelte';
-import Bookmark from './Bookmark.svelte';
-import AttachSharp from './AttachSharp.svelte';
-import LogoJavascript from './LogoJavascript.svelte';
-import DocumentAttach from './DocumentAttach.svelte';
-import ArrowUpCircleSharp from './ArrowUpCircleSharp.svelte';
-import AlertCircleOutline from './AlertCircleOutline.svelte';
-import ChevronDownSharp from './ChevronDownSharp.svelte';
-import StarHalfOutline from './StarHalfOutline.svelte';
-import ArrowDownCircle from './ArrowDownCircle.svelte';
-import CalendarNumberOutline from './CalendarNumberOutline.svelte';
-import HomeSharp from './HomeSharp.svelte';
-import ReorderTwoOutline from './ReorderTwoOutline.svelte';
-import MaleFemaleOutline from './MaleFemaleOutline.svelte';
-import CalendarNumberSharp from './CalendarNumberSharp.svelte';
-import ToggleSharp from './ToggleSharp.svelte';
-import BagRemoveOutline from './BagRemoveOutline.svelte';
-import ChevronDown from './ChevronDown.svelte';
-import PricetagSharp from './PricetagSharp.svelte';
-import ColorFilterSharp from './ColorFilterSharp.svelte';
-import SparklesOutline from './SparklesOutline.svelte';
-import ClipboardSharp from './ClipboardSharp.svelte';
-import WaterOutline from './WaterOutline.svelte';
-import HomeOutline from './HomeOutline.svelte';
-import LocationSharp from './LocationSharp.svelte';
-import StatsChart from './StatsChart.svelte';
-import GitPullRequestOutline from './GitPullRequestOutline.svelte';
-import FileTrayStackedSharp from './FileTrayStackedSharp.svelte';
-import Snow from './Snow.svelte';
-import TextSharp from './TextSharp.svelte';
-import ShuffleSharp from './ShuffleSharp.svelte';
-import FlashOffOutline from './FlashOffOutline.svelte';
-import PrintOutline from './PrintOutline.svelte';
-import InformationSharp from './InformationSharp.svelte';
-import StopSharp from './StopSharp.svelte';
-import BookmarksSharp from './BookmarksSharp.svelte';
-import EyeOffSharp from './EyeOffSharp.svelte';
-import TvOutline from './TvOutline.svelte';
-import PinOutline from './PinOutline.svelte';
-import WineOutline from './WineOutline.svelte';
-import ContrastSharp from './ContrastSharp.svelte';
-import HeartCircleSharp from './HeartCircleSharp.svelte';
-import EyedropOutline from './EyedropOutline.svelte';
-import CutSharp from './CutSharp.svelte';
-import Rose from './Rose.svelte';
-import LogoDocker from './LogoDocker.svelte';
-import LogoSnapchat from './LogoSnapchat.svelte';
-import AddCircle from './AddCircle.svelte';
-import FingerPrintSharp from './FingerPrintSharp.svelte';
-import PieChartOutline from './PieChartOutline.svelte';
-import FunnelOutline from './FunnelOutline.svelte';
-import Bag from './Bag.svelte';
-import LogoFoursquare from './LogoFoursquare.svelte';
-import FlaskOutline from './FlaskOutline.svelte';
-import ReturnUpBackOutline from './ReturnUpBackOutline.svelte';
-import RadioOutline from './RadioOutline.svelte';
-import Film from './Film.svelte';
-import DocumentSharp from './DocumentSharp.svelte';
-import KeypadOutline from './KeypadOutline.svelte';
-import FileTrayStacked from './FileTrayStacked.svelte';
-import ArrowForwardCircle from './ArrowForwardCircle.svelte';
-import AirplaneOutline from './AirplaneOutline.svelte';
-import OpenSharp from './OpenSharp.svelte';
-import TransgenderOutline from './TransgenderOutline.svelte';
-import ArrowRedoOutline from './ArrowRedoOutline.svelte';
-import Timer from './Timer.svelte';
-import PaperPlane from './PaperPlane.svelte';
-import Bus from './Bus.svelte';
-import ExitOutline from './ExitOutline.svelte';
-import CaretForwardOutline from './CaretForwardOutline.svelte';
-import QrCodeSharp from './QrCodeSharp.svelte';
-import Time from './Time.svelte';
-import CloudSharp from './CloudSharp.svelte';
-import BanOutline from './BanOutline.svelte';
-import MagnetOutline from './MagnetOutline.svelte';
-import PersonAddSharp from './PersonAddSharp.svelte';
-import GitMergeOutline from './GitMergeOutline.svelte';
-import LogoIonic from './LogoIonic.svelte';
-import PlaySkipBackCircleSharp from './PlaySkipBackCircleSharp.svelte';
-import SchoolSharp from './SchoolSharp.svelte';
-import SearchOutline from './SearchOutline.svelte';
-import LocationOutline from './LocationOutline.svelte';
-import HeartHalfOutline from './HeartHalfOutline.svelte';
-import ChatbubblesSharp from './ChatbubblesSharp.svelte';
-import PlayForwardOutline from './PlayForwardOutline.svelte';
-import RemoveCircleOutline from './RemoveCircleOutline.svelte';
-import LogoPinterest from './LogoPinterest.svelte';
-import BodyOutline from './BodyOutline.svelte';
-import Key from './Key.svelte';
-import PricetagOutline from './PricetagOutline.svelte';
-import BeerSharp from './BeerSharp.svelte';
-import VolumeMediumSharp from './VolumeMediumSharp.svelte';
-import MaleSharp from './MaleSharp.svelte';
-import Checkmark from './Checkmark.svelte';
-import ArrowRedoCircle from './ArrowRedoCircle.svelte';
-import ConstructOutline from './ConstructOutline.svelte';
-import CalendarClearSharp from './CalendarClearSharp.svelte';
-import CodeDownload from './CodeDownload.svelte';
-import TodayOutline from './TodayOutline.svelte';
-import EyeOutline from './EyeOutline.svelte';
-import PhonePortraitOutline from './PhonePortraitOutline.svelte';
-import InvertModeSharp from './InvertModeSharp.svelte';
-import Bug from './Bug.svelte';
-import CogOutline from './CogOutline.svelte';
-import Prism from './Prism.svelte';
-import Man from './Man.svelte';
-import PlaySkipForward from './PlaySkipForward.svelte';
-import BicycleSharp from './BicycleSharp.svelte';
-import Pint from './Pint.svelte';
-import Storefront from './Storefront.svelte';
-import BedSharp from './BedSharp.svelte';
-import DiceSharp from './DiceSharp.svelte';
-import MaleOutline from './MaleOutline.svelte';
-import BrushOutline from './BrushOutline.svelte';
-import FlashOutline from './FlashOutline.svelte';
-import Desktop from './Desktop.svelte';
-import ColorFilter from './ColorFilter.svelte';
-import CardOutline from './CardOutline.svelte';
-import SearchSharp from './SearchSharp.svelte';
-import Information from './Information.svelte';
-import CalculatorOutline from './CalculatorOutline.svelte';
-import ExtensionPuzzle from './ExtensionPuzzle.svelte';
-import ChatbubbleEllipsesSharp from './ChatbubbleEllipsesSharp.svelte';
-import BagAddOutline from './BagAddOutline.svelte';
-import ReorderThreeOutline from './ReorderThreeOutline.svelte';
-import BagCheckOutline from './BagCheckOutline.svelte';
-import Speedometer from './Speedometer.svelte';
-import Videocam from './Videocam.svelte';
-import HelpSharp from './HelpSharp.svelte';
-import WarningSharp from './WarningSharp.svelte';
-import VolumeMuteOutline from './VolumeMuteOutline.svelte';
-import ReorderTwo from './ReorderTwo.svelte';
-import DocumentAttachOutline from './DocumentAttachOutline.svelte';
-import StopOutline from './StopOutline.svelte';
-import HardwareChip from './HardwareChip.svelte';
-import TimeSharp from './TimeSharp.svelte';
-import LogInOutline from './LogInOutline.svelte';
-import CutOutline from './CutOutline.svelte';
-import ThumbsUp from './ThumbsUp.svelte';
-import ColorFillOutline from './ColorFillOutline.svelte';
-import PlayCircleSharp from './PlayCircleSharp.svelte';
-import ChevronBackSharp from './ChevronBackSharp.svelte';
-import Rocket from './Rocket.svelte';
-import PlayBackCircle from './PlayBackCircle.svelte';
-import Stop from './Stop.svelte';
-import LogoSkype from './LogoSkype.svelte';
-import CafeOutline from './CafeOutline.svelte';
-import ScaleSharp from './ScaleSharp.svelte';
-import MenuOutline from './MenuOutline.svelte';
-import Accessibility from './Accessibility.svelte';
-import CaretUpSharp from './CaretUpSharp.svelte';
-import SwapVerticalOutline from './SwapVerticalOutline.svelte';
-import ArrowRedoCircleSharp from './ArrowRedoCircleSharp.svelte';
-import TelescopeSharp from './TelescopeSharp.svelte';
-import ThunderstormSharp from './ThunderstormSharp.svelte';
-import Bluetooth from './Bluetooth.svelte';
-import AddSharp from './AddSharp.svelte';
-import Fitness from './Fitness.svelte';
-import PersonAddOutline from './PersonAddOutline.svelte';
-import Paw from './Paw.svelte';
-import Create from './Create.svelte';
-import MailUnread from './MailUnread.svelte';
-import HeadsetOutline from './HeadsetOutline.svelte';
-import MedalOutline from './MedalOutline.svelte';
-import BuildSharp from './BuildSharp.svelte';
-import MicOff from './MicOff.svelte';
-import StopCircle from './StopCircle.svelte';
-import CompassSharp from './CompassSharp.svelte';
-import LogoAmazon from './LogoAmazon.svelte';
-import ChevronBack from './ChevronBack.svelte';
-import PinSharp from './PinSharp.svelte';
-import FileTraySharp from './FileTraySharp.svelte';
-import RecordingOutline from './RecordingOutline.svelte';
-import SwapHorizontalSharp from './SwapHorizontalSharp.svelte';
-import MegaphoneSharp from './MegaphoneSharp.svelte';
-import NuclearOutline from './NuclearOutline.svelte';
-import Menu from './Menu.svelte';
-import AccessibilitySharp from './AccessibilitySharp.svelte';
-import LogoVenmo from './LogoVenmo.svelte';
-import ManOutline from './ManOutline.svelte';
-import VolumeOff from './VolumeOff.svelte';
-import RemoveCircle from './RemoveCircle.svelte';
-import CodeOutline from './CodeOutline.svelte';
-import ArrowForwardCircleSharp from './ArrowForwardCircleSharp.svelte';
-import FlowerOutline from './FlowerOutline.svelte';
-import ArchiveOutline from './ArchiveOutline.svelte';
-import TennisballSharp from './TennisballSharp.svelte';
-import ShieldCheckmarkSharp from './ShieldCheckmarkSharp.svelte';
-import Expand from './Expand.svelte';
-import FileTrayFullOutline from './FileTrayFullOutline.svelte';
-import MusicalNoteOutline from './MusicalNoteOutline.svelte';
-import SquareOutline from './SquareOutline.svelte';
-import Settings from './Settings.svelte';
-import CloseCircle from './CloseCircle.svelte';
-import ChevronDownCircle from './ChevronDownCircle.svelte';
-import PushOutline from './PushOutline.svelte';
-import InformationOutline from './InformationOutline.svelte';
-import AlbumsOutline from './AlbumsOutline.svelte';
-import ArrowBackSharp from './ArrowBackSharp.svelte';
-import GolfOutline from './GolfOutline.svelte';
-import Medal from './Medal.svelte';
-import BulbSharp from './BulbSharp.svelte';
-import HeartDislikeSharp from './HeartDislikeSharp.svelte';
-import Shield from './Shield.svelte';
-import WalletSharp from './WalletSharp.svelte';
-import PersonCircleOutline from './PersonCircleOutline.svelte';
-import Cloud from './Cloud.svelte';
-import GiftOutline from './GiftOutline.svelte';
-import LibrarySharp from './LibrarySharp.svelte';
-import MusicalNotes from './MusicalNotes.svelte';
-import WalkOutline from './WalkOutline.svelte';
-import RefreshOutline from './RefreshOutline.svelte';
-import Images from './Images.svelte';
-import DuplicateSharp from './DuplicateSharp.svelte';
-import ResizeOutline from './ResizeOutline.svelte';
-import VolumeHigh from './VolumeHigh.svelte';
-import ConstructSharp from './ConstructSharp.svelte';
-import CloudCircle from './CloudCircle.svelte';
-import ChevronForwardOutline from './ChevronForwardOutline.svelte';
-import LanguageOutline from './LanguageOutline.svelte';
-import LogoDeviantart from './LogoDeviantart.svelte';
-import AlertSharp from './AlertSharp.svelte';
-import LogoYahoo from './LogoYahoo.svelte';
-import ArrowBackCircleSharp from './ArrowBackCircleSharp.svelte';
-import CogSharp from './CogSharp.svelte';
-import LogoRss from './LogoRss.svelte';
-import RadioButtonOn from './RadioButtonOn.svelte';
-import CloudOutline from './CloudOutline.svelte';
-import MicOffOutline from './MicOffOutline.svelte';
-import MagnetSharp from './MagnetSharp.svelte';
-import Call from './Call.svelte';
-import SadOutline from './SadOutline.svelte';
-import ScanCircle from './ScanCircle.svelte';
-import Checkbox from './Checkbox.svelte';
-import LibraryOutline from './LibraryOutline.svelte';
-import FilterCircleSharp from './FilterCircleSharp.svelte';
-import CloudDownloadOutline from './CloudDownloadOutline.svelte';
-import PhoneLandscapeOutline from './PhoneLandscapeOutline.svelte';
-import ReturnDownBackOutline from './ReturnDownBackOutline.svelte';
-import RadioButtonOnOutline from './RadioButtonOnOutline.svelte';
-import ChatboxEllipsesSharp from './ChatboxEllipsesSharp.svelte';
-import ReaderOutline from './ReaderOutline.svelte';
-import ReorderThreeSharp from './ReorderThreeSharp.svelte';
-import EarSharp from './EarSharp.svelte';
-import CloudUploadSharp from './CloudUploadSharp.svelte';
-import Camera from './Camera.svelte';
-import SubwayOutline from './SubwayOutline.svelte';
-import BookmarkSharp from './BookmarkSharp.svelte';
-import EllipsisVertical from './EllipsisVertical.svelte';
-import HeartDislike from './HeartDislike.svelte';
-import DocumentLock from './DocumentLock.svelte';
-import TrashBinOutline from './TrashBinOutline.svelte';
-import ReceiptSharp from './ReceiptSharp.svelte';
-import NotificationsOffOutline from './NotificationsOffOutline.svelte';
-import CaretBackOutline from './CaretBackOutline.svelte';
-import Flask from './Flask.svelte';
-import People from './People.svelte';
-import DesktopOutline from './DesktopOutline.svelte';
-import CheckboxSharp from './CheckboxSharp.svelte';
-import ChatbubbleEllipsesOutline from './ChatbubbleEllipsesOutline.svelte';
-import GitMergeSharp from './GitMergeSharp.svelte';
-import TrailSignSharp from './TrailSignSharp.svelte';
-import NuclearSharp from './NuclearSharp.svelte';
-import Pencil from './Pencil.svelte';
-import BluetoothSharp from './BluetoothSharp.svelte';
-import IceCream from './IceCream.svelte';
-import LocateOutline from './LocateOutline.svelte';
-import CaretUpOutline from './CaretUpOutline.svelte';
-import VolumeOffOutline from './VolumeOffOutline.svelte';
-import Square from './Square.svelte';
-import EllipsisHorizontalCircle from './EllipsisHorizontalCircle.svelte';
-import MailUnreadSharp from './MailUnreadSharp.svelte';
-import Keypad from './Keypad.svelte';
-import WomanOutline from './WomanOutline.svelte';
-import Filter from './Filter.svelte';
-import LogoTux from './LogoTux.svelte';
-import GridSharp from './GridSharp.svelte';
-import TimerSharp from './TimerSharp.svelte';
-import SyncCircleOutline from './SyncCircleOutline.svelte';
-import Skull from './Skull.svelte';
-import TriangleOutline from './TriangleOutline.svelte';
-import VolumeMediumOutline from './VolumeMediumOutline.svelte';
-import ReorderFour from './ReorderFour.svelte';
-import WatchSharp from './WatchSharp.svelte';
-import BatteryHalfOutline from './BatteryHalfOutline.svelte';
-import ArrowUndoCircleSharp from './ArrowUndoCircleSharp.svelte';
-import Barcode from './Barcode.svelte';
-import CreateOutline from './CreateOutline.svelte';
-import SpeedometerSharp from './SpeedometerSharp.svelte';
-import DiamondOutline from './DiamondOutline.svelte';
-import Medkit from './Medkit.svelte';
-import CameraReverseOutline from './CameraReverseOutline.svelte';
-import CartOutline from './CartOutline.svelte';
-import MailSharp from './MailSharp.svelte';
-import Cellular from './Cellular.svelte';
-import ChevronForward from './ChevronForward.svelte';
-import ContractOutline from './ContractOutline.svelte';
-import PulseOutline from './PulseOutline.svelte';
-import Book from './Book.svelte';
-import Stopwatch from './Stopwatch.svelte';
-import GitCompareSharp from './GitCompareSharp.svelte';
-import Egg from './Egg.svelte';
-import Bookmarks from './Bookmarks.svelte';
-import ShieldHalfOutline from './ShieldHalfOutline.svelte';
-import BagCheck from './BagCheck.svelte';
-import ServerSharp from './ServerSharp.svelte';
-import ArrowUpSharp from './ArrowUpSharp.svelte';
-import ColorFill from './ColorFill.svelte';
-import FlaskSharp from './FlaskSharp.svelte';
-import ChevronForwardCircleOutline from './ChevronForwardCircleOutline.svelte';
-import ColorWand from './ColorWand.svelte';
-import StarOutline from './StarOutline.svelte';
-import LockOpenSharp from './LockOpenSharp.svelte';
-import NotificationsCircleSharp from './NotificationsCircleSharp.svelte';
-import HelpOutline from './HelpOutline.svelte';
-import ShieldCheckmarkOutline from './ShieldCheckmarkOutline.svelte';
-import PauseCircle from './PauseCircle.svelte';
-import ShareOutline from './ShareOutline.svelte';
-import GitNetworkOutline from './GitNetworkOutline.svelte';
-import TrashBin from './TrashBin.svelte';
-import CartSharp from './CartSharp.svelte';
-import Image from './Image.svelte';
-import Code from './Code.svelte';
-import ChevronDownCircleSharp from './ChevronDownCircleSharp.svelte';
-import ImagesSharp from './ImagesSharp.svelte';
-import RefreshCircle from './RefreshCircle.svelte';
-import Beaker from './Beaker.svelte';
-import TabletLandscape from './TabletLandscape.svelte';
-import WaterSharp from './WaterSharp.svelte';
-import BoatSharp from './BoatSharp.svelte';
-import PencilOutline from './PencilOutline.svelte';
-import SkullSharp from './SkullSharp.svelte';
-import BookmarksOutline from './BookmarksOutline.svelte';
-import Glasses from './Glasses.svelte';
-import PersonRemoveOutline from './PersonRemoveOutline.svelte';
-import Card from './Card.svelte';
-import CheckmarkSharp from './CheckmarkSharp.svelte';
-import Pricetag from './Pricetag.svelte';
-import PauseCircleOutline from './PauseCircleOutline.svelte';
-import HandLeftSharp from './HandLeftSharp.svelte';
-import PlaySkipForwardOutline from './PlaySkipForwardOutline.svelte';
-import EllipsisHorizontalCircleOutline from './EllipsisHorizontalCircleOutline.svelte';
-import PlanetOutline from './PlanetOutline.svelte';
-import Happy from './Happy.svelte';
-import ChevronUpCircleSharp from './ChevronUpCircleSharp.svelte';
-import ToggleOutline from './ToggleOutline.svelte';
-import ChevronForwardCircle from './ChevronForwardCircle.svelte';
-import Tv from './Tv.svelte';
-import ColorPalette from './ColorPalette.svelte';
-import LogoBitbucket from './LogoBitbucket.svelte';
-import LogoDropbox from './LogoDropbox.svelte';
-import Nuclear from './Nuclear.svelte';
-import FlashlightOutline from './FlashlightOutline.svelte';
-import FolderOutline from './FolderOutline.svelte';
-import CloudDownloadSharp from './CloudDownloadSharp.svelte';
-import LogoPaypal from './LogoPaypal.svelte';
-import ArrowUndo from './ArrowUndo.svelte';
-import FolderSharp from './FolderSharp.svelte';
-import Alarm from './Alarm.svelte';
-import ThunderstormOutline from './ThunderstormOutline.svelte';
-import BugSharp from './BugSharp.svelte';
-import CopySharp from './CopySharp.svelte';
-import PlayBackCircleOutline from './PlayBackCircleOutline.svelte';
-import BasketballSharp from './BasketballSharp.svelte';
-import ScanSharp from './ScanSharp.svelte';
-import ColorFillSharp from './ColorFillSharp.svelte';
-import UmbrellaOutline from './UmbrellaOutline.svelte';
-import EnterOutline from './EnterOutline.svelte';
-import CalculatorSharp from './CalculatorSharp.svelte';
-import Play from './Play.svelte';
-import DownloadOutline from './DownloadOutline.svelte';
-import Nutrition from './Nutrition.svelte';
-import ShirtOutline from './ShirtOutline.svelte';
-import Mail from './Mail.svelte';
-import HardwareChipOutline from './HardwareChipOutline.svelte';
-import BatteryFullSharp from './BatteryFullSharp.svelte';
-import Push from './Push.svelte';
-import Disc from './Disc.svelte';
-import PlaySkipForwardCircleOutline from './PlaySkipForwardCircleOutline.svelte';
-import PieChartSharp from './PieChartSharp.svelte';
-import Sunny from './Sunny.svelte';
-import ListOutline from './ListOutline.svelte';
-import DiscOutline from './DiscOutline.svelte';
-import Cut from './Cut.svelte';
-import HelpCircle from './HelpCircle.svelte';
-import AtSharp from './AtSharp.svelte';
-import LogoBehance from './LogoBehance.svelte';
-import LogoStencil from './LogoStencil.svelte';
-import CaretForwardSharp from './CaretForwardSharp.svelte';
-import SwapHorizontal from './SwapHorizontal.svelte';
-import Navigate from './Navigate.svelte';
-import LogoXing from './LogoXing.svelte';
-import CarSportOutline from './CarSportOutline.svelte';
-import ReturnUpForwardSharp from './ReturnUpForwardSharp.svelte';
-import ArrowForwardOutline from './ArrowForwardOutline.svelte';
-import DownloadSharp from './DownloadSharp.svelte';
-import HandRightOutline from './HandRightOutline.svelte';
-import PlayForward from './PlayForward.svelte';
-import ColorPaletteSharp from './ColorPaletteSharp.svelte';
-import PintOutline from './PintOutline.svelte';
-import NavigateCircleSharp from './NavigateCircleSharp.svelte';
-import FlameOutline from './FlameOutline.svelte';
-import BatteryHalf from './BatteryHalf.svelte';
-import LogoCodepen from './LogoCodepen.svelte';
-import PartlySunnyOutline from './PartlySunnyOutline.svelte';
-import Document from './Document.svelte';
-import Scale from './Scale.svelte';
-import PlayForwardCircle from './PlayForwardCircle.svelte';
-import Trash from './Trash.svelte';
-import Calendar from './Calendar.svelte';
-import Easel from './Easel.svelte';
-import Male from './Male.svelte';
-import DiscSharp from './DiscSharp.svelte';
-import Brush from './Brush.svelte';
-import MailOpen from './MailOpen.svelte';
-import PawSharp from './PawSharp.svelte';
-import Pause from './Pause.svelte';
-import PodiumOutline from './PodiumOutline.svelte';
-import PersonSharp from './PersonSharp.svelte';
-import BackspaceOutline from './BackspaceOutline.svelte';
-import Folder from './Folder.svelte';
-import CloudyNightOutline from './CloudyNightOutline.svelte';
-import FishOutline from './FishOutline.svelte';
-import NotificationsOffSharp from './NotificationsOffSharp.svelte';
-import LogoEuro from './LogoEuro.svelte';
-import Bicycle from './Bicycle.svelte';
-import LogoDesignernews from './LogoDesignernews.svelte';
-import DesktopSharp from './DesktopSharp.svelte';
-import CaretDownCircle from './CaretDownCircle.svelte';
-import ExtensionPuzzleSharp from './ExtensionPuzzleSharp.svelte';
-import NotificationsOutline from './NotificationsOutline.svelte';
-import CodeSharp from './CodeSharp.svelte';
-import Basketball from './Basketball.svelte';
-import Ear from './Ear.svelte';
-import ReturnDownForward from './ReturnDownForward.svelte';
-import SwapVerticalSharp from './SwapVerticalSharp.svelte';
-import HelpBuoySharp from './HelpBuoySharp.svelte';
-import AmericanFootball from './AmericanFootball.svelte';
-import LayersSharp from './LayersSharp.svelte';
-import ChatboxEllipsesOutline from './ChatboxEllipsesOutline.svelte';
-import TextOutline from './TextOutline.svelte';
-import TicketSharp from './TicketSharp.svelte';
-import PeopleOutline from './PeopleOutline.svelte';
-import LogoApple from './LogoApple.svelte';
-import Ban from './Ban.svelte';
-import LogoPwa from './LogoPwa.svelte';
-import PhoneLandscape from './PhoneLandscape.svelte';
-import SunnyOutline from './SunnyOutline.svelte';
-import LogoMicrosoft from './LogoMicrosoft.svelte';
-import Medical from './Medical.svelte';
-import Cash from './Cash.svelte';
-import HeadsetSharp from './HeadsetSharp.svelte';
-import Construct from './Construct.svelte';
-import At from './At.svelte';
-import BriefcaseOutline from './BriefcaseOutline.svelte';
-import QrCodeOutline from './QrCodeOutline.svelte';
-import OptionsOutline from './OptionsOutline.svelte';
-import Refresh from './Refresh.svelte';
-import Restaurant from './Restaurant.svelte';
-import CloudDoneOutline from './CloudDoneOutline.svelte';
-import PlayBack from './PlayBack.svelte';
-import ShareSocialSharp from './ShareSocialSharp.svelte';
-import TabletLandscapeSharp from './TabletLandscapeSharp.svelte';
-import RadioButtonOff from './RadioButtonOff.svelte';
-import ThumbsUpSharp from './ThumbsUpSharp.svelte';
-import CheckmarkOutline from './CheckmarkOutline.svelte';
-import Unlink from './Unlink.svelte';
-import LogoGoogle from './LogoGoogle.svelte';
-import WomanSharp from './WomanSharp.svelte';
-import ArrowBackCircleOutline from './ArrowBackCircleOutline.svelte';
-import GitCommitOutline from './GitCommitOutline.svelte';
-import RoseSharp from './RoseSharp.svelte';
-import HandLeftOutline from './HandLeftOutline.svelte';
-import FlowerSharp from './FlowerSharp.svelte';
-import ServerOutline from './ServerOutline.svelte';
-import AnalyticsSharp from './AnalyticsSharp.svelte';
-import PowerSharp from './PowerSharp.svelte';
-import Body from './Body.svelte';
-import Balloon from './Balloon.svelte';
-import Shirt from './Shirt.svelte';
-import CloudOfflineOutline from './CloudOfflineOutline.svelte';
-import PartlySunny from './PartlySunny.svelte';
-import SyncCircle from './SyncCircle.svelte';
-import RainyOutline from './RainyOutline.svelte';
-import Cloudy from './Cloudy.svelte';
-import EnterSharp from './EnterSharp.svelte';
-import Flashlight from './Flashlight.svelte';
-import Language from './Language.svelte';
-import FastFoodOutline from './FastFoodOutline.svelte';
-import Send from './Send.svelte';
-import LockClosed from './LockClosed.svelte';
-import VolumeOffSharp from './VolumeOffSharp.svelte';
-import Watch from './Watch.svelte';
-import IdCardOutline from './IdCardOutline.svelte';
-import Hourglass from './Hourglass.svelte';
-import WarningOutline from './WarningOutline.svelte';
-import Clipboard from './Clipboard.svelte';
-import LogoGitlab from './LogoGitlab.svelte';
-import PlayCircleOutline from './PlayCircleOutline.svelte';
-import NutritionSharp from './NutritionSharp.svelte';
-import SadSharp from './SadSharp.svelte';
-import RoseOutline from './RoseOutline.svelte';
-import FemaleSharp from './FemaleSharp.svelte';
-import Home from './Home.svelte';
-import HeartHalfSharp from './HeartHalfSharp.svelte';
-import SendSharp from './SendSharp.svelte';
-import Business from './Business.svelte';
-import KeyOutline from './KeyOutline.svelte';
-import PersonAdd from './PersonAdd.svelte';
-import HappyOutline from './HappyOutline.svelte';
-import ArrowForwardSharp from './ArrowForwardSharp.svelte';
-import LogoNodejs from './LogoNodejs.svelte';
-import ArrowDownCircleOutline from './ArrowDownCircleOutline.svelte';
-import Add from './Add.svelte';
-import LogoVimeo from './LogoVimeo.svelte';
-import WalletOutline from './WalletOutline.svelte';
-import LogoPython from './LogoPython.svelte';
-import AccessibilityOutline from './AccessibilityOutline.svelte';
-import TabletLandscapeOutline from './TabletLandscapeOutline.svelte';
-import Search from './Search.svelte';
-import CameraReverse from './CameraReverse.svelte';
-import PeopleCircleSharp from './PeopleCircleSharp.svelte';
-import AttachOutline from './AttachOutline.svelte';
-import BeakerSharp from './BeakerSharp.svelte';
-import TabletPortraitOutline from './TabletPortraitOutline.svelte';
-import PlayCircle from './PlayCircle.svelte';
-import NotificationsOffCircleSharp from './NotificationsOffCircleSharp.svelte';
-import InfiniteSharp from './InfiniteSharp.svelte';
-import MailOpenSharp from './MailOpenSharp.svelte';
-import Pulse from './Pulse.svelte';
-import ChatboxEllipses from './ChatboxEllipses.svelte';
-import Golf from './Golf.svelte';
-import ArrowUpCircleOutline from './ArrowUpCircleOutline.svelte';
-import BasketSharp from './BasketSharp.svelte';
-import BusinessOutline from './BusinessOutline.svelte';
-import LogoFacebook from './LogoFacebook.svelte';
-import BicycleOutline from './BicycleOutline.svelte';
-import CompassOutline from './CompassOutline.svelte';
-import RibbonOutline from './RibbonOutline.svelte';
-import MusicalNoteSharp from './MusicalNoteSharp.svelte';
-import Copy from './Copy.svelte';
-import GlobeSharp from './GlobeSharp.svelte';
-import PauseCircleSharp from './PauseCircleSharp.svelte';
-import LanguageSharp from './LanguageSharp.svelte';
-import MoveOutline from './MoveOutline.svelte';
-import PersonCircle from './PersonCircle.svelte';
-import FilterCircleOutline from './FilterCircleOutline.svelte';
-import ChevronUpCircle from './ChevronUpCircle.svelte';
-import TimeOutline from './TimeOutline.svelte';
-import LogoCapacitor from './LogoCapacitor.svelte';
-import SearchCircleSharp from './SearchCircleSharp.svelte';
-import AmericanFootballOutline from './AmericanFootballOutline.svelte';
-import CheckmarkDoneSharp from './CheckmarkDoneSharp.svelte';
-import LogoVue from './LogoVue.svelte';
-import CalendarSharp from './CalendarSharp.svelte';
-import PhonePortrait from './PhonePortrait.svelte';
-import Pin from './Pin.svelte';
-import HourglassSharp from './HourglassSharp.svelte';
-import EyeOffOutline from './EyeOffOutline.svelte';
-import ReloadCircleOutline from './ReloadCircleOutline.svelte';
-import PowerOutline from './PowerOutline.svelte';
-import DocumentText from './DocumentText.svelte';
-import CheckmarkDoneCircleOutline from './CheckmarkDoneCircleOutline.svelte';
-import CaretBackCircle from './CaretBackCircle.svelte';
-import TrendingUp from './TrendingUp.svelte';
-import CardSharp from './CardSharp.svelte';
-import PersonRemoveSharp from './PersonRemoveSharp.svelte';
-import AlertOutline from './AlertOutline.svelte';
-import PeopleCircle from './PeopleCircle.svelte';
-import ColorPaletteOutline from './ColorPaletteOutline.svelte';
-import LogoFirefox from './LogoFirefox.svelte';
-import Flower from './Flower.svelte';
-import DocumentsSharp from './DocumentsSharp.svelte';
-import ChevronUpOutline from './ChevronUpOutline.svelte';
-import BowlingBall from './BowlingBall.svelte';
-import TrendingDownOutline from './TrendingDownOutline.svelte';
-import LogoMedium from './LogoMedium.svelte';
-import ReloadOutline from './ReloadOutline.svelte';
-import HappySharp from './HappySharp.svelte';
-import PodiumSharp from './PodiumSharp.svelte';
-import BalloonSharp from './BalloonSharp.svelte';
-import CashSharp from './CashSharp.svelte';
-import CheckboxOutline from './CheckboxOutline.svelte';
-import BatteryDead from './BatteryDead.svelte';
-import EggSharp from './EggSharp.svelte';
-import AlbumsSharp from './AlbumsSharp.svelte';
-import NewspaperSharp from './NewspaperSharp.svelte';
-import AlarmSharp from './AlarmSharp.svelte';
-import ChatbubbleOutline from './ChatbubbleOutline.svelte';
-import VolumeMedium from './VolumeMedium.svelte';
-import OpenOutline from './OpenOutline.svelte';
-import BanSharp from './BanSharp.svelte';
-import ArrowUpOutline from './ArrowUpOutline.svelte';
-import BaseballOutline from './BaseballOutline.svelte';
-import ClipboardOutline from './ClipboardOutline.svelte';
-import Download from './Download.svelte';
-import GitCompareOutline from './GitCompareOutline.svelte';
-import PizzaOutline from './PizzaOutline.svelte';
-import ListCircle from './ListCircle.svelte';
-import LogoTiktok from './LogoTiktok.svelte';
-import HeartDislikeCircle from './HeartDislikeCircle.svelte';
-import MoonOutline from './MoonOutline.svelte';
-import Subway from './Subway.svelte';
-import Chatbox from './Chatbox.svelte';
-import Flame from './Flame.svelte';
-import ShieldSharp from './ShieldSharp.svelte';
-import Gift from './Gift.svelte';
-import ShapesSharp from './ShapesSharp.svelte';
-import Recording from './Recording.svelte';
-import Car from './Car.svelte';
-import VideocamOffOutline from './VideocamOffOutline.svelte';
-import RecordingSharp from './RecordingSharp.svelte';
-import DocumentTextOutline from './DocumentTextOutline.svelte';
-import Star from './Star.svelte';
-import LogoBitcoin from './LogoBitcoin.svelte';
-import VolumeHighSharp from './VolumeHighSharp.svelte';
-import Layers from './Layers.svelte';
-import AddOutline from './AddOutline.svelte';
-import Footsteps from './Footsteps.svelte';
-import MicCircleOutline from './MicCircleOutline.svelte';
-import DiamondSharp from './DiamondSharp.svelte';
-import Eye from './Eye.svelte';
-import ArrowUndoSharp from './ArrowUndoSharp.svelte';
-import IceCreamSharp from './IceCreamSharp.svelte';
-import JournalSharp from './JournalSharp.svelte';
-import Mic from './Mic.svelte';
-import CodeWorking from './CodeWorking.svelte';
-import BrowsersSharp from './BrowsersSharp.svelte';
-import GitCommit from './GitCommit.svelte';
-import ExitSharp from './ExitSharp.svelte';
-import BuildOutline from './BuildOutline.svelte';
-import Move from './Move.svelte';
-import NotificationsOffCircleOutline from './NotificationsOffCircleOutline.svelte';
-import HeartCircleOutline from './HeartCircleOutline.svelte';
-import Cube from './Cube.svelte';
-import LogOutSharp from './LogOutSharp.svelte';
-import CaretUpCircleOutline from './CaretUpCircleOutline.svelte';
-import JournalOutline from './JournalOutline.svelte';
-import FilterCircle from './FilterCircle.svelte';
-import AlertCircle from './AlertCircle.svelte';
-import Analytics from './Analytics.svelte';
-import ContractSharp from './ContractSharp.svelte';
-import RemoveOutline from './RemoveOutline.svelte';
-import CloudUploadOutline from './CloudUploadOutline.svelte';
-import LogoVk from './LogoVk.svelte';
-import CloudyNightSharp from './CloudyNightSharp.svelte';
-import HelpBuoy from './HelpBuoy.svelte';
-import Cog from './Cog.svelte';
-import BarcodeSharp from './BarcodeSharp.svelte';
-import DocumentLockSharp from './DocumentLockSharp.svelte';
-import ArrowBackOutline from './ArrowBackOutline.svelte';
-import AtCircleOutline from './AtCircleOutline.svelte';
-import RefreshSharp from './RefreshSharp.svelte';
-import Boat from './Boat.svelte';
-import ReturnUpBackSharp from './ReturnUpBackSharp.svelte';
-import BackspaceSharp from './BackspaceSharp.svelte';
-import Wifi from './Wifi.svelte';
-import NavigateCircleOutline from './NavigateCircleOutline.svelte';
-import LogoAngular from './LogoAngular.svelte';
-import LogoTwitter from './LogoTwitter.svelte';
-import TrendingDownSharp from './TrendingDownSharp.svelte';
-import FlagSharp from './FlagSharp.svelte';
-import BagSharp from './BagSharp.svelte';
-import VolumeMute from './VolumeMute.svelte';
-import MicOffCircleOutline from './MicOffCircleOutline.svelte';
-import ThumbsDownSharp from './ThumbsDownSharp.svelte';
-import ExpandSharp from './ExpandSharp.svelte';
-import LogoMastodon from './LogoMastodon.svelte';
-import Football from './Football.svelte';
-import LayersOutline from './LayersOutline.svelte';
-import TrainOutline from './TrainOutline.svelte';
-import VolumeLowSharp from './VolumeLowSharp.svelte';
-import TrashOutline from './TrashOutline.svelte';
-import UmbrellaSharp from './UmbrellaSharp.svelte';
-import CopyOutline from './CopyOutline.svelte';
-import Options from './Options.svelte';
-import DiceOutline from './DiceOutline.svelte';
-import NotificationsCircleOutline from './NotificationsCircleOutline.svelte';
-import Server from './Server.svelte';
-import BugOutline from './BugOutline.svelte';
-import MenuSharp from './MenuSharp.svelte';
-import BarcodeOutline from './BarcodeOutline.svelte';
-import CaretForwardCircleOutline from './CaretForwardCircleOutline.svelte';
-import Alert from './Alert.svelte';
-import Print from './Print.svelte';
-import Contract from './Contract.svelte';
-import PushSharp from './PushSharp.svelte';
-import BasketballOutline from './BasketballOutline.svelte';
-import BagRemove from './BagRemove.svelte';
-import DocumentTextSharp from './DocumentTextSharp.svelte';
-import Airplane from './Airplane.svelte';
-import School from './School.svelte';
-import LogoWindows from './LogoWindows.svelte';
-import CalendarClear from './CalendarClear.svelte';
-import LogoElectron from './LogoElectron.svelte';
-import BarChartOutline from './BarChartOutline.svelte';
-import Bulb from './Bulb.svelte';
-import Chatbubble from './Chatbubble.svelte';
-import BluetoothOutline from './BluetoothOutline.svelte';
-import AppsOutline from './AppsOutline.svelte';
-import LogoSlack from './LogoSlack.svelte';
-import LogoTableau from './LogoTableau.svelte';
-import PrintSharp from './PrintSharp.svelte';
-import EllipseOutline from './EllipseOutline.svelte';
-import AlarmOutline from './AlarmOutline.svelte';
-import RepeatSharp from './RepeatSharp.svelte';
-import ReturnUpForward from './ReturnUpForward.svelte';
-import LockOpen from './LockOpen.svelte';
-import Pizza from './Pizza.svelte';
-import Bonfire from './Bonfire.svelte';
-import SaveOutline from './SaveOutline.svelte';
-import BagHandleOutline from './BagHandleOutline.svelte';
-import Ticket from './Ticket.svelte';
-import EarthSharp from './EarthSharp.svelte';
-import BodySharp from './BodySharp.svelte';
-import Today from './Today.svelte';
-import Archive from './Archive.svelte';
-import ReturnDownBack from './ReturnDownBack.svelte';
-import CarSport from './CarSport.svelte';
-import ColorWandSharp from './ColorWandSharp.svelte';
-import PizzaSharp from './PizzaSharp.svelte';
-import BookmarkOutline from './BookmarkOutline.svelte';
-import RadioButtonOffOutline from './RadioButtonOffOutline.svelte';
-import CaretForward from './CaretForward.svelte';
-import MicOffCircle from './MicOffCircle.svelte';
-import HeartHalf from './HeartHalf.svelte';
-import TrailSign from './TrailSign.svelte';
-import ArrowRedo from './ArrowRedo.svelte';
-import MoveSharp from './MoveSharp.svelte';
-import Female from './Female.svelte';
-import CloudySharp from './CloudySharp.svelte';
-import GlobeOutline from './GlobeOutline.svelte';
-import LogoOctocat from './LogoOctocat.svelte';
-import AppsSharp from './AppsSharp.svelte';
-import CameraSharp from './CameraSharp.svelte';
-import InfiniteOutline from './InfiniteOutline.svelte';
-import Eyedrop from './Eyedrop.svelte';
-import GameControllerSharp from './GameControllerSharp.svelte';
-import LogOutOutline from './LogOutOutline.svelte';
-import ReturnDownForwardSharp from './ReturnDownForwardSharp.svelte';
-import MailOpenOutline from './MailOpenOutline.svelte';
-import MapSharp from './MapSharp.svelte';
-import PawOutline from './PawOutline.svelte';
-import Locate from './Locate.svelte';
-import BriefcaseSharp from './BriefcaseSharp.svelte';
-import TrainSharp from './TrainSharp.svelte';
-import Share from './Share.svelte';
-import Notifications from './Notifications.svelte';
-import SchoolOutline from './SchoolOutline.svelte';
-import FlashSharp from './FlashSharp.svelte';
-import CloudUpload from './CloudUpload.svelte';
-import CellularOutline from './CellularOutline.svelte';
-import BonfireSharp from './BonfireSharp.svelte';
-import BarChartSharp from './BarChartSharp.svelte';
-import PlaySkipBackCircleOutline from './PlaySkipBackCircleOutline.svelte';
-import MedicalSharp from './MedicalSharp.svelte';
-import PlaySharp from './PlaySharp.svelte';
-import PersonCircleSharp from './PersonCircleSharp.svelte';
-import KeySharp from './KeySharp.svelte';
-import RestaurantOutline from './RestaurantOutline.svelte';
-import GlassesSharp from './GlassesSharp.svelte';
-import CodeWorkingSharp from './CodeWorkingSharp.svelte';
-import MedkitSharp from './MedkitSharp.svelte';
-import PlaySkipBackOutline from './PlaySkipBackOutline.svelte';
-import CameraReverseSharp from './CameraReverseSharp.svelte';
-import HandRightSharp from './HandRightSharp.svelte';
-import GridOutline from './GridOutline.svelte';
-import SkullOutline from './SkullOutline.svelte';
-import NotificationsSharp from './NotificationsSharp.svelte';
-import Text from './Text.svelte';
-import ReceiptOutline from './ReceiptOutline.svelte';
-import Fish from './Fish.svelte';
-import FootstepsOutline from './FootstepsOutline.svelte';
-import LeafOutline from './LeafOutline.svelte';
-import CaretBackCircleSharp from './CaretBackCircleSharp.svelte';
-import CloseSharp from './CloseSharp.svelte';
-import WineSharp from './WineSharp.svelte';
-import EllipsisHorizontalOutline from './EllipsisHorizontalOutline.svelte';
-import PeopleCircleOutline from './PeopleCircleOutline.svelte';
-import LogoAndroid from './LogoAndroid.svelte';
-import QrCode from './QrCode.svelte';
-import List from './List.svelte';
-import HammerSharp from './HammerSharp.svelte';
-import CloseCircleOutline from './CloseCircleOutline.svelte';
-import ReloadCircle from './ReloadCircle.svelte';
-import ShieldHalf from './ShieldHalf.svelte';
-import CloudyNight from './CloudyNight.svelte';
-import EllipsisVerticalSharp from './EllipsisVerticalSharp.svelte';
-import SettingsSharp from './SettingsSharp.svelte';
-import DocumentsOutline from './DocumentsOutline.svelte';
-import ReturnUpBack from './ReturnUpBack.svelte';
-import GitNetwork from './GitNetwork.svelte';
-import BowlingBallOutline from './BowlingBallOutline.svelte';
-import Magnet from './Magnet.svelte';
-import PlanetSharp from './PlanetSharp.svelte';
-import FolderOpen from './FolderOpen.svelte';
-import Sparkles from './Sparkles.svelte';
-import HeartDislikeCircleOutline from './HeartDislikeCircleOutline.svelte';
-import ApertureSharp from './ApertureSharp.svelte';
-import ArrowRedoCircleOutline from './ArrowRedoCircleOutline.svelte';
-import Duplicate from './Duplicate.svelte';
-import TodaySharp from './TodaySharp.svelte';
-import VolumeHighOutline from './VolumeHighOutline.svelte';
-import CloudDownload from './CloudDownload.svelte';
-import ArrowUpCircle from './ArrowUpCircle.svelte';
-import NotificationsOff from './NotificationsOff.svelte';
-import ColorWandOutline from './ColorWandOutline.svelte';
-import WatchOutline from './WatchOutline.svelte';
-import MapOutline from './MapOutline.svelte';
-import ChevronBackOutline from './ChevronBackOutline.svelte';
-import FitnessSharp from './FitnessSharp.svelte';
-import Wine from './Wine.svelte';
-import Grid from './Grid.svelte';
-import LogoAmplify from './LogoAmplify.svelte';
-import ArrowForwardCircleOutline from './ArrowForwardCircleOutline.svelte';
-import CodeWorkingOutline from './CodeWorkingOutline.svelte';
-import LockClosedOutline from './LockClosedOutline.svelte';
-import EarthOutline from './EarthOutline.svelte';
-import CheckmarkCircle from './CheckmarkCircle.svelte';
-import SunnySharp from './SunnySharp.svelte';
-import BatteryDeadSharp from './BatteryDeadSharp.svelte';
-import BagHandleSharp from './BagHandleSharp.svelte';
-import LogoVercel from './LogoVercel.svelte';
-import LogoCss3 from './LogoCss3.svelte';
-import Warning from './Warning.svelte';
-import StarHalfSharp from './StarHalfSharp.svelte';
-import CashOutline from './CashOutline.svelte';
-import Reload from './Reload.svelte';
-import Cart from './Cart.svelte';
-import Moon from './Moon.svelte';
-import Telescope from './Telescope.svelte';
-import SettingsOutline from './SettingsOutline.svelte';
-import ImagesOutline from './ImagesOutline.svelte';
-import Sync from './Sync.svelte';
-import Radio from './Radio.svelte';
-import ColorFilterOutline from './ColorFilterOutline.svelte';
-import Resize from './Resize.svelte';
-import CellularSharp from './CellularSharp.svelte';
-import FilmOutline from './FilmOutline.svelte';
-import Pricetags from './Pricetags.svelte';
-import LogoTumblr from './LogoTumblr.svelte';
-import AmericanFootballSharp from './AmericanFootballSharp.svelte';
-import HeartSharp from './HeartSharp.svelte';
-import WifiOutline from './WifiOutline.svelte';
-import DocumentOutline from './DocumentOutline.svelte';
-import CheckmarkDoneOutline from './CheckmarkDoneOutline.svelte';
-import TrophyOutline from './TrophyOutline.svelte';
-import Crop from './Crop.svelte';
-import NotificationsOffCircle from './NotificationsOffCircle.svelte';
-import Funnel from './Funnel.svelte';
-import BatteryFullOutline from './BatteryFullOutline.svelte';
-import LinkSharp from './LinkSharp.svelte';
-import SwapHorizontalOutline from './SwapHorizontalOutline.svelte';
-import PaperPlaneOutline from './PaperPlaneOutline.svelte';
-export {
-	StarHalf,
-	Exit,
-	FitnessOutline,
-	ChevronUp,
-	CheckmarkCircleSharp,
-	MicOffCircleSharp,
-	InformationCircleOutline,
-	BagCheckSharp,
-	VolumeLowOutline,
-	LogoPlaystation,
-	LogoIonitron,
-	PricetagsOutline,
-	TabletPortraitSharp,
-	LockClosedSharp,
-	HelpCircleOutline,
-	Planet,
-	ShareSocial,
-	PlaySkipForwardCircle,
-	EyeOff,
-	LogoLaravel,
-	Podium,
-	ExpandOutline,
-	CubeSharp,
-	GameController,
-	ArrowForward,
-	TrophySharp,
-	RestaurantSharp,
-	EaselOutline,
-	EllipsisVerticalCircleSharp,
-	ScanOutline,
-	ArrowUndoOutline,
-	HourglassOutline,
-	ArrowDown,
-	Toggle,
-	CloudDone,
-	LogoReact,
-	BrushSharp,
-	TriangleSharp,
-	CaretForwardCircleSharp,
-	SquareSharp,
-	LogoWhatsapp,
-	Enter,
-	BeakerOutline,
-	ChevronUpSharp,
-	LinkOutline,
-	ListSharp,
-	LogIn,
-	BonfireOutline,
-	BookOutline,
-	Dice,
-	MusicalNotesOutline,
-	LaptopSharp,
-	VideocamSharp,
-	EllipsisHorizontalCircleSharp,
-	LogoTwitch,
-	PintSharp,
-	LogoSoundcloud,
-	CalendarClearOutline,
-	CloudCircleOutline,
-	BatteryFull,
-	ReturnDownBackSharp,
-	TvSharp,
-	NavigateSharp,
-	Earth,
-	CheckmarkDone,
-	CropOutline,
-	ReorderFourOutline,
-	LogoGooglePlaystore,
-	Briefcase,
-	FishSharp,
-	ScaleOutline,
-	Walk,
-	FootballOutline,
-	CheckmarkDoneCircleSharp,
-	HeartDislikeOutline,
-	PulseSharp,
-	EarOutline,
-	ShareSharp,
-	Reader,
-	Browsers,
-	HammerOutline,
-	Help,
-	EllipsisVerticalCircleOutline,
-	LogoNpm,
-	Laptop,
-	Sad,
-	TrashBinSharp,
-	Flag,
-	GitCompare,
-	MedicalOutline,
-	MoonSharp,
-	LogoEdge,
-	Diamond,
-	Woman,
-	PlayOutline,
-	HandRight,
-	Build,
-	RadioSharp,
-	Open,
-	SwapVertical,
-	ImageSharp,
-	MailUnreadOutline,
-	TrailSignOutline,
-	LogoSass,
-	MusicalNote,
-	CreateSharp,
-	CaretBack,
-	HandLeft,
-	StopCircleOutline,
-	ChevronBackCircle,
-	GolfSharp,
-	PricetagsSharp,
-	Shapes,
-	Globe,
-	PlaySkipBackCircle,
-	CaretDownSharp,
-	ChatbubbleEllipses,
-	PlayForwardSharp,
-	CloudOfflineSharp,
-	ShareSocialOutline,
-	Barbell,
-	ShieldOutline,
-	RadioButtonOnSharp,
-	AddCircleOutline,
-	DuplicateOutline,
-	FilterOutline,
-	BulbOutline,
-	ChevronUpCircleOutline,
-	SparklesSharp,
-	ImageOutline,
-	Newspaper,
-	CloudOffline,
-	BagHandle,
-	GitPullRequestSharp,
-	StopCircleSharp,
-	MicCircleSharp,
-	LogoAppleAr,
-	SyncSharp,
-	RefreshCircleSharp,
-	Megaphone,
-	BarbellSharp,
-	FileTray,
-	PlayForwardCircleSharp,
-	ScanCircleSharp,
-	ShuffleOutline,
-	PlaySkipBack,
-	LogoBuffer,
-	ArrowDownOutline,
-	FlagOutline,
-	ArrowUndoCircle,
-	CloseCircleSharp,
-	RepeatOutline,
-	LogoLinkedin,
-	FootballSharp,
-	ApertureOutline,
-	GitPullRequest,
-	StatsChartSharp,
-	Terminal,
-	ThumbsDown,
-	NavigateOutline,
-	HelpCircleSharp,
-	LockOpenOutline,
-	AlertCircleSharp,
-	LogoAlipay,
-	SaveSharp,
-	BatteryHalfSharp,
-	VideocamOff,
-	ReaderSharp,
-	Link,
-	AnalyticsOutline,
-	EyedropSharp,
-	LogoClosedCaptioning,
-	EllipseSharp,
-	Contrast,
-	PlayForwardCircleOutline,
-	FingerPrintOutline,
-	VolumeLow,
-	ListCircleOutline,
-	VolumeMuteSharp,
-	LogoNoSmoking,
-	ArrowUp,
-	CheckmarkDoneCircle,
-	ReorderFourSharp,
-	SpeedometerOutline,
-	Water,
-	OptionsSharp,
-	EaselSharp,
-	PersonRemove,
-	BatteryChargingOutline,
-	Library,
-	CropSharp,
-	MedkitOutline,
-	BarChart,
-	EllipsisVerticalOutline,
-	StorefrontOutline,
-	CaretBackCircleOutline,
-	LogoHackernews,
-	InvertModeOutline,
-	BookSharp,
-	LogoFlickr,
-	PlaySkipForwardSharp,
-	PlaySkipForwardCircleSharp,
-	CaretUp,
-	FingerPrint,
-	Trophy,
-	Chatbubbles,
-	BeerOutline,
-	BagRemoveSharp,
-	LogInSharp,
-	MaleFemale,
-	ReorderThree,
-	LogoYoutube,
-	PlaySkipBackSharp,
-	LogoDribbble,
-	TennisballOutline,
-	FolderOpenOutline,
-	Ellipse,
-	Save,
-	Flash,
-	LogoChrome,
-	BusinessSharp,
-	LogoWordpress,
-	GiftSharp,
-	Rainy,
-	HeartOutline,
-	AtCircleSharp,
-	Thermometer,
-	LogoSteam,
-	Bandage,
-	PartlySunnySharp,
-	CodeDownloadOutline,
-	PrismOutline,
-	BowlingBallSharp,
-	ChevronBackCircleSharp,
-	IdCard,
-	CarSportSharp,
-	BagOutline,
-	SnowSharp,
-	FilmSharp,
-	SearchCircleOutline,
-	ThermometerOutline,
-	KeypadSharp,
-	Albums,
-	ArrowBack,
-	ShapesOutline,
-	NutritionOutline,
-	CaretDownCircleOutline,
-	CameraOutline,
-	Aperture,
-	BusOutline,
-	LogoFirebase,
-	Apps,
-	ShieldHalfSharp,
-	MaleFemaleSharp,
-	BatteryChargingSharp,
-	ReorderTwoSharp,
-	FlashOff,
-	IceCreamOutline,
-	TransgenderSharp,
-	InformationCircleSharp,
-	LogoHtml5,
-	BalloonOutline,
-	PauseOutline,
-	RefreshCircleOutline,
-	StarSharp,
-	EllipsisHorizontalSharp,
-	NewspaperOutline,
-	TrendingDown,
-	SubwaySharp,
-	CodeSlashSharp,
-	TelescopeOutline,
-	Scan,
-	MegaphoneOutline,
-	CodeSlash,
-	Umbrella,
-	ReturnUpForwardOutline,
-	FootstepsSharp,
-	GitBranchSharp,
-	EyeSharp,
-	Ribbon,
-	RemoveCircleSharp,
-	MusicalNotesSharp,
-	NotificationsCircle,
-	ResizeSharp,
-	LogoReddit,
-	Power,
-	FastFoodSharp,
-	CaretUpCircleSharp,
-	Journal,
-	ReloadSharp,
-	CaretForwardCircle,
-	FileTrayStackedOutline,
-	DocumentAttachSharp,
-	ChevronBackCircleOutline,
-	Repeat,
-	LogoAppleAppstore,
-	MicOutline,
-	GitNetworkSharp,
-	Basket,
-	PhoneLandscapeSharp,
-	ArrowBackCircle,
-	Cafe,
-	FunnelSharp,
-	BandageSharp,
-	Documents,
-	PhonePortraitSharp,
-	ShieldCheckmark,
-	TerminalOutline,
-	EllipsisHorizontal,
-	BatteryCharging,
-	PieChart,
-	Bed,
-	ReturnDownForwardOutline,
-	UnlinkOutline,
-	LogoWechat,
-	Shuffle,
-	LaptopOutline,
-	ChevronDownOutline,
-	GitCommitSharp,
-	PlayBackCircleSharp,
-	FilterSharp,
-	HelpBuoyOutline,
-	LogoYen,
-	ChevronForwardCircleSharp,
-	CafeSharp,
-	BagAdd,
-	Map,
-	ChevronDownCircleOutline,
-	CalendarOutline,
-	LocateSharp,
-	ArchiveSharp,
-	EggOutline,
-	CaretBackSharp,
-	Heart,
-	RibbonSharp,
-	LogoMarkdown,
-	FolderOpenSharp,
-	LogoInstagram,
-	TabletPortrait,
-	CaretDown,
-	ArrowDownCircleSharp,
-	FlashOffSharp,
-	RemoveSharp,
-	AirplaneSharp,
-	FileTrayOutline,
-	ContrastOutline,
-	BarbellOutline,
-	Attach,
-	LogoStackoverflow,
-	SendOutline,
-	ChevronForwardSharp,
-	AddCircleSharp,
-	LogoUsd,
-	ExtensionPuzzleOutline,
-	Baseball,
-	LogoWebComponent,
-	CalendarNumber,
-	VideocamOutline,
-	FemaleOutline,
-	BasketOutline,
-	ShirtSharp,
-	Backspace,
-	BusSharp,
-	BaseballSharp,
-	Transgender,
-	BoatOutline,
-	InvertMode,
-	CloseOutline,
-	GameControllerOutline,
-	CallOutline,
-	FastFood,
-	HeartCircle,
-	SnowOutline,
-	ReloadCircleSharp,
-	RocketOutline,
-	Remove,
-	UnlinkSharp,
-	Location,
-	FlashlightSharp,
-	TimerOutline,
-	Receipt,
-	TicketOutline,
-	FileTrayFull,
-	BrowsersOutline,
-	StorefrontSharp,
-	PeopleSharp,
-	BedOutline,
-	Wallet,
-	EllipsisVerticalCircle,
-	Triangle,
-	CheckmarkCircleOutline,
-	ThermometerSharp,
-	ChatboxOutline,
-	SyncCircleSharp,
-	ThumbsDownOutline,
-	MailOutline,
-	PencilSharp,
-	ThumbsUpOutline,
-	TrendingUpOutline,
-	Infinite,
-	CaretDownOutline,
-	CubeOutline,
-	Compass,
-	PaperPlaneSharp,
-	WifiSharp,
-	GitMerge,
-	CodeDownloadSharp,
-	ArrowUndoCircleOutline,
-	VideocamOffSharp,
-	SyncOutline,
-	SearchCircle,
-	PauseSharp,
-	InformationCircle,
-	HeartDislikeCircleSharp,
-	FlameSharp,
-	HardwareChipSharp,
-	ChatboxSharp,
-	LogoDiscord,
-	MicOffSharp,
-	Thunderstorm,
-	Close,
-	AtOutline,
-	LogoFigma,
-	Leaf,
-	PlayBackOutline,
-	StopwatchSharp,
-	BandageOutline,
-	Train,
-	StopwatchOutline,
-	GitBranch,
-	CaretUpCircle,
-	StatsChartOutline,
-	LogoXbox,
-	BagAddSharp,
-	CloudCircleSharp,
-	ListCircleSharp,
-	MicCircle,
-	ScanCircleOutline,
-	PlayBackSharp,
-	GitBranchOutline,
-	ChatbubblesOutline,
-	LogOut,
-	Hammer,
-	RocketSharp,
-	TerminalSharp,
-	AtCircle,
-	ChatbubbleSharp,
-	Beer,
-	TrendingUpSharp,
-	TrashSharp,
-	CarSharp,
-	Calculator,
-	CodeSlashOutline,
-	CloudyOutline,
-	MedalSharp,
-	PrismSharp,
-	LogoGithub,
-	IdCardSharp,
-	CaretDownCircleSharp,
-	LeafSharp,
-	CallSharp,
-	Tennisball,
-	WalkSharp,
-	GlassesOutline,
-	ArrowDownSharp,
-	RainySharp,
-	DocumentLockOutline,
-	Headset,
-	RadioButtonOffSharp,
-	NavigateCircle,
-	ManSharp,
-	FileTrayFullSharp,
-	MicSharp,
-	Person,
-	CloudDoneSharp,
-	PersonOutline,
-	ArrowRedoSharp,
-	CarOutline,
-	BatteryDeadOutline,
-	Bookmark,
-	AttachSharp,
-	LogoJavascript,
-	DocumentAttach,
-	ArrowUpCircleSharp,
-	AlertCircleOutline,
-	ChevronDownSharp,
-	StarHalfOutline,
-	ArrowDownCircle,
-	CalendarNumberOutline,
-	HomeSharp,
-	ReorderTwoOutline,
-	MaleFemaleOutline,
-	CalendarNumberSharp,
-	ToggleSharp,
-	BagRemoveOutline,
-	ChevronDown,
-	PricetagSharp,
-	ColorFilterSharp,
-	SparklesOutline,
-	ClipboardSharp,
-	WaterOutline,
-	HomeOutline,
-	LocationSharp,
-	StatsChart,
-	GitPullRequestOutline,
-	FileTrayStackedSharp,
-	Snow,
-	TextSharp,
-	ShuffleSharp,
-	FlashOffOutline,
-	PrintOutline,
-	InformationSharp,
-	StopSharp,
-	BookmarksSharp,
-	EyeOffSharp,
-	TvOutline,
-	PinOutline,
-	WineOutline,
-	ContrastSharp,
-	HeartCircleSharp,
-	EyedropOutline,
-	CutSharp,
-	Rose,
-	LogoDocker,
-	LogoSnapchat,
-	AddCircle,
-	FingerPrintSharp,
-	PieChartOutline,
-	FunnelOutline,
-	Bag,
-	LogoFoursquare,
-	FlaskOutline,
-	ReturnUpBackOutline,
-	RadioOutline,
-	Film,
-	DocumentSharp,
-	KeypadOutline,
-	FileTrayStacked,
-	ArrowForwardCircle,
-	AirplaneOutline,
-	OpenSharp,
-	TransgenderOutline,
-	ArrowRedoOutline,
-	Timer,
-	PaperPlane,
-	Bus,
-	ExitOutline,
-	CaretForwardOutline,
-	QrCodeSharp,
-	Time,
-	CloudSharp,
-	BanOutline,
-	MagnetOutline,
-	PersonAddSharp,
-	GitMergeOutline,
-	LogoIonic,
-	PlaySkipBackCircleSharp,
-	SchoolSharp,
-	SearchOutline,
-	LocationOutline,
-	HeartHalfOutline,
-	ChatbubblesSharp,
-	PlayForwardOutline,
-	RemoveCircleOutline,
-	LogoPinterest,
-	BodyOutline,
-	Key,
-	PricetagOutline,
-	BeerSharp,
-	VolumeMediumSharp,
-	MaleSharp,
-	Checkmark,
-	ArrowRedoCircle,
-	ConstructOutline,
-	CalendarClearSharp,
-	CodeDownload,
-	TodayOutline,
-	EyeOutline,
-	PhonePortraitOutline,
-	InvertModeSharp,
-	Bug,
-	CogOutline,
-	Prism,
-	Man,
-	PlaySkipForward,
-	BicycleSharp,
-	Pint,
-	Storefront,
-	BedSharp,
-	DiceSharp,
-	MaleOutline,
-	BrushOutline,
-	FlashOutline,
-	Desktop,
-	ColorFilter,
-	CardOutline,
-	SearchSharp,
-	Information,
-	CalculatorOutline,
-	ExtensionPuzzle,
-	ChatbubbleEllipsesSharp,
-	BagAddOutline,
-	ReorderThreeOutline,
-	BagCheckOutline,
-	Speedometer,
-	Videocam,
-	HelpSharp,
-	WarningSharp,
-	VolumeMuteOutline,
-	ReorderTwo,
-	DocumentAttachOutline,
-	StopOutline,
-	HardwareChip,
-	TimeSharp,
-	LogInOutline,
-	CutOutline,
-	ThumbsUp,
-	ColorFillOutline,
-	PlayCircleSharp,
-	ChevronBackSharp,
-	Rocket,
-	PlayBackCircle,
-	Stop,
-	LogoSkype,
-	CafeOutline,
-	ScaleSharp,
-	MenuOutline,
-	Accessibility,
-	CaretUpSharp,
-	SwapVerticalOutline,
-	ArrowRedoCircleSharp,
-	TelescopeSharp,
-	ThunderstormSharp,
-	Bluetooth,
-	AddSharp,
-	Fitness,
-	PersonAddOutline,
-	Paw,
-	Create,
-	MailUnread,
-	HeadsetOutline,
-	MedalOutline,
-	BuildSharp,
-	MicOff,
-	StopCircle,
-	CompassSharp,
-	LogoAmazon,
-	ChevronBack,
-	PinSharp,
-	FileTraySharp,
-	RecordingOutline,
-	SwapHorizontalSharp,
-	MegaphoneSharp,
-	NuclearOutline,
-	Menu,
-	AccessibilitySharp,
-	LogoVenmo,
-	ManOutline,
-	VolumeOff,
-	RemoveCircle,
-	CodeOutline,
-	ArrowForwardCircleSharp,
-	FlowerOutline,
-	ArchiveOutline,
-	TennisballSharp,
-	ShieldCheckmarkSharp,
-	Expand,
-	FileTrayFullOutline,
-	MusicalNoteOutline,
-	SquareOutline,
-	Settings,
-	CloseCircle,
-	ChevronDownCircle,
-	PushOutline,
-	InformationOutline,
-	AlbumsOutline,
-	ArrowBackSharp,
-	GolfOutline,
-	Medal,
-	BulbSharp,
-	HeartDislikeSharp,
-	Shield,
-	WalletSharp,
-	PersonCircleOutline,
-	Cloud,
-	GiftOutline,
-	LibrarySharp,
-	MusicalNotes,
-	WalkOutline,
-	RefreshOutline,
-	Images,
-	DuplicateSharp,
-	ResizeOutline,
-	VolumeHigh,
-	ConstructSharp,
-	CloudCircle,
-	ChevronForwardOutline,
-	LanguageOutline,
-	LogoDeviantart,
-	AlertSharp,
-	LogoYahoo,
-	ArrowBackCircleSharp,
-	CogSharp,
-	LogoRss,
-	RadioButtonOn,
-	CloudOutline,
-	MicOffOutline,
-	MagnetSharp,
-	Call,
-	SadOutline,
-	ScanCircle,
-	Checkbox,
-	LibraryOutline,
-	FilterCircleSharp,
-	CloudDownloadOutline,
-	PhoneLandscapeOutline,
-	ReturnDownBackOutline,
-	RadioButtonOnOutline,
-	ChatboxEllipsesSharp,
-	ReaderOutline,
-	ReorderThreeSharp,
-	EarSharp,
-	CloudUploadSharp,
-	Camera,
-	SubwayOutline,
-	BookmarkSharp,
-	EllipsisVertical,
-	HeartDislike,
-	DocumentLock,
-	TrashBinOutline,
-	ReceiptSharp,
-	NotificationsOffOutline,
-	CaretBackOutline,
-	Flask,
-	People,
-	DesktopOutline,
-	CheckboxSharp,
-	ChatbubbleEllipsesOutline,
-	GitMergeSharp,
-	TrailSignSharp,
-	NuclearSharp,
-	Pencil,
-	BluetoothSharp,
-	IceCream,
-	LocateOutline,
-	CaretUpOutline,
-	VolumeOffOutline,
-	Square,
-	EllipsisHorizontalCircle,
-	MailUnreadSharp,
-	Keypad,
-	WomanOutline,
-	Filter,
-	LogoTux,
-	GridSharp,
-	TimerSharp,
-	SyncCircleOutline,
-	Skull,
-	TriangleOutline,
-	VolumeMediumOutline,
-	ReorderFour,
-	WatchSharp,
-	BatteryHalfOutline,
-	ArrowUndoCircleSharp,
-	Barcode,
-	CreateOutline,
-	SpeedometerSharp,
-	DiamondOutline,
-	Medkit,
-	CameraReverseOutline,
-	CartOutline,
-	MailSharp,
-	Cellular,
-	ChevronForward,
-	ContractOutline,
-	PulseOutline,
-	Book,
-	Stopwatch,
-	GitCompareSharp,
-	Egg,
-	Bookmarks,
-	ShieldHalfOutline,
-	BagCheck,
-	ServerSharp,
-	ArrowUpSharp,
-	ColorFill,
-	FlaskSharp,
-	ChevronForwardCircleOutline,
-	ColorWand,
-	StarOutline,
-	LockOpenSharp,
-	NotificationsCircleSharp,
-	HelpOutline,
-	ShieldCheckmarkOutline,
-	PauseCircle,
-	ShareOutline,
-	GitNetworkOutline,
-	TrashBin,
-	CartSharp,
-	Image,
-	Code,
-	ChevronDownCircleSharp,
-	ImagesSharp,
-	RefreshCircle,
-	Beaker,
-	TabletLandscape,
-	WaterSharp,
-	BoatSharp,
-	PencilOutline,
-	SkullSharp,
-	BookmarksOutline,
-	Glasses,
-	PersonRemoveOutline,
-	Card,
-	CheckmarkSharp,
-	Pricetag,
-	PauseCircleOutline,
-	HandLeftSharp,
-	PlaySkipForwardOutline,
-	EllipsisHorizontalCircleOutline,
-	PlanetOutline,
-	Happy,
-	ChevronUpCircleSharp,
-	ToggleOutline,
-	ChevronForwardCircle,
-	Tv,
-	ColorPalette,
-	LogoBitbucket,
-	LogoDropbox,
-	Nuclear,
-	FlashlightOutline,
-	FolderOutline,
-	CloudDownloadSharp,
-	LogoPaypal,
-	ArrowUndo,
-	FolderSharp,
-	Alarm,
-	ThunderstormOutline,
-	BugSharp,
-	CopySharp,
-	PlayBackCircleOutline,
-	BasketballSharp,
-	ScanSharp,
-	ColorFillSharp,
-	UmbrellaOutline,
-	EnterOutline,
-	CalculatorSharp,
-	Play,
-	DownloadOutline,
-	Nutrition,
-	ShirtOutline,
-	Mail,
-	HardwareChipOutline,
-	BatteryFullSharp,
-	Push,
-	Disc,
-	PlaySkipForwardCircleOutline,
-	PieChartSharp,
-	Sunny,
-	ListOutline,
-	DiscOutline,
-	Cut,
-	HelpCircle,
-	AtSharp,
-	LogoBehance,
-	LogoStencil,
-	CaretForwardSharp,
-	SwapHorizontal,
-	Navigate,
-	LogoXing,
-	CarSportOutline,
-	ReturnUpForwardSharp,
-	ArrowForwardOutline,
-	DownloadSharp,
-	HandRightOutline,
-	PlayForward,
-	ColorPaletteSharp,
-	PintOutline,
-	NavigateCircleSharp,
-	FlameOutline,
-	BatteryHalf,
-	LogoCodepen,
-	PartlySunnyOutline,
-	Document,
-	Scale,
-	PlayForwardCircle,
-	Trash,
-	Calendar,
-	Easel,
-	Male,
-	DiscSharp,
-	Brush,
-	MailOpen,
-	PawSharp,
-	Pause,
-	PodiumOutline,
-	PersonSharp,
-	BackspaceOutline,
-	Folder,
-	CloudyNightOutline,
-	FishOutline,
-	NotificationsOffSharp,
-	LogoEuro,
-	Bicycle,
-	LogoDesignernews,
-	DesktopSharp,
-	CaretDownCircle,
-	ExtensionPuzzleSharp,
-	NotificationsOutline,
-	CodeSharp,
-	Basketball,
-	Ear,
-	ReturnDownForward,
-	SwapVerticalSharp,
-	HelpBuoySharp,
-	AmericanFootball,
-	LayersSharp,
-	ChatboxEllipsesOutline,
-	TextOutline,
-	TicketSharp,
-	PeopleOutline,
-	LogoApple,
-	Ban,
-	LogoPwa,
-	PhoneLandscape,
-	SunnyOutline,
-	LogoMicrosoft,
-	Medical,
-	Cash,
-	HeadsetSharp,
-	Construct,
-	At,
-	BriefcaseOutline,
-	QrCodeOutline,
-	OptionsOutline,
-	Refresh,
-	Restaurant,
-	CloudDoneOutline,
-	PlayBack,
-	ShareSocialSharp,
-	TabletLandscapeSharp,
-	RadioButtonOff,
-	ThumbsUpSharp,
-	CheckmarkOutline,
-	Unlink,
-	LogoGoogle,
-	WomanSharp,
-	ArrowBackCircleOutline,
-	GitCommitOutline,
-	RoseSharp,
-	HandLeftOutline,
-	FlowerSharp,
-	ServerOutline,
-	AnalyticsSharp,
-	PowerSharp,
-	Body,
-	Balloon,
-	Shirt,
-	CloudOfflineOutline,
-	PartlySunny,
-	SyncCircle,
-	RainyOutline,
-	Cloudy,
-	EnterSharp,
-	Flashlight,
-	Language,
-	FastFoodOutline,
-	Send,
-	LockClosed,
-	VolumeOffSharp,
-	Watch,
-	IdCardOutline,
-	Hourglass,
-	WarningOutline,
-	Clipboard,
-	LogoGitlab,
-	PlayCircleOutline,
-	NutritionSharp,
-	SadSharp,
-	RoseOutline,
-	FemaleSharp,
-	Home,
-	HeartHalfSharp,
-	SendSharp,
-	Business,
-	KeyOutline,
-	PersonAdd,
-	HappyOutline,
-	ArrowForwardSharp,
-	LogoNodejs,
-	ArrowDownCircleOutline,
-	Add,
-	LogoVimeo,
-	WalletOutline,
-	LogoPython,
-	AccessibilityOutline,
-	TabletLandscapeOutline,
-	Search,
-	CameraReverse,
-	PeopleCircleSharp,
-	AttachOutline,
-	BeakerSharp,
-	TabletPortraitOutline,
-	PlayCircle,
-	NotificationsOffCircleSharp,
-	InfiniteSharp,
-	MailOpenSharp,
-	Pulse,
-	ChatboxEllipses,
-	Golf,
-	ArrowUpCircleOutline,
-	BasketSharp,
-	BusinessOutline,
-	LogoFacebook,
-	BicycleOutline,
-	CompassOutline,
-	RibbonOutline,
-	MusicalNoteSharp,
-	Copy,
-	GlobeSharp,
-	PauseCircleSharp,
-	LanguageSharp,
-	MoveOutline,
-	PersonCircle,
-	FilterCircleOutline,
-	ChevronUpCircle,
-	TimeOutline,
-	LogoCapacitor,
-	SearchCircleSharp,
-	AmericanFootballOutline,
-	CheckmarkDoneSharp,
-	LogoVue,
-	CalendarSharp,
-	PhonePortrait,
-	Pin,
-	HourglassSharp,
-	EyeOffOutline,
-	ReloadCircleOutline,
-	PowerOutline,
-	DocumentText,
-	CheckmarkDoneCircleOutline,
-	CaretBackCircle,
-	TrendingUp,
-	CardSharp,
-	PersonRemoveSharp,
-	AlertOutline,
-	PeopleCircle,
-	ColorPaletteOutline,
-	LogoFirefox,
-	Flower,
-	DocumentsSharp,
-	ChevronUpOutline,
-	BowlingBall,
-	TrendingDownOutline,
-	LogoMedium,
-	ReloadOutline,
-	HappySharp,
-	PodiumSharp,
-	BalloonSharp,
-	CashSharp,
-	CheckboxOutline,
-	BatteryDead,
-	EggSharp,
-	AlbumsSharp,
-	NewspaperSharp,
-	AlarmSharp,
-	ChatbubbleOutline,
-	VolumeMedium,
-	OpenOutline,
-	BanSharp,
-	ArrowUpOutline,
-	BaseballOutline,
-	ClipboardOutline,
-	Download,
-	GitCompareOutline,
-	PizzaOutline,
-	ListCircle,
-	LogoTiktok,
-	HeartDislikeCircle,
-	MoonOutline,
-	Subway,
-	Chatbox,
-	Flame,
-	ShieldSharp,
-	Gift,
-	ShapesSharp,
-	Recording,
-	Car,
-	VideocamOffOutline,
-	RecordingSharp,
-	DocumentTextOutline,
-	Star,
-	LogoBitcoin,
-	VolumeHighSharp,
-	Layers,
-	AddOutline,
-	Footsteps,
-	MicCircleOutline,
-	DiamondSharp,
-	Eye,
-	ArrowUndoSharp,
-	IceCreamSharp,
-	JournalSharp,
-	Mic,
-	CodeWorking,
-	BrowsersSharp,
-	GitCommit,
-	ExitSharp,
-	BuildOutline,
-	Move,
-	NotificationsOffCircleOutline,
-	HeartCircleOutline,
-	Cube,
-	LogOutSharp,
-	CaretUpCircleOutline,
-	JournalOutline,
-	FilterCircle,
-	AlertCircle,
-	Analytics,
-	ContractSharp,
-	RemoveOutline,
-	CloudUploadOutline,
-	LogoVk,
-	CloudyNightSharp,
-	HelpBuoy,
-	Cog,
-	BarcodeSharp,
-	DocumentLockSharp,
-	ArrowBackOutline,
-	AtCircleOutline,
-	RefreshSharp,
-	Boat,
-	ReturnUpBackSharp,
-	BackspaceSharp,
-	Wifi,
-	NavigateCircleOutline,
-	LogoAngular,
-	LogoTwitter,
-	TrendingDownSharp,
-	FlagSharp,
-	BagSharp,
-	VolumeMute,
-	MicOffCircleOutline,
-	ThumbsDownSharp,
-	ExpandSharp,
-	LogoMastodon,
-	Football,
-	LayersOutline,
-	TrainOutline,
-	VolumeLowSharp,
-	TrashOutline,
-	UmbrellaSharp,
-	CopyOutline,
-	Options,
-	DiceOutline,
-	NotificationsCircleOutline,
-	Server,
-	BugOutline,
-	MenuSharp,
-	BarcodeOutline,
-	CaretForwardCircleOutline,
-	Alert,
-	Print,
-	Contract,
-	PushSharp,
-	BasketballOutline,
-	BagRemove,
-	DocumentTextSharp,
-	Airplane,
-	School,
-	LogoWindows,
-	CalendarClear,
-	LogoElectron,
-	BarChartOutline,
-	Bulb,
-	Chatbubble,
-	BluetoothOutline,
-	AppsOutline,
-	LogoSlack,
-	LogoTableau,
-	PrintSharp,
-	EllipseOutline,
-	AlarmOutline,
-	RepeatSharp,
-	ReturnUpForward,
-	LockOpen,
-	Pizza,
-	Bonfire,
-	SaveOutline,
-	BagHandleOutline,
-	Ticket,
-	EarthSharp,
-	BodySharp,
-	Today,
-	Archive,
-	ReturnDownBack,
-	CarSport,
-	ColorWandSharp,
-	PizzaSharp,
-	BookmarkOutline,
-	RadioButtonOffOutline,
-	CaretForward,
-	MicOffCircle,
-	HeartHalf,
-	TrailSign,
-	ArrowRedo,
-	MoveSharp,
-	Female,
-	CloudySharp,
-	GlobeOutline,
-	LogoOctocat,
-	AppsSharp,
-	CameraSharp,
-	InfiniteOutline,
-	Eyedrop,
-	GameControllerSharp,
-	LogOutOutline,
-	ReturnDownForwardSharp,
-	MailOpenOutline,
-	MapSharp,
-	PawOutline,
-	Locate,
-	BriefcaseSharp,
-	TrainSharp,
-	Share,
-	Notifications,
-	SchoolOutline,
-	FlashSharp,
-	CloudUpload,
-	CellularOutline,
-	BonfireSharp,
-	BarChartSharp,
-	PlaySkipBackCircleOutline,
-	MedicalSharp,
-	PlaySharp,
-	PersonCircleSharp,
-	KeySharp,
-	RestaurantOutline,
-	GlassesSharp,
-	CodeWorkingSharp,
-	MedkitSharp,
-	PlaySkipBackOutline,
-	CameraReverseSharp,
-	HandRightSharp,
-	GridOutline,
-	SkullOutline,
-	NotificationsSharp,
-	Text,
-	ReceiptOutline,
-	Fish,
-	FootstepsOutline,
-	LeafOutline,
-	CaretBackCircleSharp,
-	CloseSharp,
-	WineSharp,
-	EllipsisHorizontalOutline,
-	PeopleCircleOutline,
-	LogoAndroid,
-	QrCode,
-	List,
-	HammerSharp,
-	CloseCircleOutline,
-	ReloadCircle,
-	ShieldHalf,
-	CloudyNight,
-	EllipsisVerticalSharp,
-	SettingsSharp,
-	DocumentsOutline,
-	ReturnUpBack,
-	GitNetwork,
-	BowlingBallOutline,
-	Magnet,
-	PlanetSharp,
-	FolderOpen,
-	Sparkles,
-	HeartDislikeCircleOutline,
-	ApertureSharp,
-	ArrowRedoCircleOutline,
-	Duplicate,
-	TodaySharp,
-	VolumeHighOutline,
-	CloudDownload,
-	ArrowUpCircle,
-	NotificationsOff,
-	ColorWandOutline,
-	WatchOutline,
-	MapOutline,
-	ChevronBackOutline,
-	FitnessSharp,
-	Wine,
-	Grid,
-	LogoAmplify,
-	ArrowForwardCircleOutline,
-	CodeWorkingOutline,
-	LockClosedOutline,
-	EarthOutline,
-	CheckmarkCircle,
-	SunnySharp,
-	BatteryDeadSharp,
-	BagHandleSharp,
-	LogoVercel,
-	LogoCss3,
-	Warning,
-	StarHalfSharp,
-	CashOutline,
-	Reload,
-	Cart,
-	Moon,
-	Telescope,
-	SettingsOutline,
-	ImagesOutline,
-	Sync,
-	Radio,
-	ColorFilterOutline,
-	Resize,
-	CellularSharp,
-	FilmOutline,
-	Pricetags,
-	LogoTumblr,
-	AmericanFootballSharp,
-	HeartSharp,
-	WifiOutline,
-	DocumentOutline,
-	CheckmarkDoneOutline,
-	TrophyOutline,
-	Crop,
-	NotificationsOffCircle,
-	Funnel,
-	BatteryFullOutline,
-	LinkSharp,
-	SwapHorizontalOutline,
-	PaperPlaneOutline
-};
+export { default as Accessibility } from './Accessibility.svelte';
+export { default as AccessibilityOutline } from './AccessibilityOutline.svelte';
+export { default as AccessibilitySharp } from './AccessibilitySharp.svelte';
+export { default as Add } from './Add.svelte';
+export { default as AddCircle } from './AddCircle.svelte';
+export { default as AddCircleOutline } from './AddCircleOutline.svelte';
+export { default as AddCircleSharp } from './AddCircleSharp.svelte';
+export { default as AddOutline } from './AddOutline.svelte';
+export { default as AddSharp } from './AddSharp.svelte';
+export { default as Airplane } from './Airplane.svelte';
+export { default as AirplaneOutline } from './AirplaneOutline.svelte';
+export { default as AirplaneSharp } from './AirplaneSharp.svelte';
+export { default as Alarm } from './Alarm.svelte';
+export { default as AlarmOutline } from './AlarmOutline.svelte';
+export { default as AlarmSharp } from './AlarmSharp.svelte';
+export { default as Albums } from './Albums.svelte';
+export { default as AlbumsOutline } from './AlbumsOutline.svelte';
+export { default as AlbumsSharp } from './AlbumsSharp.svelte';
+export { default as Alert } from './Alert.svelte';
+export { default as AlertCircle } from './AlertCircle.svelte';
+export { default as AlertCircleOutline } from './AlertCircleOutline.svelte';
+export { default as AlertCircleSharp } from './AlertCircleSharp.svelte';
+export { default as AlertOutline } from './AlertOutline.svelte';
+export { default as AlertSharp } from './AlertSharp.svelte';
+export { default as AmericanFootball } from './AmericanFootball.svelte';
+export { default as AmericanFootballOutline } from './AmericanFootballOutline.svelte';
+export { default as AmericanFootballSharp } from './AmericanFootballSharp.svelte';
+export { default as Analytics } from './Analytics.svelte';
+export { default as AnalyticsOutline } from './AnalyticsOutline.svelte';
+export { default as AnalyticsSharp } from './AnalyticsSharp.svelte';
+export { default as Aperture } from './Aperture.svelte';
+export { default as ApertureOutline } from './ApertureOutline.svelte';
+export { default as ApertureSharp } from './ApertureSharp.svelte';
+export { default as Apps } from './Apps.svelte';
+export { default as AppsOutline } from './AppsOutline.svelte';
+export { default as AppsSharp } from './AppsSharp.svelte';
+export { default as Archive } from './Archive.svelte';
+export { default as ArchiveOutline } from './ArchiveOutline.svelte';
+export { default as ArchiveSharp } from './ArchiveSharp.svelte';
+export { default as ArrowBack } from './ArrowBack.svelte';
+export { default as ArrowBackCircle } from './ArrowBackCircle.svelte';
+export { default as ArrowBackCircleOutline } from './ArrowBackCircleOutline.svelte';
+export { default as ArrowBackCircleSharp } from './ArrowBackCircleSharp.svelte';
+export { default as ArrowBackOutline } from './ArrowBackOutline.svelte';
+export { default as ArrowBackSharp } from './ArrowBackSharp.svelte';
+export { default as ArrowDown } from './ArrowDown.svelte';
+export { default as ArrowDownCircle } from './ArrowDownCircle.svelte';
+export { default as ArrowDownCircleOutline } from './ArrowDownCircleOutline.svelte';
+export { default as ArrowDownCircleSharp } from './ArrowDownCircleSharp.svelte';
+export { default as ArrowDownOutline } from './ArrowDownOutline.svelte';
+export { default as ArrowDownSharp } from './ArrowDownSharp.svelte';
+export { default as ArrowForward } from './ArrowForward.svelte';
+export { default as ArrowForwardCircle } from './ArrowForwardCircle.svelte';
+export { default as ArrowForwardCircleOutline } from './ArrowForwardCircleOutline.svelte';
+export { default as ArrowForwardCircleSharp } from './ArrowForwardCircleSharp.svelte';
+export { default as ArrowForwardOutline } from './ArrowForwardOutline.svelte';
+export { default as ArrowForwardSharp } from './ArrowForwardSharp.svelte';
+export { default as ArrowRedo } from './ArrowRedo.svelte';
+export { default as ArrowRedoCircle } from './ArrowRedoCircle.svelte';
+export { default as ArrowRedoCircleOutline } from './ArrowRedoCircleOutline.svelte';
+export { default as ArrowRedoCircleSharp } from './ArrowRedoCircleSharp.svelte';
+export { default as ArrowRedoOutline } from './ArrowRedoOutline.svelte';
+export { default as ArrowRedoSharp } from './ArrowRedoSharp.svelte';
+export { default as ArrowUndo } from './ArrowUndo.svelte';
+export { default as ArrowUndoCircle } from './ArrowUndoCircle.svelte';
+export { default as ArrowUndoCircleOutline } from './ArrowUndoCircleOutline.svelte';
+export { default as ArrowUndoCircleSharp } from './ArrowUndoCircleSharp.svelte';
+export { default as ArrowUndoOutline } from './ArrowUndoOutline.svelte';
+export { default as ArrowUndoSharp } from './ArrowUndoSharp.svelte';
+export { default as ArrowUp } from './ArrowUp.svelte';
+export { default as ArrowUpCircle } from './ArrowUpCircle.svelte';
+export { default as ArrowUpCircleOutline } from './ArrowUpCircleOutline.svelte';
+export { default as ArrowUpCircleSharp } from './ArrowUpCircleSharp.svelte';
+export { default as ArrowUpOutline } from './ArrowUpOutline.svelte';
+export { default as ArrowUpSharp } from './ArrowUpSharp.svelte';
+export { default as At } from './At.svelte';
+export { default as AtCircle } from './AtCircle.svelte';
+export { default as AtCircleOutline } from './AtCircleOutline.svelte';
+export { default as AtCircleSharp } from './AtCircleSharp.svelte';
+export { default as AtOutline } from './AtOutline.svelte';
+export { default as AtSharp } from './AtSharp.svelte';
+export { default as Attach } from './Attach.svelte';
+export { default as AttachOutline } from './AttachOutline.svelte';
+export { default as AttachSharp } from './AttachSharp.svelte';
+export { default as Backspace } from './Backspace.svelte';
+export { default as BackspaceOutline } from './BackspaceOutline.svelte';
+export { default as BackspaceSharp } from './BackspaceSharp.svelte';
+export { default as Bag } from './Bag.svelte';
+export { default as BagAdd } from './BagAdd.svelte';
+export { default as BagAddOutline } from './BagAddOutline.svelte';
+export { default as BagAddSharp } from './BagAddSharp.svelte';
+export { default as BagCheck } from './BagCheck.svelte';
+export { default as BagCheckOutline } from './BagCheckOutline.svelte';
+export { default as BagCheckSharp } from './BagCheckSharp.svelte';
+export { default as BagHandle } from './BagHandle.svelte';
+export { default as BagHandleOutline } from './BagHandleOutline.svelte';
+export { default as BagHandleSharp } from './BagHandleSharp.svelte';
+export { default as BagOutline } from './BagOutline.svelte';
+export { default as BagRemove } from './BagRemove.svelte';
+export { default as BagRemoveOutline } from './BagRemoveOutline.svelte';
+export { default as BagRemoveSharp } from './BagRemoveSharp.svelte';
+export { default as BagSharp } from './BagSharp.svelte';
+export { default as Balloon } from './Balloon.svelte';
+export { default as BalloonOutline } from './BalloonOutline.svelte';
+export { default as BalloonSharp } from './BalloonSharp.svelte';
+export { default as Ban } from './Ban.svelte';
+export { default as BanOutline } from './BanOutline.svelte';
+export { default as BanSharp } from './BanSharp.svelte';
+export { default as Bandage } from './Bandage.svelte';
+export { default as BandageOutline } from './BandageOutline.svelte';
+export { default as BandageSharp } from './BandageSharp.svelte';
+export { default as BarChart } from './BarChart.svelte';
+export { default as BarChartOutline } from './BarChartOutline.svelte';
+export { default as BarChartSharp } from './BarChartSharp.svelte';
+export { default as Barbell } from './Barbell.svelte';
+export { default as BarbellOutline } from './BarbellOutline.svelte';
+export { default as BarbellSharp } from './BarbellSharp.svelte';
+export { default as Barcode } from './Barcode.svelte';
+export { default as BarcodeOutline } from './BarcodeOutline.svelte';
+export { default as BarcodeSharp } from './BarcodeSharp.svelte';
+export { default as Baseball } from './Baseball.svelte';
+export { default as BaseballOutline } from './BaseballOutline.svelte';
+export { default as BaseballSharp } from './BaseballSharp.svelte';
+export { default as Basket } from './Basket.svelte';
+export { default as BasketOutline } from './BasketOutline.svelte';
+export { default as BasketSharp } from './BasketSharp.svelte';
+export { default as Basketball } from './Basketball.svelte';
+export { default as BasketballOutline } from './BasketballOutline.svelte';
+export { default as BasketballSharp } from './BasketballSharp.svelte';
+export { default as BatteryCharging } from './BatteryCharging.svelte';
+export { default as BatteryChargingOutline } from './BatteryChargingOutline.svelte';
+export { default as BatteryChargingSharp } from './BatteryChargingSharp.svelte';
+export { default as BatteryDead } from './BatteryDead.svelte';
+export { default as BatteryDeadOutline } from './BatteryDeadOutline.svelte';
+export { default as BatteryDeadSharp } from './BatteryDeadSharp.svelte';
+export { default as BatteryFull } from './BatteryFull.svelte';
+export { default as BatteryFullOutline } from './BatteryFullOutline.svelte';
+export { default as BatteryFullSharp } from './BatteryFullSharp.svelte';
+export { default as BatteryHalf } from './BatteryHalf.svelte';
+export { default as BatteryHalfOutline } from './BatteryHalfOutline.svelte';
+export { default as BatteryHalfSharp } from './BatteryHalfSharp.svelte';
+export { default as Beaker } from './Beaker.svelte';
+export { default as BeakerOutline } from './BeakerOutline.svelte';
+export { default as BeakerSharp } from './BeakerSharp.svelte';
+export { default as Bed } from './Bed.svelte';
+export { default as BedOutline } from './BedOutline.svelte';
+export { default as BedSharp } from './BedSharp.svelte';
+export { default as Beer } from './Beer.svelte';
+export { default as BeerOutline } from './BeerOutline.svelte';
+export { default as BeerSharp } from './BeerSharp.svelte';
+export { default as Bicycle } from './Bicycle.svelte';
+export { default as BicycleOutline } from './BicycleOutline.svelte';
+export { default as BicycleSharp } from './BicycleSharp.svelte';
+export { default as Bluetooth } from './Bluetooth.svelte';
+export { default as BluetoothOutline } from './BluetoothOutline.svelte';
+export { default as BluetoothSharp } from './BluetoothSharp.svelte';
+export { default as Boat } from './Boat.svelte';
+export { default as BoatOutline } from './BoatOutline.svelte';
+export { default as BoatSharp } from './BoatSharp.svelte';
+export { default as Body } from './Body.svelte';
+export { default as BodyOutline } from './BodyOutline.svelte';
+export { default as BodySharp } from './BodySharp.svelte';
+export { default as Bonfire } from './Bonfire.svelte';
+export { default as BonfireOutline } from './BonfireOutline.svelte';
+export { default as BonfireSharp } from './BonfireSharp.svelte';
+export { default as Book } from './Book.svelte';
+export { default as BookOutline } from './BookOutline.svelte';
+export { default as BookSharp } from './BookSharp.svelte';
+export { default as Bookmark } from './Bookmark.svelte';
+export { default as BookmarkOutline } from './BookmarkOutline.svelte';
+export { default as BookmarkSharp } from './BookmarkSharp.svelte';
+export { default as Bookmarks } from './Bookmarks.svelte';
+export { default as BookmarksOutline } from './BookmarksOutline.svelte';
+export { default as BookmarksSharp } from './BookmarksSharp.svelte';
+export { default as BowlingBall } from './BowlingBall.svelte';
+export { default as BowlingBallOutline } from './BowlingBallOutline.svelte';
+export { default as BowlingBallSharp } from './BowlingBallSharp.svelte';
+export { default as Briefcase } from './Briefcase.svelte';
+export { default as BriefcaseOutline } from './BriefcaseOutline.svelte';
+export { default as BriefcaseSharp } from './BriefcaseSharp.svelte';
+export { default as Browsers } from './Browsers.svelte';
+export { default as BrowsersOutline } from './BrowsersOutline.svelte';
+export { default as BrowsersSharp } from './BrowsersSharp.svelte';
+export { default as Brush } from './Brush.svelte';
+export { default as BrushOutline } from './BrushOutline.svelte';
+export { default as BrushSharp } from './BrushSharp.svelte';
+export { default as Bug } from './Bug.svelte';
+export { default as BugOutline } from './BugOutline.svelte';
+export { default as BugSharp } from './BugSharp.svelte';
+export { default as Build } from './Build.svelte';
+export { default as BuildOutline } from './BuildOutline.svelte';
+export { default as BuildSharp } from './BuildSharp.svelte';
+export { default as Bulb } from './Bulb.svelte';
+export { default as BulbOutline } from './BulbOutline.svelte';
+export { default as BulbSharp } from './BulbSharp.svelte';
+export { default as Bus } from './Bus.svelte';
+export { default as BusOutline } from './BusOutline.svelte';
+export { default as BusSharp } from './BusSharp.svelte';
+export { default as Business } from './Business.svelte';
+export { default as BusinessOutline } from './BusinessOutline.svelte';
+export { default as BusinessSharp } from './BusinessSharp.svelte';
+export { default as Cafe } from './Cafe.svelte';
+export { default as CafeOutline } from './CafeOutline.svelte';
+export { default as CafeSharp } from './CafeSharp.svelte';
+export { default as Calculator } from './Calculator.svelte';
+export { default as CalculatorOutline } from './CalculatorOutline.svelte';
+export { default as CalculatorSharp } from './CalculatorSharp.svelte';
+export { default as Calendar } from './Calendar.svelte';
+export { default as CalendarClear } from './CalendarClear.svelte';
+export { default as CalendarClearOutline } from './CalendarClearOutline.svelte';
+export { default as CalendarClearSharp } from './CalendarClearSharp.svelte';
+export { default as CalendarNumber } from './CalendarNumber.svelte';
+export { default as CalendarNumberOutline } from './CalendarNumberOutline.svelte';
+export { default as CalendarNumberSharp } from './CalendarNumberSharp.svelte';
+export { default as CalendarOutline } from './CalendarOutline.svelte';
+export { default as CalendarSharp } from './CalendarSharp.svelte';
+export { default as Call } from './Call.svelte';
+export { default as CallOutline } from './CallOutline.svelte';
+export { default as CallSharp } from './CallSharp.svelte';
+export { default as Camera } from './Camera.svelte';
+export { default as CameraOutline } from './CameraOutline.svelte';
+export { default as CameraReverse } from './CameraReverse.svelte';
+export { default as CameraReverseOutline } from './CameraReverseOutline.svelte';
+export { default as CameraReverseSharp } from './CameraReverseSharp.svelte';
+export { default as CameraSharp } from './CameraSharp.svelte';
+export { default as Car } from './Car.svelte';
+export { default as CarOutline } from './CarOutline.svelte';
+export { default as CarSharp } from './CarSharp.svelte';
+export { default as CarSport } from './CarSport.svelte';
+export { default as CarSportOutline } from './CarSportOutline.svelte';
+export { default as CarSportSharp } from './CarSportSharp.svelte';
+export { default as Card } from './Card.svelte';
+export { default as CardOutline } from './CardOutline.svelte';
+export { default as CardSharp } from './CardSharp.svelte';
+export { default as CaretBack } from './CaretBack.svelte';
+export { default as CaretBackCircle } from './CaretBackCircle.svelte';
+export { default as CaretBackCircleOutline } from './CaretBackCircleOutline.svelte';
+export { default as CaretBackCircleSharp } from './CaretBackCircleSharp.svelte';
+export { default as CaretBackOutline } from './CaretBackOutline.svelte';
+export { default as CaretBackSharp } from './CaretBackSharp.svelte';
+export { default as CaretDown } from './CaretDown.svelte';
+export { default as CaretDownCircle } from './CaretDownCircle.svelte';
+export { default as CaretDownCircleOutline } from './CaretDownCircleOutline.svelte';
+export { default as CaretDownCircleSharp } from './CaretDownCircleSharp.svelte';
+export { default as CaretDownOutline } from './CaretDownOutline.svelte';
+export { default as CaretDownSharp } from './CaretDownSharp.svelte';
+export { default as CaretForward } from './CaretForward.svelte';
+export { default as CaretForwardCircle } from './CaretForwardCircle.svelte';
+export { default as CaretForwardCircleOutline } from './CaretForwardCircleOutline.svelte';
+export { default as CaretForwardCircleSharp } from './CaretForwardCircleSharp.svelte';
+export { default as CaretForwardOutline } from './CaretForwardOutline.svelte';
+export { default as CaretForwardSharp } from './CaretForwardSharp.svelte';
+export { default as CaretUp } from './CaretUp.svelte';
+export { default as CaretUpCircle } from './CaretUpCircle.svelte';
+export { default as CaretUpCircleOutline } from './CaretUpCircleOutline.svelte';
+export { default as CaretUpCircleSharp } from './CaretUpCircleSharp.svelte';
+export { default as CaretUpOutline } from './CaretUpOutline.svelte';
+export { default as CaretUpSharp } from './CaretUpSharp.svelte';
+export { default as Cart } from './Cart.svelte';
+export { default as CartOutline } from './CartOutline.svelte';
+export { default as CartSharp } from './CartSharp.svelte';
+export { default as Cash } from './Cash.svelte';
+export { default as CashOutline } from './CashOutline.svelte';
+export { default as CashSharp } from './CashSharp.svelte';
+export { default as Cellular } from './Cellular.svelte';
+export { default as CellularOutline } from './CellularOutline.svelte';
+export { default as CellularSharp } from './CellularSharp.svelte';
+export { default as Chatbox } from './Chatbox.svelte';
+export { default as ChatboxEllipses } from './ChatboxEllipses.svelte';
+export { default as ChatboxEllipsesOutline } from './ChatboxEllipsesOutline.svelte';
+export { default as ChatboxEllipsesSharp } from './ChatboxEllipsesSharp.svelte';
+export { default as ChatboxOutline } from './ChatboxOutline.svelte';
+export { default as ChatboxSharp } from './ChatboxSharp.svelte';
+export { default as Chatbubble } from './Chatbubble.svelte';
+export { default as ChatbubbleEllipses } from './ChatbubbleEllipses.svelte';
+export { default as ChatbubbleEllipsesOutline } from './ChatbubbleEllipsesOutline.svelte';
+export { default as ChatbubbleEllipsesSharp } from './ChatbubbleEllipsesSharp.svelte';
+export { default as ChatbubbleOutline } from './ChatbubbleOutline.svelte';
+export { default as ChatbubbleSharp } from './ChatbubbleSharp.svelte';
+export { default as Chatbubbles } from './Chatbubbles.svelte';
+export { default as ChatbubblesOutline } from './ChatbubblesOutline.svelte';
+export { default as ChatbubblesSharp } from './ChatbubblesSharp.svelte';
+export { default as Checkbox } from './Checkbox.svelte';
+export { default as CheckboxOutline } from './CheckboxOutline.svelte';
+export { default as CheckboxSharp } from './CheckboxSharp.svelte';
+export { default as Checkmark } from './Checkmark.svelte';
+export { default as CheckmarkCircle } from './CheckmarkCircle.svelte';
+export { default as CheckmarkCircleOutline } from './CheckmarkCircleOutline.svelte';
+export { default as CheckmarkCircleSharp } from './CheckmarkCircleSharp.svelte';
+export { default as CheckmarkDone } from './CheckmarkDone.svelte';
+export { default as CheckmarkDoneCircle } from './CheckmarkDoneCircle.svelte';
+export { default as CheckmarkDoneCircleOutline } from './CheckmarkDoneCircleOutline.svelte';
+export { default as CheckmarkDoneCircleSharp } from './CheckmarkDoneCircleSharp.svelte';
+export { default as CheckmarkDoneOutline } from './CheckmarkDoneOutline.svelte';
+export { default as CheckmarkDoneSharp } from './CheckmarkDoneSharp.svelte';
+export { default as CheckmarkOutline } from './CheckmarkOutline.svelte';
+export { default as CheckmarkSharp } from './CheckmarkSharp.svelte';
+export { default as ChevronBack } from './ChevronBack.svelte';
+export { default as ChevronBackCircle } from './ChevronBackCircle.svelte';
+export { default as ChevronBackCircleOutline } from './ChevronBackCircleOutline.svelte';
+export { default as ChevronBackCircleSharp } from './ChevronBackCircleSharp.svelte';
+export { default as ChevronBackOutline } from './ChevronBackOutline.svelte';
+export { default as ChevronBackSharp } from './ChevronBackSharp.svelte';
+export { default as ChevronDown } from './ChevronDown.svelte';
+export { default as ChevronDownCircle } from './ChevronDownCircle.svelte';
+export { default as ChevronDownCircleOutline } from './ChevronDownCircleOutline.svelte';
+export { default as ChevronDownCircleSharp } from './ChevronDownCircleSharp.svelte';
+export { default as ChevronDownOutline } from './ChevronDownOutline.svelte';
+export { default as ChevronDownSharp } from './ChevronDownSharp.svelte';
+export { default as ChevronForward } from './ChevronForward.svelte';
+export { default as ChevronForwardCircle } from './ChevronForwardCircle.svelte';
+export { default as ChevronForwardCircleOutline } from './ChevronForwardCircleOutline.svelte';
+export { default as ChevronForwardCircleSharp } from './ChevronForwardCircleSharp.svelte';
+export { default as ChevronForwardOutline } from './ChevronForwardOutline.svelte';
+export { default as ChevronForwardSharp } from './ChevronForwardSharp.svelte';
+export { default as ChevronUp } from './ChevronUp.svelte';
+export { default as ChevronUpCircle } from './ChevronUpCircle.svelte';
+export { default as ChevronUpCircleOutline } from './ChevronUpCircleOutline.svelte';
+export { default as ChevronUpCircleSharp } from './ChevronUpCircleSharp.svelte';
+export { default as ChevronUpOutline } from './ChevronUpOutline.svelte';
+export { default as ChevronUpSharp } from './ChevronUpSharp.svelte';
+export { default as Clipboard } from './Clipboard.svelte';
+export { default as ClipboardOutline } from './ClipboardOutline.svelte';
+export { default as ClipboardSharp } from './ClipboardSharp.svelte';
+export { default as Close } from './Close.svelte';
+export { default as CloseCircle } from './CloseCircle.svelte';
+export { default as CloseCircleOutline } from './CloseCircleOutline.svelte';
+export { default as CloseCircleSharp } from './CloseCircleSharp.svelte';
+export { default as CloseOutline } from './CloseOutline.svelte';
+export { default as CloseSharp } from './CloseSharp.svelte';
+export { default as Cloud } from './Cloud.svelte';
+export { default as CloudCircle } from './CloudCircle.svelte';
+export { default as CloudCircleOutline } from './CloudCircleOutline.svelte';
+export { default as CloudCircleSharp } from './CloudCircleSharp.svelte';
+export { default as CloudDone } from './CloudDone.svelte';
+export { default as CloudDoneOutline } from './CloudDoneOutline.svelte';
+export { default as CloudDoneSharp } from './CloudDoneSharp.svelte';
+export { default as CloudDownload } from './CloudDownload.svelte';
+export { default as CloudDownloadOutline } from './CloudDownloadOutline.svelte';
+export { default as CloudDownloadSharp } from './CloudDownloadSharp.svelte';
+export { default as CloudOffline } from './CloudOffline.svelte';
+export { default as CloudOfflineOutline } from './CloudOfflineOutline.svelte';
+export { default as CloudOfflineSharp } from './CloudOfflineSharp.svelte';
+export { default as CloudOutline } from './CloudOutline.svelte';
+export { default as CloudSharp } from './CloudSharp.svelte';
+export { default as CloudUpload } from './CloudUpload.svelte';
+export { default as CloudUploadOutline } from './CloudUploadOutline.svelte';
+export { default as CloudUploadSharp } from './CloudUploadSharp.svelte';
+export { default as Cloudy } from './Cloudy.svelte';
+export { default as CloudyNight } from './CloudyNight.svelte';
+export { default as CloudyNightOutline } from './CloudyNightOutline.svelte';
+export { default as CloudyNightSharp } from './CloudyNightSharp.svelte';
+export { default as CloudyOutline } from './CloudyOutline.svelte';
+export { default as CloudySharp } from './CloudySharp.svelte';
+export { default as Code } from './Code.svelte';
+export { default as CodeDownload } from './CodeDownload.svelte';
+export { default as CodeDownloadOutline } from './CodeDownloadOutline.svelte';
+export { default as CodeDownloadSharp } from './CodeDownloadSharp.svelte';
+export { default as CodeOutline } from './CodeOutline.svelte';
+export { default as CodeSharp } from './CodeSharp.svelte';
+export { default as CodeSlash } from './CodeSlash.svelte';
+export { default as CodeSlashOutline } from './CodeSlashOutline.svelte';
+export { default as CodeSlashSharp } from './CodeSlashSharp.svelte';
+export { default as CodeWorking } from './CodeWorking.svelte';
+export { default as CodeWorkingOutline } from './CodeWorkingOutline.svelte';
+export { default as CodeWorkingSharp } from './CodeWorkingSharp.svelte';
+export { default as Cog } from './Cog.svelte';
+export { default as CogOutline } from './CogOutline.svelte';
+export { default as CogSharp } from './CogSharp.svelte';
+export { default as ColorFill } from './ColorFill.svelte';
+export { default as ColorFillOutline } from './ColorFillOutline.svelte';
+export { default as ColorFillSharp } from './ColorFillSharp.svelte';
+export { default as ColorFilter } from './ColorFilter.svelte';
+export { default as ColorFilterOutline } from './ColorFilterOutline.svelte';
+export { default as ColorFilterSharp } from './ColorFilterSharp.svelte';
+export { default as ColorPalette } from './ColorPalette.svelte';
+export { default as ColorPaletteOutline } from './ColorPaletteOutline.svelte';
+export { default as ColorPaletteSharp } from './ColorPaletteSharp.svelte';
+export { default as ColorWand } from './ColorWand.svelte';
+export { default as ColorWandOutline } from './ColorWandOutline.svelte';
+export { default as ColorWandSharp } from './ColorWandSharp.svelte';
+export { default as Compass } from './Compass.svelte';
+export { default as CompassOutline } from './CompassOutline.svelte';
+export { default as CompassSharp } from './CompassSharp.svelte';
+export { default as Construct } from './Construct.svelte';
+export { default as ConstructOutline } from './ConstructOutline.svelte';
+export { default as ConstructSharp } from './ConstructSharp.svelte';
+export { default as Contract } from './Contract.svelte';
+export { default as ContractOutline } from './ContractOutline.svelte';
+export { default as ContractSharp } from './ContractSharp.svelte';
+export { default as Contrast } from './Contrast.svelte';
+export { default as ContrastOutline } from './ContrastOutline.svelte';
+export { default as ContrastSharp } from './ContrastSharp.svelte';
+export { default as Copy } from './Copy.svelte';
+export { default as CopyOutline } from './CopyOutline.svelte';
+export { default as CopySharp } from './CopySharp.svelte';
+export { default as Create } from './Create.svelte';
+export { default as CreateOutline } from './CreateOutline.svelte';
+export { default as CreateSharp } from './CreateSharp.svelte';
+export { default as Crop } from './Crop.svelte';
+export { default as CropOutline } from './CropOutline.svelte';
+export { default as CropSharp } from './CropSharp.svelte';
+export { default as Cube } from './Cube.svelte';
+export { default as CubeOutline } from './CubeOutline.svelte';
+export { default as CubeSharp } from './CubeSharp.svelte';
+export { default as Cut } from './Cut.svelte';
+export { default as CutOutline } from './CutOutline.svelte';
+export { default as CutSharp } from './CutSharp.svelte';
+export { default as Desktop } from './Desktop.svelte';
+export { default as DesktopOutline } from './DesktopOutline.svelte';
+export { default as DesktopSharp } from './DesktopSharp.svelte';
+export { default as Diamond } from './Diamond.svelte';
+export { default as DiamondOutline } from './DiamondOutline.svelte';
+export { default as DiamondSharp } from './DiamondSharp.svelte';
+export { default as Dice } from './Dice.svelte';
+export { default as DiceOutline } from './DiceOutline.svelte';
+export { default as DiceSharp } from './DiceSharp.svelte';
+export { default as Disc } from './Disc.svelte';
+export { default as DiscOutline } from './DiscOutline.svelte';
+export { default as DiscSharp } from './DiscSharp.svelte';
+export { default as Document } from './Document.svelte';
+export { default as DocumentAttach } from './DocumentAttach.svelte';
+export { default as DocumentAttachOutline } from './DocumentAttachOutline.svelte';
+export { default as DocumentAttachSharp } from './DocumentAttachSharp.svelte';
+export { default as DocumentLock } from './DocumentLock.svelte';
+export { default as DocumentLockOutline } from './DocumentLockOutline.svelte';
+export { default as DocumentLockSharp } from './DocumentLockSharp.svelte';
+export { default as DocumentOutline } from './DocumentOutline.svelte';
+export { default as DocumentSharp } from './DocumentSharp.svelte';
+export { default as DocumentText } from './DocumentText.svelte';
+export { default as DocumentTextOutline } from './DocumentTextOutline.svelte';
+export { default as DocumentTextSharp } from './DocumentTextSharp.svelte';
+export { default as Documents } from './Documents.svelte';
+export { default as DocumentsOutline } from './DocumentsOutline.svelte';
+export { default as DocumentsSharp } from './DocumentsSharp.svelte';
+export { default as Download } from './Download.svelte';
+export { default as DownloadOutline } from './DownloadOutline.svelte';
+export { default as DownloadSharp } from './DownloadSharp.svelte';
+export { default as Duplicate } from './Duplicate.svelte';
+export { default as DuplicateOutline } from './DuplicateOutline.svelte';
+export { default as DuplicateSharp } from './DuplicateSharp.svelte';
+export { default as Ear } from './Ear.svelte';
+export { default as EarOutline } from './EarOutline.svelte';
+export { default as EarSharp } from './EarSharp.svelte';
+export { default as Earth } from './Earth.svelte';
+export { default as EarthOutline } from './EarthOutline.svelte';
+export { default as EarthSharp } from './EarthSharp.svelte';
+export { default as Easel } from './Easel.svelte';
+export { default as EaselOutline } from './EaselOutline.svelte';
+export { default as EaselSharp } from './EaselSharp.svelte';
+export { default as Egg } from './Egg.svelte';
+export { default as EggOutline } from './EggOutline.svelte';
+export { default as EggSharp } from './EggSharp.svelte';
+export { default as Ellipse } from './Ellipse.svelte';
+export { default as EllipseOutline } from './EllipseOutline.svelte';
+export { default as EllipseSharp } from './EllipseSharp.svelte';
+export { default as EllipsisHorizontal } from './EllipsisHorizontal.svelte';
+export { default as EllipsisHorizontalCircle } from './EllipsisHorizontalCircle.svelte';
+export { default as EllipsisHorizontalCircleOutline } from './EllipsisHorizontalCircleOutline.svelte';
+export { default as EllipsisHorizontalCircleSharp } from './EllipsisHorizontalCircleSharp.svelte';
+export { default as EllipsisHorizontalOutline } from './EllipsisHorizontalOutline.svelte';
+export { default as EllipsisHorizontalSharp } from './EllipsisHorizontalSharp.svelte';
+export { default as EllipsisVertical } from './EllipsisVertical.svelte';
+export { default as EllipsisVerticalCircle } from './EllipsisVerticalCircle.svelte';
+export { default as EllipsisVerticalCircleOutline } from './EllipsisVerticalCircleOutline.svelte';
+export { default as EllipsisVerticalCircleSharp } from './EllipsisVerticalCircleSharp.svelte';
+export { default as EllipsisVerticalOutline } from './EllipsisVerticalOutline.svelte';
+export { default as EllipsisVerticalSharp } from './EllipsisVerticalSharp.svelte';
+export { default as Enter } from './Enter.svelte';
+export { default as EnterOutline } from './EnterOutline.svelte';
+export { default as EnterSharp } from './EnterSharp.svelte';
+export { default as Exit } from './Exit.svelte';
+export { default as ExitOutline } from './ExitOutline.svelte';
+export { default as ExitSharp } from './ExitSharp.svelte';
+export { default as Expand } from './Expand.svelte';
+export { default as ExpandOutline } from './ExpandOutline.svelte';
+export { default as ExpandSharp } from './ExpandSharp.svelte';
+export { default as ExtensionPuzzle } from './ExtensionPuzzle.svelte';
+export { default as ExtensionPuzzleOutline } from './ExtensionPuzzleOutline.svelte';
+export { default as ExtensionPuzzleSharp } from './ExtensionPuzzleSharp.svelte';
+export { default as Eye } from './Eye.svelte';
+export { default as EyeOff } from './EyeOff.svelte';
+export { default as EyeOffOutline } from './EyeOffOutline.svelte';
+export { default as EyeOffSharp } from './EyeOffSharp.svelte';
+export { default as EyeOutline } from './EyeOutline.svelte';
+export { default as EyeSharp } from './EyeSharp.svelte';
+export { default as Eyedrop } from './Eyedrop.svelte';
+export { default as EyedropOutline } from './EyedropOutline.svelte';
+export { default as EyedropSharp } from './EyedropSharp.svelte';
+export { default as FastFood } from './FastFood.svelte';
+export { default as FastFoodOutline } from './FastFoodOutline.svelte';
+export { default as FastFoodSharp } from './FastFoodSharp.svelte';
+export { default as Female } from './Female.svelte';
+export { default as FemaleOutline } from './FemaleOutline.svelte';
+export { default as FemaleSharp } from './FemaleSharp.svelte';
+export { default as FileTray } from './FileTray.svelte';
+export { default as FileTrayFull } from './FileTrayFull.svelte';
+export { default as FileTrayFullOutline } from './FileTrayFullOutline.svelte';
+export { default as FileTrayFullSharp } from './FileTrayFullSharp.svelte';
+export { default as FileTrayOutline } from './FileTrayOutline.svelte';
+export { default as FileTraySharp } from './FileTraySharp.svelte';
+export { default as FileTrayStacked } from './FileTrayStacked.svelte';
+export { default as FileTrayStackedOutline } from './FileTrayStackedOutline.svelte';
+export { default as FileTrayStackedSharp } from './FileTrayStackedSharp.svelte';
+export { default as Film } from './Film.svelte';
+export { default as FilmOutline } from './FilmOutline.svelte';
+export { default as FilmSharp } from './FilmSharp.svelte';
+export { default as Filter } from './Filter.svelte';
+export { default as FilterCircle } from './FilterCircle.svelte';
+export { default as FilterCircleOutline } from './FilterCircleOutline.svelte';
+export { default as FilterCircleSharp } from './FilterCircleSharp.svelte';
+export { default as FilterOutline } from './FilterOutline.svelte';
+export { default as FilterSharp } from './FilterSharp.svelte';
+export { default as FingerPrint } from './FingerPrint.svelte';
+export { default as FingerPrintOutline } from './FingerPrintOutline.svelte';
+export { default as FingerPrintSharp } from './FingerPrintSharp.svelte';
+export { default as Fish } from './Fish.svelte';
+export { default as FishOutline } from './FishOutline.svelte';
+export { default as FishSharp } from './FishSharp.svelte';
+export { default as Fitness } from './Fitness.svelte';
+export { default as FitnessOutline } from './FitnessOutline.svelte';
+export { default as FitnessSharp } from './FitnessSharp.svelte';
+export { default as Flag } from './Flag.svelte';
+export { default as FlagOutline } from './FlagOutline.svelte';
+export { default as FlagSharp } from './FlagSharp.svelte';
+export { default as Flame } from './Flame.svelte';
+export { default as FlameOutline } from './FlameOutline.svelte';
+export { default as FlameSharp } from './FlameSharp.svelte';
+export { default as Flash } from './Flash.svelte';
+export { default as FlashOff } from './FlashOff.svelte';
+export { default as FlashOffOutline } from './FlashOffOutline.svelte';
+export { default as FlashOffSharp } from './FlashOffSharp.svelte';
+export { default as FlashOutline } from './FlashOutline.svelte';
+export { default as FlashSharp } from './FlashSharp.svelte';
+export { default as Flashlight } from './Flashlight.svelte';
+export { default as FlashlightOutline } from './FlashlightOutline.svelte';
+export { default as FlashlightSharp } from './FlashlightSharp.svelte';
+export { default as Flask } from './Flask.svelte';
+export { default as FlaskOutline } from './FlaskOutline.svelte';
+export { default as FlaskSharp } from './FlaskSharp.svelte';
+export { default as Flower } from './Flower.svelte';
+export { default as FlowerOutline } from './FlowerOutline.svelte';
+export { default as FlowerSharp } from './FlowerSharp.svelte';
+export { default as Folder } from './Folder.svelte';
+export { default as FolderOpen } from './FolderOpen.svelte';
+export { default as FolderOpenOutline } from './FolderOpenOutline.svelte';
+export { default as FolderOpenSharp } from './FolderOpenSharp.svelte';
+export { default as FolderOutline } from './FolderOutline.svelte';
+export { default as FolderSharp } from './FolderSharp.svelte';
+export { default as Football } from './Football.svelte';
+export { default as FootballOutline } from './FootballOutline.svelte';
+export { default as FootballSharp } from './FootballSharp.svelte';
+export { default as Footsteps } from './Footsteps.svelte';
+export { default as FootstepsOutline } from './FootstepsOutline.svelte';
+export { default as FootstepsSharp } from './FootstepsSharp.svelte';
+export { default as Funnel } from './Funnel.svelte';
+export { default as FunnelOutline } from './FunnelOutline.svelte';
+export { default as FunnelSharp } from './FunnelSharp.svelte';
+export { default as GameController } from './GameController.svelte';
+export { default as GameControllerOutline } from './GameControllerOutline.svelte';
+export { default as GameControllerSharp } from './GameControllerSharp.svelte';
+export { default as Gift } from './Gift.svelte';
+export { default as GiftOutline } from './GiftOutline.svelte';
+export { default as GiftSharp } from './GiftSharp.svelte';
+export { default as GitBranch } from './GitBranch.svelte';
+export { default as GitBranchOutline } from './GitBranchOutline.svelte';
+export { default as GitBranchSharp } from './GitBranchSharp.svelte';
+export { default as GitCommit } from './GitCommit.svelte';
+export { default as GitCommitOutline } from './GitCommitOutline.svelte';
+export { default as GitCommitSharp } from './GitCommitSharp.svelte';
+export { default as GitCompare } from './GitCompare.svelte';
+export { default as GitCompareOutline } from './GitCompareOutline.svelte';
+export { default as GitCompareSharp } from './GitCompareSharp.svelte';
+export { default as GitMerge } from './GitMerge.svelte';
+export { default as GitMergeOutline } from './GitMergeOutline.svelte';
+export { default as GitMergeSharp } from './GitMergeSharp.svelte';
+export { default as GitNetwork } from './GitNetwork.svelte';
+export { default as GitNetworkOutline } from './GitNetworkOutline.svelte';
+export { default as GitNetworkSharp } from './GitNetworkSharp.svelte';
+export { default as GitPullRequest } from './GitPullRequest.svelte';
+export { default as GitPullRequestOutline } from './GitPullRequestOutline.svelte';
+export { default as GitPullRequestSharp } from './GitPullRequestSharp.svelte';
+export { default as Glasses } from './Glasses.svelte';
+export { default as GlassesOutline } from './GlassesOutline.svelte';
+export { default as GlassesSharp } from './GlassesSharp.svelte';
+export { default as Globe } from './Globe.svelte';
+export { default as GlobeOutline } from './GlobeOutline.svelte';
+export { default as GlobeSharp } from './GlobeSharp.svelte';
+export { default as Golf } from './Golf.svelte';
+export { default as GolfOutline } from './GolfOutline.svelte';
+export { default as GolfSharp } from './GolfSharp.svelte';
+export { default as Grid } from './Grid.svelte';
+export { default as GridOutline } from './GridOutline.svelte';
+export { default as GridSharp } from './GridSharp.svelte';
+export { default as Hammer } from './Hammer.svelte';
+export { default as HammerOutline } from './HammerOutline.svelte';
+export { default as HammerSharp } from './HammerSharp.svelte';
+export { default as HandLeft } from './HandLeft.svelte';
+export { default as HandLeftOutline } from './HandLeftOutline.svelte';
+export { default as HandLeftSharp } from './HandLeftSharp.svelte';
+export { default as HandRight } from './HandRight.svelte';
+export { default as HandRightOutline } from './HandRightOutline.svelte';
+export { default as HandRightSharp } from './HandRightSharp.svelte';
+export { default as Happy } from './Happy.svelte';
+export { default as HappyOutline } from './HappyOutline.svelte';
+export { default as HappySharp } from './HappySharp.svelte';
+export { default as HardwareChip } from './HardwareChip.svelte';
+export { default as HardwareChipOutline } from './HardwareChipOutline.svelte';
+export { default as HardwareChipSharp } from './HardwareChipSharp.svelte';
+export { default as Headset } from './Headset.svelte';
+export { default as HeadsetOutline } from './HeadsetOutline.svelte';
+export { default as HeadsetSharp } from './HeadsetSharp.svelte';
+export { default as Heart } from './Heart.svelte';
+export { default as HeartCircle } from './HeartCircle.svelte';
+export { default as HeartCircleOutline } from './HeartCircleOutline.svelte';
+export { default as HeartCircleSharp } from './HeartCircleSharp.svelte';
+export { default as HeartDislike } from './HeartDislike.svelte';
+export { default as HeartDislikeCircle } from './HeartDislikeCircle.svelte';
+export { default as HeartDislikeCircleOutline } from './HeartDislikeCircleOutline.svelte';
+export { default as HeartDislikeCircleSharp } from './HeartDislikeCircleSharp.svelte';
+export { default as HeartDislikeOutline } from './HeartDislikeOutline.svelte';
+export { default as HeartDislikeSharp } from './HeartDislikeSharp.svelte';
+export { default as HeartHalf } from './HeartHalf.svelte';
+export { default as HeartHalfOutline } from './HeartHalfOutline.svelte';
+export { default as HeartHalfSharp } from './HeartHalfSharp.svelte';
+export { default as HeartOutline } from './HeartOutline.svelte';
+export { default as HeartSharp } from './HeartSharp.svelte';
+export { default as Help } from './Help.svelte';
+export { default as HelpBuoy } from './HelpBuoy.svelte';
+export { default as HelpBuoyOutline } from './HelpBuoyOutline.svelte';
+export { default as HelpBuoySharp } from './HelpBuoySharp.svelte';
+export { default as HelpCircle } from './HelpCircle.svelte';
+export { default as HelpCircleOutline } from './HelpCircleOutline.svelte';
+export { default as HelpCircleSharp } from './HelpCircleSharp.svelte';
+export { default as HelpOutline } from './HelpOutline.svelte';
+export { default as HelpSharp } from './HelpSharp.svelte';
+export { default as Home } from './Home.svelte';
+export { default as HomeOutline } from './HomeOutline.svelte';
+export { default as HomeSharp } from './HomeSharp.svelte';
+export { default as Hourglass } from './Hourglass.svelte';
+export { default as HourglassOutline } from './HourglassOutline.svelte';
+export { default as HourglassSharp } from './HourglassSharp.svelte';
+export { default as IceCream } from './IceCream.svelte';
+export { default as IceCreamOutline } from './IceCreamOutline.svelte';
+export { default as IceCreamSharp } from './IceCreamSharp.svelte';
+export { default as IdCard } from './IdCard.svelte';
+export { default as IdCardOutline } from './IdCardOutline.svelte';
+export { default as IdCardSharp } from './IdCardSharp.svelte';
+export { default as Image } from './Image.svelte';
+export { default as ImageOutline } from './ImageOutline.svelte';
+export { default as ImageSharp } from './ImageSharp.svelte';
+export { default as Images } from './Images.svelte';
+export { default as ImagesOutline } from './ImagesOutline.svelte';
+export { default as ImagesSharp } from './ImagesSharp.svelte';
+export { default as Infinite } from './Infinite.svelte';
+export { default as InfiniteOutline } from './InfiniteOutline.svelte';
+export { default as InfiniteSharp } from './InfiniteSharp.svelte';
+export { default as Information } from './Information.svelte';
+export { default as InformationCircle } from './InformationCircle.svelte';
+export { default as InformationCircleOutline } from './InformationCircleOutline.svelte';
+export { default as InformationCircleSharp } from './InformationCircleSharp.svelte';
+export { default as InformationOutline } from './InformationOutline.svelte';
+export { default as InformationSharp } from './InformationSharp.svelte';
+export { default as InvertMode } from './InvertMode.svelte';
+export { default as InvertModeOutline } from './InvertModeOutline.svelte';
+export { default as InvertModeSharp } from './InvertModeSharp.svelte';
+export { default as Journal } from './Journal.svelte';
+export { default as JournalOutline } from './JournalOutline.svelte';
+export { default as JournalSharp } from './JournalSharp.svelte';
+export { default as Key } from './Key.svelte';
+export { default as KeyOutline } from './KeyOutline.svelte';
+export { default as KeySharp } from './KeySharp.svelte';
+export { default as Keypad } from './Keypad.svelte';
+export { default as KeypadOutline } from './KeypadOutline.svelte';
+export { default as KeypadSharp } from './KeypadSharp.svelte';
+export { default as Language } from './Language.svelte';
+export { default as LanguageOutline } from './LanguageOutline.svelte';
+export { default as LanguageSharp } from './LanguageSharp.svelte';
+export { default as Laptop } from './Laptop.svelte';
+export { default as LaptopOutline } from './LaptopOutline.svelte';
+export { default as LaptopSharp } from './LaptopSharp.svelte';
+export { default as Layers } from './Layers.svelte';
+export { default as LayersOutline } from './LayersOutline.svelte';
+export { default as LayersSharp } from './LayersSharp.svelte';
+export { default as Leaf } from './Leaf.svelte';
+export { default as LeafOutline } from './LeafOutline.svelte';
+export { default as LeafSharp } from './LeafSharp.svelte';
+export { default as Library } from './Library.svelte';
+export { default as LibraryOutline } from './LibraryOutline.svelte';
+export { default as LibrarySharp } from './LibrarySharp.svelte';
+export { default as Link } from './Link.svelte';
+export { default as LinkOutline } from './LinkOutline.svelte';
+export { default as LinkSharp } from './LinkSharp.svelte';
+export { default as List } from './List.svelte';
+export { default as ListCircle } from './ListCircle.svelte';
+export { default as ListCircleOutline } from './ListCircleOutline.svelte';
+export { default as ListCircleSharp } from './ListCircleSharp.svelte';
+export { default as ListOutline } from './ListOutline.svelte';
+export { default as ListSharp } from './ListSharp.svelte';
+export { default as Locate } from './Locate.svelte';
+export { default as LocateOutline } from './LocateOutline.svelte';
+export { default as LocateSharp } from './LocateSharp.svelte';
+export { default as Location } from './Location.svelte';
+export { default as LocationOutline } from './LocationOutline.svelte';
+export { default as LocationSharp } from './LocationSharp.svelte';
+export { default as LockClosed } from './LockClosed.svelte';
+export { default as LockClosedOutline } from './LockClosedOutline.svelte';
+export { default as LockClosedSharp } from './LockClosedSharp.svelte';
+export { default as LockOpen } from './LockOpen.svelte';
+export { default as LockOpenOutline } from './LockOpenOutline.svelte';
+export { default as LockOpenSharp } from './LockOpenSharp.svelte';
+export { default as LogIn } from './LogIn.svelte';
+export { default as LogInOutline } from './LogInOutline.svelte';
+export { default as LogInSharp } from './LogInSharp.svelte';
+export { default as LogOut } from './LogOut.svelte';
+export { default as LogOutOutline } from './LogOutOutline.svelte';
+export { default as LogOutSharp } from './LogOutSharp.svelte';
+export { default as LogoAlipay } from './LogoAlipay.svelte';
+export { default as LogoAmazon } from './LogoAmazon.svelte';
+export { default as LogoAmplify } from './LogoAmplify.svelte';
+export { default as LogoAndroid } from './LogoAndroid.svelte';
+export { default as LogoAngular } from './LogoAngular.svelte';
+export { default as LogoApple } from './LogoApple.svelte';
+export { default as LogoAppleAppstore } from './LogoAppleAppstore.svelte';
+export { default as LogoAppleAr } from './LogoAppleAr.svelte';
+export { default as LogoBehance } from './LogoBehance.svelte';
+export { default as LogoBitbucket } from './LogoBitbucket.svelte';
+export { default as LogoBitcoin } from './LogoBitcoin.svelte';
+export { default as LogoBuffer } from './LogoBuffer.svelte';
+export { default as LogoCapacitor } from './LogoCapacitor.svelte';
+export { default as LogoChrome } from './LogoChrome.svelte';
+export { default as LogoClosedCaptioning } from './LogoClosedCaptioning.svelte';
+export { default as LogoCodepen } from './LogoCodepen.svelte';
+export { default as LogoCss3 } from './LogoCss3.svelte';
+export { default as LogoDesignernews } from './LogoDesignernews.svelte';
+export { default as LogoDeviantart } from './LogoDeviantart.svelte';
+export { default as LogoDiscord } from './LogoDiscord.svelte';
+export { default as LogoDocker } from './LogoDocker.svelte';
+export { default as LogoDribbble } from './LogoDribbble.svelte';
+export { default as LogoDropbox } from './LogoDropbox.svelte';
+export { default as LogoEdge } from './LogoEdge.svelte';
+export { default as LogoElectron } from './LogoElectron.svelte';
+export { default as LogoEuro } from './LogoEuro.svelte';
+export { default as LogoFacebook } from './LogoFacebook.svelte';
+export { default as LogoFigma } from './LogoFigma.svelte';
+export { default as LogoFirebase } from './LogoFirebase.svelte';
+export { default as LogoFirefox } from './LogoFirefox.svelte';
+export { default as LogoFlickr } from './LogoFlickr.svelte';
+export { default as LogoFoursquare } from './LogoFoursquare.svelte';
+export { default as LogoGithub } from './LogoGithub.svelte';
+export { default as LogoGitlab } from './LogoGitlab.svelte';
+export { default as LogoGoogle } from './LogoGoogle.svelte';
+export { default as LogoGooglePlaystore } from './LogoGooglePlaystore.svelte';
+export { default as LogoHackernews } from './LogoHackernews.svelte';
+export { default as LogoHtml5 } from './LogoHtml5.svelte';
+export { default as LogoInstagram } from './LogoInstagram.svelte';
+export { default as LogoIonic } from './LogoIonic.svelte';
+export { default as LogoIonitron } from './LogoIonitron.svelte';
+export { default as LogoJavascript } from './LogoJavascript.svelte';
+export { default as LogoLaravel } from './LogoLaravel.svelte';
+export { default as LogoLinkedin } from './LogoLinkedin.svelte';
+export { default as LogoMarkdown } from './LogoMarkdown.svelte';
+export { default as LogoMastodon } from './LogoMastodon.svelte';
+export { default as LogoMedium } from './LogoMedium.svelte';
+export { default as LogoMicrosoft } from './LogoMicrosoft.svelte';
+export { default as LogoNoSmoking } from './LogoNoSmoking.svelte';
+export { default as LogoNodejs } from './LogoNodejs.svelte';
+export { default as LogoNpm } from './LogoNpm.svelte';
+export { default as LogoOctocat } from './LogoOctocat.svelte';
+export { default as LogoPaypal } from './LogoPaypal.svelte';
+export { default as LogoPinterest } from './LogoPinterest.svelte';
+export { default as LogoPlaystation } from './LogoPlaystation.svelte';
+export { default as LogoPwa } from './LogoPwa.svelte';
+export { default as LogoPython } from './LogoPython.svelte';
+export { default as LogoReact } from './LogoReact.svelte';
+export { default as LogoReddit } from './LogoReddit.svelte';
+export { default as LogoRss } from './LogoRss.svelte';
+export { default as LogoSass } from './LogoSass.svelte';
+export { default as LogoSkype } from './LogoSkype.svelte';
+export { default as LogoSlack } from './LogoSlack.svelte';
+export { default as LogoSnapchat } from './LogoSnapchat.svelte';
+export { default as LogoSoundcloud } from './LogoSoundcloud.svelte';
+export { default as LogoStackoverflow } from './LogoStackoverflow.svelte';
+export { default as LogoSteam } from './LogoSteam.svelte';
+export { default as LogoStencil } from './LogoStencil.svelte';
+export { default as LogoTableau } from './LogoTableau.svelte';
+export { default as LogoTiktok } from './LogoTiktok.svelte';
+export { default as LogoTumblr } from './LogoTumblr.svelte';
+export { default as LogoTux } from './LogoTux.svelte';
+export { default as LogoTwitch } from './LogoTwitch.svelte';
+export { default as LogoTwitter } from './LogoTwitter.svelte';
+export { default as LogoUsd } from './LogoUsd.svelte';
+export { default as LogoVenmo } from './LogoVenmo.svelte';
+export { default as LogoVercel } from './LogoVercel.svelte';
+export { default as LogoVimeo } from './LogoVimeo.svelte';
+export { default as LogoVk } from './LogoVk.svelte';
+export { default as LogoVue } from './LogoVue.svelte';
+export { default as LogoWebComponent } from './LogoWebComponent.svelte';
+export { default as LogoWechat } from './LogoWechat.svelte';
+export { default as LogoWhatsapp } from './LogoWhatsapp.svelte';
+export { default as LogoWindows } from './LogoWindows.svelte';
+export { default as LogoWordpress } from './LogoWordpress.svelte';
+export { default as LogoXbox } from './LogoXbox.svelte';
+export { default as LogoXing } from './LogoXing.svelte';
+export { default as LogoYahoo } from './LogoYahoo.svelte';
+export { default as LogoYen } from './LogoYen.svelte';
+export { default as LogoYoutube } from './LogoYoutube.svelte';
+export { default as Magnet } from './Magnet.svelte';
+export { default as MagnetOutline } from './MagnetOutline.svelte';
+export { default as MagnetSharp } from './MagnetSharp.svelte';
+export { default as Mail } from './Mail.svelte';
+export { default as MailOpen } from './MailOpen.svelte';
+export { default as MailOpenOutline } from './MailOpenOutline.svelte';
+export { default as MailOpenSharp } from './MailOpenSharp.svelte';
+export { default as MailOutline } from './MailOutline.svelte';
+export { default as MailSharp } from './MailSharp.svelte';
+export { default as MailUnread } from './MailUnread.svelte';
+export { default as MailUnreadOutline } from './MailUnreadOutline.svelte';
+export { default as MailUnreadSharp } from './MailUnreadSharp.svelte';
+export { default as Male } from './Male.svelte';
+export { default as MaleFemale } from './MaleFemale.svelte';
+export { default as MaleFemaleOutline } from './MaleFemaleOutline.svelte';
+export { default as MaleFemaleSharp } from './MaleFemaleSharp.svelte';
+export { default as MaleOutline } from './MaleOutline.svelte';
+export { default as MaleSharp } from './MaleSharp.svelte';
+export { default as Man } from './Man.svelte';
+export { default as ManOutline } from './ManOutline.svelte';
+export { default as ManSharp } from './ManSharp.svelte';
+export { default as Map } from './Map.svelte';
+export { default as MapOutline } from './MapOutline.svelte';
+export { default as MapSharp } from './MapSharp.svelte';
+export { default as Medal } from './Medal.svelte';
+export { default as MedalOutline } from './MedalOutline.svelte';
+export { default as MedalSharp } from './MedalSharp.svelte';
+export { default as Medical } from './Medical.svelte';
+export { default as MedicalOutline } from './MedicalOutline.svelte';
+export { default as MedicalSharp } from './MedicalSharp.svelte';
+export { default as Medkit } from './Medkit.svelte';
+export { default as MedkitOutline } from './MedkitOutline.svelte';
+export { default as MedkitSharp } from './MedkitSharp.svelte';
+export { default as Megaphone } from './Megaphone.svelte';
+export { default as MegaphoneOutline } from './MegaphoneOutline.svelte';
+export { default as MegaphoneSharp } from './MegaphoneSharp.svelte';
+export { default as Menu } from './Menu.svelte';
+export { default as MenuOutline } from './MenuOutline.svelte';
+export { default as MenuSharp } from './MenuSharp.svelte';
+export { default as Mic } from './Mic.svelte';
+export { default as MicCircle } from './MicCircle.svelte';
+export { default as MicCircleOutline } from './MicCircleOutline.svelte';
+export { default as MicCircleSharp } from './MicCircleSharp.svelte';
+export { default as MicOff } from './MicOff.svelte';
+export { default as MicOffCircle } from './MicOffCircle.svelte';
+export { default as MicOffCircleOutline } from './MicOffCircleOutline.svelte';
+export { default as MicOffCircleSharp } from './MicOffCircleSharp.svelte';
+export { default as MicOffOutline } from './MicOffOutline.svelte';
+export { default as MicOffSharp } from './MicOffSharp.svelte';
+export { default as MicOutline } from './MicOutline.svelte';
+export { default as MicSharp } from './MicSharp.svelte';
+export { default as Moon } from './Moon.svelte';
+export { default as MoonOutline } from './MoonOutline.svelte';
+export { default as MoonSharp } from './MoonSharp.svelte';
+export { default as Move } from './Move.svelte';
+export { default as MoveOutline } from './MoveOutline.svelte';
+export { default as MoveSharp } from './MoveSharp.svelte';
+export { default as MusicalNote } from './MusicalNote.svelte';
+export { default as MusicalNoteOutline } from './MusicalNoteOutline.svelte';
+export { default as MusicalNoteSharp } from './MusicalNoteSharp.svelte';
+export { default as MusicalNotes } from './MusicalNotes.svelte';
+export { default as MusicalNotesOutline } from './MusicalNotesOutline.svelte';
+export { default as MusicalNotesSharp } from './MusicalNotesSharp.svelte';
+export { default as Navigate } from './Navigate.svelte';
+export { default as NavigateCircle } from './NavigateCircle.svelte';
+export { default as NavigateCircleOutline } from './NavigateCircleOutline.svelte';
+export { default as NavigateCircleSharp } from './NavigateCircleSharp.svelte';
+export { default as NavigateOutline } from './NavigateOutline.svelte';
+export { default as NavigateSharp } from './NavigateSharp.svelte';
+export { default as Newspaper } from './Newspaper.svelte';
+export { default as NewspaperOutline } from './NewspaperOutline.svelte';
+export { default as NewspaperSharp } from './NewspaperSharp.svelte';
+export { default as Notifications } from './Notifications.svelte';
+export { default as NotificationsCircle } from './NotificationsCircle.svelte';
+export { default as NotificationsCircleOutline } from './NotificationsCircleOutline.svelte';
+export { default as NotificationsCircleSharp } from './NotificationsCircleSharp.svelte';
+export { default as NotificationsOff } from './NotificationsOff.svelte';
+export { default as NotificationsOffCircle } from './NotificationsOffCircle.svelte';
+export { default as NotificationsOffCircleOutline } from './NotificationsOffCircleOutline.svelte';
+export { default as NotificationsOffCircleSharp } from './NotificationsOffCircleSharp.svelte';
+export { default as NotificationsOffOutline } from './NotificationsOffOutline.svelte';
+export { default as NotificationsOffSharp } from './NotificationsOffSharp.svelte';
+export { default as NotificationsOutline } from './NotificationsOutline.svelte';
+export { default as NotificationsSharp } from './NotificationsSharp.svelte';
+export { default as Nuclear } from './Nuclear.svelte';
+export { default as NuclearOutline } from './NuclearOutline.svelte';
+export { default as NuclearSharp } from './NuclearSharp.svelte';
+export { default as Nutrition } from './Nutrition.svelte';
+export { default as NutritionOutline } from './NutritionOutline.svelte';
+export { default as NutritionSharp } from './NutritionSharp.svelte';
+export { default as Open } from './Open.svelte';
+export { default as OpenOutline } from './OpenOutline.svelte';
+export { default as OpenSharp } from './OpenSharp.svelte';
+export { default as Options } from './Options.svelte';
+export { default as OptionsOutline } from './OptionsOutline.svelte';
+export { default as OptionsSharp } from './OptionsSharp.svelte';
+export { default as PaperPlane } from './PaperPlane.svelte';
+export { default as PaperPlaneOutline } from './PaperPlaneOutline.svelte';
+export { default as PaperPlaneSharp } from './PaperPlaneSharp.svelte';
+export { default as PartlySunny } from './PartlySunny.svelte';
+export { default as PartlySunnyOutline } from './PartlySunnyOutline.svelte';
+export { default as PartlySunnySharp } from './PartlySunnySharp.svelte';
+export { default as Pause } from './Pause.svelte';
+export { default as PauseCircle } from './PauseCircle.svelte';
+export { default as PauseCircleOutline } from './PauseCircleOutline.svelte';
+export { default as PauseCircleSharp } from './PauseCircleSharp.svelte';
+export { default as PauseOutline } from './PauseOutline.svelte';
+export { default as PauseSharp } from './PauseSharp.svelte';
+export { default as Paw } from './Paw.svelte';
+export { default as PawOutline } from './PawOutline.svelte';
+export { default as PawSharp } from './PawSharp.svelte';
+export { default as Pencil } from './Pencil.svelte';
+export { default as PencilOutline } from './PencilOutline.svelte';
+export { default as PencilSharp } from './PencilSharp.svelte';
+export { default as People } from './People.svelte';
+export { default as PeopleCircle } from './PeopleCircle.svelte';
+export { default as PeopleCircleOutline } from './PeopleCircleOutline.svelte';
+export { default as PeopleCircleSharp } from './PeopleCircleSharp.svelte';
+export { default as PeopleOutline } from './PeopleOutline.svelte';
+export { default as PeopleSharp } from './PeopleSharp.svelte';
+export { default as Person } from './Person.svelte';
+export { default as PersonAdd } from './PersonAdd.svelte';
+export { default as PersonAddOutline } from './PersonAddOutline.svelte';
+export { default as PersonAddSharp } from './PersonAddSharp.svelte';
+export { default as PersonCircle } from './PersonCircle.svelte';
+export { default as PersonCircleOutline } from './PersonCircleOutline.svelte';
+export { default as PersonCircleSharp } from './PersonCircleSharp.svelte';
+export { default as PersonOutline } from './PersonOutline.svelte';
+export { default as PersonRemove } from './PersonRemove.svelte';
+export { default as PersonRemoveOutline } from './PersonRemoveOutline.svelte';
+export { default as PersonRemoveSharp } from './PersonRemoveSharp.svelte';
+export { default as PersonSharp } from './PersonSharp.svelte';
+export { default as PhoneLandscape } from './PhoneLandscape.svelte';
+export { default as PhoneLandscapeOutline } from './PhoneLandscapeOutline.svelte';
+export { default as PhoneLandscapeSharp } from './PhoneLandscapeSharp.svelte';
+export { default as PhonePortrait } from './PhonePortrait.svelte';
+export { default as PhonePortraitOutline } from './PhonePortraitOutline.svelte';
+export { default as PhonePortraitSharp } from './PhonePortraitSharp.svelte';
+export { default as PieChart } from './PieChart.svelte';
+export { default as PieChartOutline } from './PieChartOutline.svelte';
+export { default as PieChartSharp } from './PieChartSharp.svelte';
+export { default as Pin } from './Pin.svelte';
+export { default as PinOutline } from './PinOutline.svelte';
+export { default as PinSharp } from './PinSharp.svelte';
+export { default as Pint } from './Pint.svelte';
+export { default as PintOutline } from './PintOutline.svelte';
+export { default as PintSharp } from './PintSharp.svelte';
+export { default as Pizza } from './Pizza.svelte';
+export { default as PizzaOutline } from './PizzaOutline.svelte';
+export { default as PizzaSharp } from './PizzaSharp.svelte';
+export { default as Planet } from './Planet.svelte';
+export { default as PlanetOutline } from './PlanetOutline.svelte';
+export { default as PlanetSharp } from './PlanetSharp.svelte';
+export { default as Play } from './Play.svelte';
+export { default as PlayBack } from './PlayBack.svelte';
+export { default as PlayBackCircle } from './PlayBackCircle.svelte';
+export { default as PlayBackCircleOutline } from './PlayBackCircleOutline.svelte';
+export { default as PlayBackCircleSharp } from './PlayBackCircleSharp.svelte';
+export { default as PlayBackOutline } from './PlayBackOutline.svelte';
+export { default as PlayBackSharp } from './PlayBackSharp.svelte';
+export { default as PlayCircle } from './PlayCircle.svelte';
+export { default as PlayCircleOutline } from './PlayCircleOutline.svelte';
+export { default as PlayCircleSharp } from './PlayCircleSharp.svelte';
+export { default as PlayForward } from './PlayForward.svelte';
+export { default as PlayForwardCircle } from './PlayForwardCircle.svelte';
+export { default as PlayForwardCircleOutline } from './PlayForwardCircleOutline.svelte';
+export { default as PlayForwardCircleSharp } from './PlayForwardCircleSharp.svelte';
+export { default as PlayForwardOutline } from './PlayForwardOutline.svelte';
+export { default as PlayForwardSharp } from './PlayForwardSharp.svelte';
+export { default as PlayOutline } from './PlayOutline.svelte';
+export { default as PlaySharp } from './PlaySharp.svelte';
+export { default as PlaySkipBack } from './PlaySkipBack.svelte';
+export { default as PlaySkipBackCircle } from './PlaySkipBackCircle.svelte';
+export { default as PlaySkipBackCircleOutline } from './PlaySkipBackCircleOutline.svelte';
+export { default as PlaySkipBackCircleSharp } from './PlaySkipBackCircleSharp.svelte';
+export { default as PlaySkipBackOutline } from './PlaySkipBackOutline.svelte';
+export { default as PlaySkipBackSharp } from './PlaySkipBackSharp.svelte';
+export { default as PlaySkipForward } from './PlaySkipForward.svelte';
+export { default as PlaySkipForwardCircle } from './PlaySkipForwardCircle.svelte';
+export { default as PlaySkipForwardCircleOutline } from './PlaySkipForwardCircleOutline.svelte';
+export { default as PlaySkipForwardCircleSharp } from './PlaySkipForwardCircleSharp.svelte';
+export { default as PlaySkipForwardOutline } from './PlaySkipForwardOutline.svelte';
+export { default as PlaySkipForwardSharp } from './PlaySkipForwardSharp.svelte';
+export { default as Podium } from './Podium.svelte';
+export { default as PodiumOutline } from './PodiumOutline.svelte';
+export { default as PodiumSharp } from './PodiumSharp.svelte';
+export { default as Power } from './Power.svelte';
+export { default as PowerOutline } from './PowerOutline.svelte';
+export { default as PowerSharp } from './PowerSharp.svelte';
+export { default as Pricetag } from './Pricetag.svelte';
+export { default as PricetagOutline } from './PricetagOutline.svelte';
+export { default as PricetagSharp } from './PricetagSharp.svelte';
+export { default as Pricetags } from './Pricetags.svelte';
+export { default as PricetagsOutline } from './PricetagsOutline.svelte';
+export { default as PricetagsSharp } from './PricetagsSharp.svelte';
+export { default as Print } from './Print.svelte';
+export { default as PrintOutline } from './PrintOutline.svelte';
+export { default as PrintSharp } from './PrintSharp.svelte';
+export { default as Prism } from './Prism.svelte';
+export { default as PrismOutline } from './PrismOutline.svelte';
+export { default as PrismSharp } from './PrismSharp.svelte';
+export { default as Pulse } from './Pulse.svelte';
+export { default as PulseOutline } from './PulseOutline.svelte';
+export { default as PulseSharp } from './PulseSharp.svelte';
+export { default as Push } from './Push.svelte';
+export { default as PushOutline } from './PushOutline.svelte';
+export { default as PushSharp } from './PushSharp.svelte';
+export { default as QrCode } from './QrCode.svelte';
+export { default as QrCodeOutline } from './QrCodeOutline.svelte';
+export { default as QrCodeSharp } from './QrCodeSharp.svelte';
+export { default as Radio } from './Radio.svelte';
+export { default as RadioButtonOff } from './RadioButtonOff.svelte';
+export { default as RadioButtonOffOutline } from './RadioButtonOffOutline.svelte';
+export { default as RadioButtonOffSharp } from './RadioButtonOffSharp.svelte';
+export { default as RadioButtonOn } from './RadioButtonOn.svelte';
+export { default as RadioButtonOnOutline } from './RadioButtonOnOutline.svelte';
+export { default as RadioButtonOnSharp } from './RadioButtonOnSharp.svelte';
+export { default as RadioOutline } from './RadioOutline.svelte';
+export { default as RadioSharp } from './RadioSharp.svelte';
+export { default as Rainy } from './Rainy.svelte';
+export { default as RainyOutline } from './RainyOutline.svelte';
+export { default as RainySharp } from './RainySharp.svelte';
+export { default as Reader } from './Reader.svelte';
+export { default as ReaderOutline } from './ReaderOutline.svelte';
+export { default as ReaderSharp } from './ReaderSharp.svelte';
+export { default as Receipt } from './Receipt.svelte';
+export { default as ReceiptOutline } from './ReceiptOutline.svelte';
+export { default as ReceiptSharp } from './ReceiptSharp.svelte';
+export { default as Recording } from './Recording.svelte';
+export { default as RecordingOutline } from './RecordingOutline.svelte';
+export { default as RecordingSharp } from './RecordingSharp.svelte';
+export { default as Refresh } from './Refresh.svelte';
+export { default as RefreshCircle } from './RefreshCircle.svelte';
+export { default as RefreshCircleOutline } from './RefreshCircleOutline.svelte';
+export { default as RefreshCircleSharp } from './RefreshCircleSharp.svelte';
+export { default as RefreshOutline } from './RefreshOutline.svelte';
+export { default as RefreshSharp } from './RefreshSharp.svelte';
+export { default as Reload } from './Reload.svelte';
+export { default as ReloadCircle } from './ReloadCircle.svelte';
+export { default as ReloadCircleOutline } from './ReloadCircleOutline.svelte';
+export { default as ReloadCircleSharp } from './ReloadCircleSharp.svelte';
+export { default as ReloadOutline } from './ReloadOutline.svelte';
+export { default as ReloadSharp } from './ReloadSharp.svelte';
+export { default as Remove } from './Remove.svelte';
+export { default as RemoveCircle } from './RemoveCircle.svelte';
+export { default as RemoveCircleOutline } from './RemoveCircleOutline.svelte';
+export { default as RemoveCircleSharp } from './RemoveCircleSharp.svelte';
+export { default as RemoveOutline } from './RemoveOutline.svelte';
+export { default as RemoveSharp } from './RemoveSharp.svelte';
+export { default as ReorderFour } from './ReorderFour.svelte';
+export { default as ReorderFourOutline } from './ReorderFourOutline.svelte';
+export { default as ReorderFourSharp } from './ReorderFourSharp.svelte';
+export { default as ReorderThree } from './ReorderThree.svelte';
+export { default as ReorderThreeOutline } from './ReorderThreeOutline.svelte';
+export { default as ReorderThreeSharp } from './ReorderThreeSharp.svelte';
+export { default as ReorderTwo } from './ReorderTwo.svelte';
+export { default as ReorderTwoOutline } from './ReorderTwoOutline.svelte';
+export { default as ReorderTwoSharp } from './ReorderTwoSharp.svelte';
+export { default as Repeat } from './Repeat.svelte';
+export { default as RepeatOutline } from './RepeatOutline.svelte';
+export { default as RepeatSharp } from './RepeatSharp.svelte';
+export { default as Resize } from './Resize.svelte';
+export { default as ResizeOutline } from './ResizeOutline.svelte';
+export { default as ResizeSharp } from './ResizeSharp.svelte';
+export { default as Restaurant } from './Restaurant.svelte';
+export { default as RestaurantOutline } from './RestaurantOutline.svelte';
+export { default as RestaurantSharp } from './RestaurantSharp.svelte';
+export { default as ReturnDownBack } from './ReturnDownBack.svelte';
+export { default as ReturnDownBackOutline } from './ReturnDownBackOutline.svelte';
+export { default as ReturnDownBackSharp } from './ReturnDownBackSharp.svelte';
+export { default as ReturnDownForward } from './ReturnDownForward.svelte';
+export { default as ReturnDownForwardOutline } from './ReturnDownForwardOutline.svelte';
+export { default as ReturnDownForwardSharp } from './ReturnDownForwardSharp.svelte';
+export { default as ReturnUpBack } from './ReturnUpBack.svelte';
+export { default as ReturnUpBackOutline } from './ReturnUpBackOutline.svelte';
+export { default as ReturnUpBackSharp } from './ReturnUpBackSharp.svelte';
+export { default as ReturnUpForward } from './ReturnUpForward.svelte';
+export { default as ReturnUpForwardOutline } from './ReturnUpForwardOutline.svelte';
+export { default as ReturnUpForwardSharp } from './ReturnUpForwardSharp.svelte';
+export { default as Ribbon } from './Ribbon.svelte';
+export { default as RibbonOutline } from './RibbonOutline.svelte';
+export { default as RibbonSharp } from './RibbonSharp.svelte';
+export { default as Rocket } from './Rocket.svelte';
+export { default as RocketOutline } from './RocketOutline.svelte';
+export { default as RocketSharp } from './RocketSharp.svelte';
+export { default as Rose } from './Rose.svelte';
+export { default as RoseOutline } from './RoseOutline.svelte';
+export { default as RoseSharp } from './RoseSharp.svelte';
+export { default as Sad } from './Sad.svelte';
+export { default as SadOutline } from './SadOutline.svelte';
+export { default as SadSharp } from './SadSharp.svelte';
+export { default as Save } from './Save.svelte';
+export { default as SaveOutline } from './SaveOutline.svelte';
+export { default as SaveSharp } from './SaveSharp.svelte';
+export { default as Scale } from './Scale.svelte';
+export { default as ScaleOutline } from './ScaleOutline.svelte';
+export { default as ScaleSharp } from './ScaleSharp.svelte';
+export { default as Scan } from './Scan.svelte';
+export { default as ScanCircle } from './ScanCircle.svelte';
+export { default as ScanCircleOutline } from './ScanCircleOutline.svelte';
+export { default as ScanCircleSharp } from './ScanCircleSharp.svelte';
+export { default as ScanOutline } from './ScanOutline.svelte';
+export { default as ScanSharp } from './ScanSharp.svelte';
+export { default as School } from './School.svelte';
+export { default as SchoolOutline } from './SchoolOutline.svelte';
+export { default as SchoolSharp } from './SchoolSharp.svelte';
+export { default as Search } from './Search.svelte';
+export { default as SearchCircle } from './SearchCircle.svelte';
+export { default as SearchCircleOutline } from './SearchCircleOutline.svelte';
+export { default as SearchCircleSharp } from './SearchCircleSharp.svelte';
+export { default as SearchOutline } from './SearchOutline.svelte';
+export { default as SearchSharp } from './SearchSharp.svelte';
+export { default as Send } from './Send.svelte';
+export { default as SendOutline } from './SendOutline.svelte';
+export { default as SendSharp } from './SendSharp.svelte';
+export { default as Server } from './Server.svelte';
+export { default as ServerOutline } from './ServerOutline.svelte';
+export { default as ServerSharp } from './ServerSharp.svelte';
+export { default as Settings } from './Settings.svelte';
+export { default as SettingsOutline } from './SettingsOutline.svelte';
+export { default as SettingsSharp } from './SettingsSharp.svelte';
+export { default as Shapes } from './Shapes.svelte';
+export { default as ShapesOutline } from './ShapesOutline.svelte';
+export { default as ShapesSharp } from './ShapesSharp.svelte';
+export { default as Share } from './Share.svelte';
+export { default as ShareOutline } from './ShareOutline.svelte';
+export { default as ShareSharp } from './ShareSharp.svelte';
+export { default as ShareSocial } from './ShareSocial.svelte';
+export { default as ShareSocialOutline } from './ShareSocialOutline.svelte';
+export { default as ShareSocialSharp } from './ShareSocialSharp.svelte';
+export { default as Shield } from './Shield.svelte';
+export { default as ShieldCheckmark } from './ShieldCheckmark.svelte';
+export { default as ShieldCheckmarkOutline } from './ShieldCheckmarkOutline.svelte';
+export { default as ShieldCheckmarkSharp } from './ShieldCheckmarkSharp.svelte';
+export { default as ShieldHalf } from './ShieldHalf.svelte';
+export { default as ShieldHalfOutline } from './ShieldHalfOutline.svelte';
+export { default as ShieldHalfSharp } from './ShieldHalfSharp.svelte';
+export { default as ShieldOutline } from './ShieldOutline.svelte';
+export { default as ShieldSharp } from './ShieldSharp.svelte';
+export { default as Shirt } from './Shirt.svelte';
+export { default as ShirtOutline } from './ShirtOutline.svelte';
+export { default as ShirtSharp } from './ShirtSharp.svelte';
+export { default as Shuffle } from './Shuffle.svelte';
+export { default as ShuffleOutline } from './ShuffleOutline.svelte';
+export { default as ShuffleSharp } from './ShuffleSharp.svelte';
+export { default as Skull } from './Skull.svelte';
+export { default as SkullOutline } from './SkullOutline.svelte';
+export { default as SkullSharp } from './SkullSharp.svelte';
+export { default as Snow } from './Snow.svelte';
+export { default as SnowOutline } from './SnowOutline.svelte';
+export { default as SnowSharp } from './SnowSharp.svelte';
+export { default as Sparkles } from './Sparkles.svelte';
+export { default as SparklesOutline } from './SparklesOutline.svelte';
+export { default as SparklesSharp } from './SparklesSharp.svelte';
+export { default as Speedometer } from './Speedometer.svelte';
+export { default as SpeedometerOutline } from './SpeedometerOutline.svelte';
+export { default as SpeedometerSharp } from './SpeedometerSharp.svelte';
+export { default as Square } from './Square.svelte';
+export { default as SquareOutline } from './SquareOutline.svelte';
+export { default as SquareSharp } from './SquareSharp.svelte';
+export { default as Star } from './Star.svelte';
+export { default as StarHalf } from './StarHalf.svelte';
+export { default as StarHalfOutline } from './StarHalfOutline.svelte';
+export { default as StarHalfSharp } from './StarHalfSharp.svelte';
+export { default as StarOutline } from './StarOutline.svelte';
+export { default as StarSharp } from './StarSharp.svelte';
+export { default as StatsChart } from './StatsChart.svelte';
+export { default as StatsChartOutline } from './StatsChartOutline.svelte';
+export { default as StatsChartSharp } from './StatsChartSharp.svelte';
+export { default as Stop } from './Stop.svelte';
+export { default as StopCircle } from './StopCircle.svelte';
+export { default as StopCircleOutline } from './StopCircleOutline.svelte';
+export { default as StopCircleSharp } from './StopCircleSharp.svelte';
+export { default as StopOutline } from './StopOutline.svelte';
+export { default as StopSharp } from './StopSharp.svelte';
+export { default as Stopwatch } from './Stopwatch.svelte';
+export { default as StopwatchOutline } from './StopwatchOutline.svelte';
+export { default as StopwatchSharp } from './StopwatchSharp.svelte';
+export { default as Storefront } from './Storefront.svelte';
+export { default as StorefrontOutline } from './StorefrontOutline.svelte';
+export { default as StorefrontSharp } from './StorefrontSharp.svelte';
+export { default as Subway } from './Subway.svelte';
+export { default as SubwayOutline } from './SubwayOutline.svelte';
+export { default as SubwaySharp } from './SubwaySharp.svelte';
+export { default as Sunny } from './Sunny.svelte';
+export { default as SunnyOutline } from './SunnyOutline.svelte';
+export { default as SunnySharp } from './SunnySharp.svelte';
+export { default as SwapHorizontal } from './SwapHorizontal.svelte';
+export { default as SwapHorizontalOutline } from './SwapHorizontalOutline.svelte';
+export { default as SwapHorizontalSharp } from './SwapHorizontalSharp.svelte';
+export { default as SwapVertical } from './SwapVertical.svelte';
+export { default as SwapVerticalOutline } from './SwapVerticalOutline.svelte';
+export { default as SwapVerticalSharp } from './SwapVerticalSharp.svelte';
+export { default as Sync } from './Sync.svelte';
+export { default as SyncCircle } from './SyncCircle.svelte';
+export { default as SyncCircleOutline } from './SyncCircleOutline.svelte';
+export { default as SyncCircleSharp } from './SyncCircleSharp.svelte';
+export { default as SyncOutline } from './SyncOutline.svelte';
+export { default as SyncSharp } from './SyncSharp.svelte';
+export { default as TabletLandscape } from './TabletLandscape.svelte';
+export { default as TabletLandscapeOutline } from './TabletLandscapeOutline.svelte';
+export { default as TabletLandscapeSharp } from './TabletLandscapeSharp.svelte';
+export { default as TabletPortrait } from './TabletPortrait.svelte';
+export { default as TabletPortraitOutline } from './TabletPortraitOutline.svelte';
+export { default as TabletPortraitSharp } from './TabletPortraitSharp.svelte';
+export { default as Telescope } from './Telescope.svelte';
+export { default as TelescopeOutline } from './TelescopeOutline.svelte';
+export { default as TelescopeSharp } from './TelescopeSharp.svelte';
+export { default as Tennisball } from './Tennisball.svelte';
+export { default as TennisballOutline } from './TennisballOutline.svelte';
+export { default as TennisballSharp } from './TennisballSharp.svelte';
+export { default as Terminal } from './Terminal.svelte';
+export { default as TerminalOutline } from './TerminalOutline.svelte';
+export { default as TerminalSharp } from './TerminalSharp.svelte';
+export { default as Text } from './Text.svelte';
+export { default as TextOutline } from './TextOutline.svelte';
+export { default as TextSharp } from './TextSharp.svelte';
+export { default as Thermometer } from './Thermometer.svelte';
+export { default as ThermometerOutline } from './ThermometerOutline.svelte';
+export { default as ThermometerSharp } from './ThermometerSharp.svelte';
+export { default as ThumbsDown } from './ThumbsDown.svelte';
+export { default as ThumbsDownOutline } from './ThumbsDownOutline.svelte';
+export { default as ThumbsDownSharp } from './ThumbsDownSharp.svelte';
+export { default as ThumbsUp } from './ThumbsUp.svelte';
+export { default as ThumbsUpOutline } from './ThumbsUpOutline.svelte';
+export { default as ThumbsUpSharp } from './ThumbsUpSharp.svelte';
+export { default as Thunderstorm } from './Thunderstorm.svelte';
+export { default as ThunderstormOutline } from './ThunderstormOutline.svelte';
+export { default as ThunderstormSharp } from './ThunderstormSharp.svelte';
+export { default as Ticket } from './Ticket.svelte';
+export { default as TicketOutline } from './TicketOutline.svelte';
+export { default as TicketSharp } from './TicketSharp.svelte';
+export { default as Time } from './Time.svelte';
+export { default as TimeOutline } from './TimeOutline.svelte';
+export { default as TimeSharp } from './TimeSharp.svelte';
+export { default as Timer } from './Timer.svelte';
+export { default as TimerOutline } from './TimerOutline.svelte';
+export { default as TimerSharp } from './TimerSharp.svelte';
+export { default as Today } from './Today.svelte';
+export { default as TodayOutline } from './TodayOutline.svelte';
+export { default as TodaySharp } from './TodaySharp.svelte';
+export { default as Toggle } from './Toggle.svelte';
+export { default as ToggleOutline } from './ToggleOutline.svelte';
+export { default as ToggleSharp } from './ToggleSharp.svelte';
+export { default as TrailSign } from './TrailSign.svelte';
+export { default as TrailSignOutline } from './TrailSignOutline.svelte';
+export { default as TrailSignSharp } from './TrailSignSharp.svelte';
+export { default as Train } from './Train.svelte';
+export { default as TrainOutline } from './TrainOutline.svelte';
+export { default as TrainSharp } from './TrainSharp.svelte';
+export { default as Transgender } from './Transgender.svelte';
+export { default as TransgenderOutline } from './TransgenderOutline.svelte';
+export { default as TransgenderSharp } from './TransgenderSharp.svelte';
+export { default as Trash } from './Trash.svelte';
+export { default as TrashBin } from './TrashBin.svelte';
+export { default as TrashBinOutline } from './TrashBinOutline.svelte';
+export { default as TrashBinSharp } from './TrashBinSharp.svelte';
+export { default as TrashOutline } from './TrashOutline.svelte';
+export { default as TrashSharp } from './TrashSharp.svelte';
+export { default as TrendingDown } from './TrendingDown.svelte';
+export { default as TrendingDownOutline } from './TrendingDownOutline.svelte';
+export { default as TrendingDownSharp } from './TrendingDownSharp.svelte';
+export { default as TrendingUp } from './TrendingUp.svelte';
+export { default as TrendingUpOutline } from './TrendingUpOutline.svelte';
+export { default as TrendingUpSharp } from './TrendingUpSharp.svelte';
+export { default as Triangle } from './Triangle.svelte';
+export { default as TriangleOutline } from './TriangleOutline.svelte';
+export { default as TriangleSharp } from './TriangleSharp.svelte';
+export { default as Trophy } from './Trophy.svelte';
+export { default as TrophyOutline } from './TrophyOutline.svelte';
+export { default as TrophySharp } from './TrophySharp.svelte';
+export { default as Tv } from './Tv.svelte';
+export { default as TvOutline } from './TvOutline.svelte';
+export { default as TvSharp } from './TvSharp.svelte';
+export { default as Umbrella } from './Umbrella.svelte';
+export { default as UmbrellaOutline } from './UmbrellaOutline.svelte';
+export { default as UmbrellaSharp } from './UmbrellaSharp.svelte';
+export { default as Unlink } from './Unlink.svelte';
+export { default as UnlinkOutline } from './UnlinkOutline.svelte';
+export { default as UnlinkSharp } from './UnlinkSharp.svelte';
+export { default as Videocam } from './Videocam.svelte';
+export { default as VideocamOff } from './VideocamOff.svelte';
+export { default as VideocamOffOutline } from './VideocamOffOutline.svelte';
+export { default as VideocamOffSharp } from './VideocamOffSharp.svelte';
+export { default as VideocamOutline } from './VideocamOutline.svelte';
+export { default as VideocamSharp } from './VideocamSharp.svelte';
+export { default as VolumeHigh } from './VolumeHigh.svelte';
+export { default as VolumeHighOutline } from './VolumeHighOutline.svelte';
+export { default as VolumeHighSharp } from './VolumeHighSharp.svelte';
+export { default as VolumeLow } from './VolumeLow.svelte';
+export { default as VolumeLowOutline } from './VolumeLowOutline.svelte';
+export { default as VolumeLowSharp } from './VolumeLowSharp.svelte';
+export { default as VolumeMedium } from './VolumeMedium.svelte';
+export { default as VolumeMediumOutline } from './VolumeMediumOutline.svelte';
+export { default as VolumeMediumSharp } from './VolumeMediumSharp.svelte';
+export { default as VolumeMute } from './VolumeMute.svelte';
+export { default as VolumeMuteOutline } from './VolumeMuteOutline.svelte';
+export { default as VolumeMuteSharp } from './VolumeMuteSharp.svelte';
+export { default as VolumeOff } from './VolumeOff.svelte';
+export { default as VolumeOffOutline } from './VolumeOffOutline.svelte';
+export { default as VolumeOffSharp } from './VolumeOffSharp.svelte';
+export { default as Walk } from './Walk.svelte';
+export { default as WalkOutline } from './WalkOutline.svelte';
+export { default as WalkSharp } from './WalkSharp.svelte';
+export { default as Wallet } from './Wallet.svelte';
+export { default as WalletOutline } from './WalletOutline.svelte';
+export { default as WalletSharp } from './WalletSharp.svelte';
+export { default as Warning } from './Warning.svelte';
+export { default as WarningOutline } from './WarningOutline.svelte';
+export { default as WarningSharp } from './WarningSharp.svelte';
+export { default as Watch } from './Watch.svelte';
+export { default as WatchOutline } from './WatchOutline.svelte';
+export { default as WatchSharp } from './WatchSharp.svelte';
+export { default as Water } from './Water.svelte';
+export { default as WaterOutline } from './WaterOutline.svelte';
+export { default as WaterSharp } from './WaterSharp.svelte';
+export { default as Wifi } from './Wifi.svelte';
+export { default as WifiOutline } from './WifiOutline.svelte';
+export { default as WifiSharp } from './WifiSharp.svelte';
+export { default as Wine } from './Wine.svelte';
+export { default as WineOutline } from './WineOutline.svelte';
+export { default as WineSharp } from './WineSharp.svelte';
+export { default as Woman } from './Woman.svelte';
+export { default as WomanOutline } from './WomanOutline.svelte';
+export { default as WomanSharp } from './WomanSharp.svelte';
