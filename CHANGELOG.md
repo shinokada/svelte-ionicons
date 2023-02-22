@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/shinokada/svelte-ionicons/compare/v0.3.1...v0.3.2) (2023-02-22)
+
+
+### Features
+
+* add microsoft webmaster tools meta tag ([dd5e2f9](https://github.com/shinokada/svelte-ionicons/commit/dd5e2f9ff1f3b957f9c57e3c1b3ffe82e4a295af))
+* new svelte packaging system ([d2d2a8c](https://github.com/shinokada/svelte-ionicons/commit/d2d2a8ce05c988c862c0476294d7b6d335616e11))
+
+
+### Bug Fixes
+
+* add back to home ([ff0f74a](https://github.com/shinokada/svelte-ionicons/commit/ff0f74a5ab713ffaf132e46ec19cba8ef7490bc4))
+* update index.html ([539007e](https://github.com/shinokada/svelte-ionicons/commit/539007e3805b482a4dab0227a96fc5f8063c197a))
+
 ### [0.3.1](https://github.com/shinokada/svelte-ionicons/compare/v0.3.0...v0.3.1) (2023-02-03)
 
 ## [0.3.0](https://github.com/shinokada/svelte-ionicons/compare/v0.2.15...v0.3.0) (2023-02-03)
