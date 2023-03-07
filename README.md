@@ -60,7 +60,7 @@ By importing only what you need, you can reduce the amount of code that needs to
 <AddSharp />
 ```
 
-If you are TypeScript user, install **typescript version 5.0.0 or above**.
+If you are a TypeScript user, install **typescript version 5.0.0 or above**.
 
 As of March 2023, the `typescript@beta` version is now available:
 
@@ -121,7 +121,7 @@ All icons have aria-label. For example `Bandage` has `aria-label="bandage"`.
 Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
-<Bandage ariaLabel="bandage icon"></Bandage>
+<Bandage ariaLabel="bandage icon" />
 ```
 
 ## Unfocusable icon
@@ -137,7 +137,7 @@ If you want to make an icon unfocusable, add `tabindex="-1"`.
 You can pass other attibutes as well.
 
 ```html
-<Bandage tabindex="0"></Bandage>
+<Bandage tabindex="0" />
 ```
 
 ## Import all
