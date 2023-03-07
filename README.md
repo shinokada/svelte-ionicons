@@ -39,35 +39,46 @@ npm i -D svelte-ionicons
 
 ```html
 <script>
-	import {
-		AddSharp,
-		Analytics,
-		Apps,
-		Bandage,
-		BonfireOutline,
-		Book,
-		Walk,
-		WalkOutline,
-		WalkSharp,
-		Barcode,
-		BarcodeSharp,
-		BarcodeOutline
-	} from 'svelte-ionicons';
+	import { AddSharp	} from 'svelte-ionicons';
 </script>
 
 <AddSharp size="40" />
-<Analytics size="40" />
-<Apps size="40" />
-<Bandage size="40" />
-<BonfireOutline size="40" />
-<Book size="40" />
-<Walk size="40" />
-<WalkOutline size="40" />
-<WalkSharp size="40" />
-<Barcode size="40" />
-<BarcodeSharp size="40" />
-<BarcodeOutline size="40" />
 ```
+
+
+## Faster compiling
+
+For faster compilation, you can import the icon directly.
+
+```html
+<script>
+  import AddSharp from 'svelte-ionicons/AddSharp.svelte';
+</script>
+
+<AddSharp />
+```
+
+If you are TypeScript user, **this require `"typescript": "^5.0.0"`.**
+
+As of March 2023, the `typescript@beta` version is now available:
+
+```sh
+pnpm i -D typescript@beta
+```
+
+To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleResolution` in your tsconfig.json file.
+
+```json
+{
+  //...
+  "compilerOptions": {
+    // ...
+    "moduleResolution": "nodenext"
+  }
+}
+```
+
+## REPL
 
 [REPL](https://svelte.dev/repl/7e3373ecc2ec47d2b2136e7e01bf2e5e)
 
@@ -109,6 +120,14 @@ Use `ariaLabel` prop to modify the `aria-label` value.
 
 ```html
 <Bandage ariaLabel="bandage icon"></Bandage>
+```
+
+## Unfocusable icon
+
+If you want to make an icon unfocusable, add `tabindex="-1"`.
+
+```html
+<Bandage tabindex="-1" />
 ```
 
 ## Passing down other attributes
