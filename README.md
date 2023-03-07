@@ -39,7 +39,7 @@ npm i -D svelte-ionicons
 
 ```html
 <script>
-	import { AddSharp	} from 'svelte-ionicons';
+  import { AddSharp	} from 'svelte-ionicons';
 </script>
 
 <AddSharp size="40" />
@@ -143,7 +143,7 @@ Use `import * as Icon from 'svelte-heros`.
 
 ```html
 <script>
-	import * as Icon from 'svelte-ionicons';
+  import * as Icon from 'svelte-ionicons';
 </script>
 
 <Icon.Bandage size="30" />
