@@ -45,7 +45,6 @@ npm i -D svelte-ionicons
 <AddSharp size="40" />
 ```
 
-
 ## Faster compiling
 
 For faster compilation, you can import the icon directly.
