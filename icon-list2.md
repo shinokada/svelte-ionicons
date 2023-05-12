@@ -1,5 +1,3 @@
-# Icon list
-
 - Accessibility.svelte
 - AccessibilityOutline.svelte
 - AccessibilitySharp.svelte
@@ -1338,8 +1336,4 @@
 - Woman.svelte
 - WomanOutline.svelte
 - WomanSharp.svelte
-
-
-## Back to Home
-
-[Back to Home](/)
+- index.js
