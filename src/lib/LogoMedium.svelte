@@ -1,7 +1,7 @@
 <script>export let size="24"; export let color="currentColor"</script>
 <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 512 512" {...$$restProps} width={size} height={size} fill={color} class={$$props.class}  style="enable-background:new 0 0 512 512;" xml:space="preserve">
+	 viewBox="0 0 512 512" {...$$restProps} width={size} height={size} fill={color} class={$$props.class} on:click on:mouseenter on:mouseleave on:mouseover on:mouseout on:blur on:focus  style="enable-background:new 0 0 512 512;" xml:space="preserve">
 <g id="boxes" style="display:none;">
 </g>
 <g id="icons">
