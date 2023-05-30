@@ -91,6 +91,11 @@ To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleRe
 | class     |           |
 | ariaLabel | file name |
 
+
+## IDE support
+
+If you are using an LSP-compatible editor, such as VSCode, Atom, Sublime Text, or Neovim, hovering over a component name will display a documentation link, features, props, events, and an example.
+
 ## Size
 
 Use the `size` prop to change the size of icons.

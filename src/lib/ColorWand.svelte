@@ -15,3 +15,12 @@
 <path d="M457,389.8L307.6,240.4c-3.1-3.1-8.2-3.1-11.3,0l-55.9,55.9c-3.1,3.1-3.1,8.2,0,11.3L389.8,457c18.4,18.7,48.5,19,67.2,0.7
 	c18.7-18.4,19-48.5,0.7-67.2C457.5,390.3,457.3,390,457,389.8L457,389.8z"/>
 </svg>
+
+<!--
+  @component
+  [Go to Document](https://svelte-ionicons.codewithshin.com/)
+
+  ## Props
+  @prop size = "24";
+  @prop variation: "regular" | "outline" | "sharp" = "regular";
+-->
