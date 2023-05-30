@@ -12,12 +12,14 @@
   fill={color}
   class={$$props.class}
   on:click
+  on:keydown
+  on:keyup
+  on:focus
+  on:blur
   on:mouseenter
   on:mouseleave
   on:mouseover
   on:mouseout
-  on:blur
-  on:focus
   ><path
     d="M302.16,56.2a13.88,13.88,0,0,1-3.42,8.91l-.11,5.13-27.71-.57c0,1.3.09,2.61.16,3.91h0a177.33,177.33,0,0,0,3.45,26.31l24.72-7.18,7.81,26.88-24.71,7.18a177.21,177.21,0,0,0,13.34,27.69l21.27-15,16.16,22.86-21.29,15.05q5.25,6.33,11.11,12.19c3.91,3.91,8,7.6,12.2,11.1l15.71-22.22,22.86,16.16L358,216.75a178.78,178.78,0,0,0,27.68,13.32l7.49-25.8,26.89,7.81-7.5,25.83a177.8,177.8,0,0,0,31,3.67l-.41-24.67,17.41-.29A208,208,0,0,0,301.82,52.93,13.65,13.65,0,0,1,302.16,56.2Z"
   /><path
@@ -28,8 +30,18 @@
 >
 <!--
 @component
-[Go to Document](https://svelte-ionicons.codewithshin.com/)
+[Go to Document](https://svelte-flag-icons.codewithshin.com/)
 ## Props
-@prop size = "24";
-@prop color = "currentColor";
+@prop size = '24';
+@prop color = 'currentColor';
+## Event
+- on:click
+- on:keydown
+- on:keyup
+- on:focus
+- on:blur
+- on:mouseenter
+- on:mouseleave
+- on:mouseover
+- on:mouseout
 -->

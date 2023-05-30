@@ -12,12 +12,14 @@
   fill={color}
   class={$$props.class}
   on:click
+  on:keydown
+  on:keyup
+  on:focus
+  on:blur
   on:mouseenter
   on:mouseleave
   on:mouseover
   on:mouseout
-  on:blur
-  on:focus
   ><path
     d="M468.41,269.19c-2.64-33.39-11.76-58-31.44-57.39a1,1,0,0,0-.92,1.37c5.11,12.59,9.68,36.9,9.17,58.07a1,1,0,0,1-2,.08c-2.19-21.21-7.1-41.19-16.22-59.43a186.69,186.69,0,0,0-348.91,41A4,4,0,0,1,74.76,256l-8.65,1.22c-17.2,2.4-26.9,34.9-21.7,72.5s23.5,66.2,40.7,63.8l13.24-1.85a4,4,0,0,1,3.93,1.84,186.71,186.71,0,0,0,339-56.07,4,4,0,0,1,3.68-3.08l4.4-.24C464.51,331.59,471.11,302.89,468.41,269.19ZM94.5,270.42a1,1,0,0,1,1.59-1.19c9.63,10,20.25,27.65,23.32,49.86,3.24,23.05-2.24,45.2-9.13,57.87a1,1,0,0,1-1.84-.73c4.07-14.44,5.16-33.83,2.27-54.74C107.91,301.17,102,283.22,94.5,270.42ZM273.27,380.21a15.53,15.53,0,0,1-15.41-13.83,15.48,15.48,0,1,1,15.41,13.83Zm81.84-4.72a15.37,15.37,0,1,1,14.6-16.2A15.43,15.43,0,0,1,355.11,375.49Z"
   /><path
@@ -26,8 +28,18 @@
 >
 <!--
 @component
-[Go to Document](https://svelte-ionicons.codewithshin.com/)
+[Go to Document](https://svelte-flag-icons.codewithshin.com/)
 ## Props
-@prop size = "24";
-@prop color = "currentColor";
+@prop size = '24';
+@prop color = 'currentColor';
+## Event
+- on:click
+- on:keydown
+- on:keyup
+- on:focus
+- on:blur
+- on:mouseenter
+- on:mouseleave
+- on:mouseover
+- on:mouseout
 -->

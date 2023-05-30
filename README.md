@@ -138,15 +138,15 @@ If you want to make an icon unfocusable, add `tabindex="-1"`.
 
 All icons have the following events:
 
-```
-on:click
-on:mouseenter
-on:mouseleave
-on:mouseover
-on:mouseout
-on:blur
-on:focus
-```
+- on:click
+- on:keydown
+- on:keyup
+- on:focus
+- on:blur
+- on:mouseenter
+- on:mouseleave
+- on:mouseover
+- on:mouseout
 
 ## Passing down other attributes
 
