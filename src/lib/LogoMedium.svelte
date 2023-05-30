@@ -13,10 +13,9 @@
 </svg>
 
 <!--
-  @component
-  [Go to Document](https://svelte-ionicons.codewithshin.com/)
-
-  ## Props
-  @prop size = "24";
-  @prop variation: "regular" | "outline" | "sharp" = "regular";
+@component
+[Go to Document](https://svelte-ionicons.codewithshin.com/)
+## Props
+@prop size = "24";
+@prop color = "currentColor";
 -->
