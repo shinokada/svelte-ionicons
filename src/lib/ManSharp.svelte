@@ -1,4 +1,27 @@
-<script>export let size="24"; export let color="currentColor"</script><svg xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 512 512" {...$$restProps} width={size} height={size} fill={color} class={$$props.class} on:click on:mouseenter on:mouseleave on:mouseover on:mouseout on:blur on:focus ><circle cx="256" cy="56" r="56"/><path d="M336,128H176a32,32,0,0,0-32,32V320h48V192h8V512h52V328h8V512h52V192h8V320h48V160A32,32,0,0,0,336,128Z"/></svg>
+<script>
+  export let size = '24';
+  export let color = 'currentColor';
+</script>
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 512 512"
+  {...$$restProps}
+  width={size}
+  height={size}
+  fill={color}
+  class={$$props.class}
+  on:click
+  on:mouseenter
+  on:mouseleave
+  on:mouseover
+  on:mouseout
+  on:blur
+  on:focus
+  ><circle cx="256" cy="56" r="56" /><path
+    d="M336,128H176a32,32,0,0,0-32,32V320h48V192h8V512h52V328h8V512h52V192h8V320h48V160A32,32,0,0,0,336,128Z"
+  /></svg
+>
 <!--
 @component
 [Go to Document](https://svelte-ionicons.codewithshin.com/)

@@ -36,12 +36,11 @@ npm i -D svelte-ionicons
 
 [Icon images](/icon-images.md)
 
-
 ## Usages
 
 ```html
 <script>
-  import { AddSharp	} from 'svelte-ionicons';
+  import { AddSharp } from 'svelte-ionicons';
 </script>
 
 <AddSharp size="40" />
@@ -90,7 +89,6 @@ To avoid any complaints from the editor, add `node16` or `nodenext` to `moduleRe
 | size      | 15        |
 | class     |           |
 | ariaLabel | file name |
-
 
 ## IDE support
 
@@ -172,7 +170,6 @@ Use `import * as Icon from 'svelte-heros`.
 ```
 
 ## Original source
-
 
 - [Ionicons](https://ionic.io/ionicons)
 - [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
