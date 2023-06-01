@@ -4,17 +4,15 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.5.5](https://github.com/shinokada/svelte-ionicons/compare/v0.5.4...v0.5.5) (2023-06-01)
 
-
 ### Features
 
-* add || ^4.0.0 to peerDependencies ([d849d15](https://github.com/shinokada/svelte-ionicons/commit/d849d15c90fe2d2c5082ff73acab3b0d0bba182b))
+- add || ^4.0.0 to peerDependencies ([d849d15](https://github.com/shinokada/svelte-ionicons/commit/d849d15c90fe2d2c5082ff73acab3b0d0bba182b))
 
 ### [0.5.4](https://github.com/shinokada/svelte-ionicons/compare/v0.5.3...v0.5.4) (2023-05-30)
 
-
 ### Features
 
-* add component docs ([7c58056](https://github.com/shinokada/svelte-ionicons/commit/7c580569b30a188de6f29abd5b4a1dec135e467a))
+- add component docs ([7c58056](https://github.com/shinokada/svelte-ionicons/commit/7c580569b30a188de6f29abd5b4a1dec135e467a))
 
 ### [0.5.3](https://github.com/shinokada/svelte-ionicons/compare/v0.5.2...v0.5.3) (2023-05-30)
 

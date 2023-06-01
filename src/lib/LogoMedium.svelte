@@ -1,5 +1,6 @@
 <script>
   export let size = '24';
+  export let role = 'img';
   export let color = 'currentColor';
 </script>
 
@@ -12,6 +13,7 @@
   y="0px"
   viewBox="0 0 512 512"
   {...$$restProps}
+  {role}
   width={size}
   height={size}
   fill={color}
@@ -44,6 +46,7 @@
 [Go to Document](https://svelte-flag-icons.codewithshin.com/)
 ## Props
 @prop size = '24';
+@prop role = 'img';
 @prop color = 'currentColor';
 ## Event
 - on:click
