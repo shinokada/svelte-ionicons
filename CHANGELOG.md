@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.5](https://github.com/shinokada/svelte-ionicons/compare/v0.5.4...v0.5.5) (2023-06-01)
+
+
+### Features
+
+* add || ^4.0.0 to peerDependencies ([d849d15](https://github.com/shinokada/svelte-ionicons/commit/d849d15c90fe2d2c5082ff73acab3b0d0bba182b))
+
 ### [0.5.4](https://github.com/shinokada/svelte-ionicons/compare/v0.5.3...v0.5.4) (2023-05-30)
 
 
