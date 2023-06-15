@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.5.6](https://github.com/shinokada/svelte-ionicons/compare/v0.5.5...v0.5.6) (2023-06-01)
 
-
 ### Features
 
-* add prop role="img" ([61c8d84](https://github.com/shinokada/svelte-ionicons/commit/61c8d844eacd5f7136140d4705e8683e3b08e841))
+- add prop role="img" ([61c8d84](https://github.com/shinokada/svelte-ionicons/commit/61c8d844eacd5f7136140d4705e8683e3b08e841))
 
 ### [0.5.5](https://github.com/shinokada/svelte-ionicons/compare/v0.5.4...v0.5.5) (2023-06-01)
 
