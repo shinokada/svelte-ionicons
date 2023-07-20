@@ -8,7 +8,7 @@
     "url": "https://blog.codewithshin.com"
   },
   "bugs": "https://github.com/shinokada/svelte-ionicons/issues",
-  "homepage": "https://svelte-ionicons.codewithshin.com",
+  "homepage": "https://svelte-ionicons.vercel.app",
   "license": "MIT",
   "scripts": {
     "dev": "vite dev",
