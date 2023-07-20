@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.5.8](https://github.com/shinokada/svelte-ionicons/compare/v0.5.7...v0.5.8) (2023-07-20)
+
+
+### Features
+
+* add size range ([e7bef0d](https://github.com/shinokada/svelte-ionicons/commit/e7bef0d3f1b8b61c626996279925e9592200d739))
+
+
+### Bug Fixes
+
+* homepage update ([0c06df3](https://github.com/shinokada/svelte-ionicons/commit/0c06df331fd1ae0ce7bb21985ff92c94430c1c46))
+* remove .vercel ([d3ae681](https://github.com/shinokada/svelte-ionicons/commit/d3ae681e9cc0fa7bb74b5dedb14deb8fc14345e8))
+* update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([320342d](https://github.com/shinokada/svelte-ionicons/commit/320342de04764ad2084211842ad28361b4afd0cb))
+
 ### [0.5.7](https://github.com/shinokada/svelte-ionicons/compare/v0.5.6...v0.5.7) (2023-06-15)
 
 ### [0.5.6](https://github.com/shinokada/svelte-ionicons/compare/v0.5.5...v0.5.6) (2023-06-01)
