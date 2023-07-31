@@ -35,7 +35,7 @@ viewBox="0 0 {displayIcon.box} {displayIcon.box}"
 
 <!--
 @component
-[Go to Document](https://shinokada.github.io/svelte-ionicons/)
+[Go to Document](https://svelte-ionicons.vercel.app/)
 ## Props
 @prop name;
 @prop width = "24";

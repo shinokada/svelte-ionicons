@@ -87,6 +87,10 @@
     "./Icon.svelte": {
       "types": "./dist/Icon.svelte.d.ts",
       "svelte": "./dist/Icon.svelte"
+    },
+    "./icons.js": {
+      "types": "./dist/icons.d.ts",
+      "svelte": "./dist/icons.js"
     }
   }
 }
