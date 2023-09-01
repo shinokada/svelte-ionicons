@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.2](https://github.com/shinokada/svelte-ionicons/compare/v0.7.1...v0.7.2) (2023-09-01)
+
+
+### Bug Fixes
+
+* change stroke to currentColor ([441dd15](https://github.com/shinokada/svelte-ionicons/commit/441dd152d288746117999e99cb590dfa1413187e))
+
 ### [0.7.1](https://github.com/shinokada/svelte-ionicons/compare/v0.6.5...v0.7.1) (2023-09-01)
 
 ### Features
