@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.7.1](https://github.com/shinokada/svelte-ionicons/compare/v0.6.5...v0.7.1) (2023-09-01)
 
-
 ### Features
 
-* smaller compiled size and Icon component ([4ed5a54](https://github.com/shinokada/svelte-ionicons/commit/4ed5a54ff1227e37522c8d4cb3b603a6f9166e81))
+- smaller compiled size and Icon component ([4ed5a54](https://github.com/shinokada/svelte-ionicons/commit/4ed5a54ff1227e37522c8d4cb3b603a6f9166e81))
 
 ### [0.6.5](https://github.com/shinokada/svelte-ionicons/compare/v0.6.4...v0.6.5) (2023-08-03)
 

@@ -24,7 +24,7 @@
   on:mouseout
   ><path
     fill="none"
-    stroke="#000"
+    stroke="currentColor"
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke-width="32"

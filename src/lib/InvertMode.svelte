@@ -24,7 +24,7 @@
   on:mouseout
   ><circle
     fill="none"
-    stroke="#000"
+    stroke="currentColor"
     stroke-miterlimit="10"
     stroke-width="32"
     cx="256"

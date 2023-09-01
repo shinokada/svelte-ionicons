@@ -24,14 +24,14 @@
   on:mouseout
   ><polyline
     fill="none"
-    stroke="#000"
+    stroke="currentColor"
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke-width="32"
     points="320 264 230.4 376 192 331.12"
   /><path
     fill="none"
-    stroke="#000"
+    stroke="currentColor"
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke-width="32"
@@ -39,7 +39,7 @@
     d="M80,176a16,16,0,0,0-16,16V408c0,30.24,25.76,56,56,56H392c30.24,0,56-24.51,56-54.75V192a16,16,0,0,0-16-16Z"
   /><path
     fill="none"
-    stroke="#000"
+    stroke="currentColor"
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke-width="32"

@@ -30,7 +30,7 @@
     height="448"
     rx="48"
     fill="none"
-    stroke="#000"
+    stroke="currentColor"
     stroke-linejoin="round"
     stroke-width="32"
   /><line
@@ -39,7 +39,7 @@
     x2="304"
     y2="80"
     fill="none"
-    stroke="#000"
+    stroke="currentColor"
     stroke-linecap="round"
     stroke-linejoin="round"
     stroke-width="32"
