@@ -9,4 +9,3 @@ test('Icons page has expected h1', async ({ page }) => {
   await page.goto('/icons');
   expect(await page.textContent('h1')).toBe('Svelte Ionicons: Icons');
 });
-

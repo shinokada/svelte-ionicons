@@ -16,7 +16,8 @@
   $: activeUrl = $page.url.pathname;
   const title = 'Svelte Ionicons';
   let divClass = 'w-full ml-auto lg:block lg:w-auto order-1 lg:order-none';
-  let ulClass = 'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium gap-4 dark:lg:bg-transparent lg:bg-white lg:border-0';
+  let ulClass =
+    'flex flex-col py-3 my-4 lg:flex-row lg:my-0 text-sm font-medium gap-4 dark:lg:bg-transparent lg:bg-white lg:border-0';
 </script>
 
 <MetaTags
@@ -66,9 +67,8 @@
     >
       <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/'} href="/">Home</NavLi>
       <NavLi class="lg:px-2 lg:mb-0" active={activeUrl === '/icons'} href="/icons">Icons</NavLi>
-      <NavLi
-        class="lg:px-2 lg:mb-0"
-        href="https://github.com/shinokada/svelte-ionicons">GitHub</NavLi
+      <NavLi class="lg:px-2 lg:mb-0" href="https://github.com/shinokada/svelte-ionicons"
+        >GitHub</NavLi
       >
       <NavLi href="https://svelte-svg-icons.vercel.app/">Icon sets</NavLi>
     </NavUl>
@@ -94,9 +94,8 @@
     >
       <FooterLink class="lg:px-2 lg:mb-0">Home</FooterLink>
       <FooterLink class="lg:px-2 lg:mb-0" href="/icons">Icons</FooterLink>
-      <FooterLink
-        class="lg:px-2 lg:mb-0"
-        href="https://github.com/shinokada/svelte-ionicons">GitHub</FooterLink
+      <FooterLink class="lg:px-2 lg:mb-0" href="https://github.com/shinokada/svelte-ionicons"
+        >GitHub</FooterLink
       >
       <FooterLink href="https://svelte-svg-icons.vercel.app/">Icon sets</FooterLink>
     </FooterLinkGroup>

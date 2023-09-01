@@ -6,45 +6,39 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.6.4](https://github.com/shinokada/svelte-ionicons/compare/v0.6.3...v0.6.4) (2023-07-31)
 
-
 ### Bug Fixes
 
-* component doc update ([a6c827f](https://github.com/shinokada/svelte-ionicons/commit/a6c827fbf4cf5dbdc932b6e2e049cdca18dde1da))
+- component doc update ([a6c827f](https://github.com/shinokada/svelte-ionicons/commit/a6c827fbf4cf5dbdc932b6e2e049cdca18dde1da))
 
 ### [0.6.3](https://github.com/shinokada/svelte-ionicons/compare/v0.6.2...v0.6.3) (2023-07-29)
 
-
 ### Bug Fixes
 
-* update add-exports-to-package-json ([466a061](https://github.com/shinokada/svelte-ionicons/commit/466a0617f681a408100879aeaf263cb53713d719))
+- update add-exports-to-package-json ([466a061](https://github.com/shinokada/svelte-ionicons/commit/466a0617f681a408100879aeaf263cb53713d719))
 
 ### [0.6.2](https://github.com/shinokada/svelte-ionicons/compare/v0.6.1...v0.6.2) (2023-07-29)
 
-
 ### Bug Fixes
 
-* add main to package.json ([fc9fe1c](https://github.com/shinokada/svelte-ionicons/commit/fc9fe1c67ec56a3954c543dcf0998859e97dde45))
+- add main to package.json ([fc9fe1c](https://github.com/shinokada/svelte-ionicons/commit/fc9fe1c67ec56a3954c543dcf0998859e97dde45))
 
 ### [0.6.1](https://github.com/shinokada/svelte-ionicons/compare/v0.5.8...v0.6.1) (2023-07-29)
 
-
 ### Features
 
-* use two files ([a4bbbd0](https://github.com/shinokada/svelte-ionicons/commit/a4bbbd09ddb96c301ab3ab6e16ab6498d520360e))
+- use two files ([a4bbbd0](https://github.com/shinokada/svelte-ionicons/commit/a4bbbd09ddb96c301ab3ab6e16ab6498d520360e))
 
 ### [0.5.8](https://github.com/shinokada/svelte-ionicons/compare/v0.5.7...v0.5.8) (2023-07-20)
 
-
 ### Features
 
-* add size range ([e7bef0d](https://github.com/shinokada/svelte-ionicons/commit/e7bef0d3f1b8b61c626996279925e9592200d739))
-
+- add size range ([e7bef0d](https://github.com/shinokada/svelte-ionicons/commit/e7bef0d3f1b8b61c626996279925e9592200d739))
 
 ### Bug Fixes
 
-* homepage update ([0c06df3](https://github.com/shinokada/svelte-ionicons/commit/0c06df331fd1ae0ce7bb21985ff92c94430c1c46))
-* remove .vercel ([d3ae681](https://github.com/shinokada/svelte-ionicons/commit/d3ae681e9cc0fa7bb74b5dedb14deb8fc14345e8))
-* update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([320342d](https://github.com/shinokada/svelte-ionicons/commit/320342de04764ad2084211842ad28361b4afd0cb))
+- homepage update ([0c06df3](https://github.com/shinokada/svelte-ionicons/commit/0c06df331fd1ae0ce7bb21985ff92c94430c1c46))
+- remove .vercel ([d3ae681](https://github.com/shinokada/svelte-ionicons/commit/d3ae681e9cc0fa7bb74b5dedb14deb8fc14345e8))
+- update flowbite-svelte v0.40.1, add @floating-ui/dom remove flowbite and popper, add tests ([320342d](https://github.com/shinokada/svelte-ionicons/commit/320342de04764ad2084211842ad28361b4afd0cb))
 
 ### [0.5.7](https://github.com/shinokada/svelte-ionicons/compare/v0.5.6...v0.5.7) (2023-06-15)
 
