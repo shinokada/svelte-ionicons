@@ -4,6 +4,7 @@
   export let size = ctx.size || '24';
   export let role = ctx.role || 'img';
   export let color = ctx.color || 'currentColor';
+  export let ariaLabel = 'MaleOutline';
 </script>
 
 <svg
@@ -14,6 +15,7 @@
   width={size}
   height={size}
   fill={color}
+  aria-label={ariaLabel}
   class={$$props.class}
   on:click
   on:keydown
@@ -60,4 +62,5 @@
 @prop export let size = ctx.size || '24';
 @prop export let role = ctx.role || 'img';
 @prop export let color = ctx.color || 'currentColor';
+@prop export let ariaLabel = 'MaleOutline';
 -->

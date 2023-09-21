@@ -4,6 +4,7 @@
   export let size = ctx.size || '24';
   export let role = ctx.role || 'img';
   export let color = ctx.color || 'currentColor';
+  export let ariaLabel = 'LogoMedium';
 </script>
 
 <!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -19,6 +20,7 @@
   width={size}
   height={size}
   fill={color}
+  aria-label={ariaLabel}
   class={$$props.class}
   on:click
   on:keydown
@@ -50,4 +52,5 @@
 @prop export let size = ctx.size || '24';
 @prop export let role = ctx.role || 'img';
 @prop export let color = ctx.color || 'currentColor';
+@prop export let ariaLabel = 'LogoMedium';
 -->
