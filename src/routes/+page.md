@@ -20,17 +20,6 @@ Thank you for considering my open-source package. If you use it in a commercial 
 
 [GitHub Repo](https://github.com/shinokada/svelte-ionicons)
 
-## Original source
-
-- [Ionicons](https://ionic.io/ionicons)
-- [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
-
-## License
-
-[Svelte-Ionicon License](https://github.com/shinokada/svelte-ionicons/blob/main/LICENSE)
-
-[Ionicons LICENSE](https://github.com/ionic-team/ionicons/blob/main/LICENSE)
-
 ## Installation
 
 ```sh
@@ -326,6 +315,17 @@ Use `import * as Icon from 'svelte-heros`.
 <Icon.WalkSharp size="40" class="mx-4" />
 ```
 
+## Original source
+
+- [Ionicons](https://ionic.io/ionicons)
+- [Ionicons GitHub Repo](https://github.com/ionic-team/ionicons)
+
+## License
+
+[Svelte-Ionicon License](https://github.com/shinokada/svelte-ionicons/blob/main/LICENSE)
+
+[Ionicons LICENSE](https://github.com/ionic-team/ionicons/blob/main/LICENSE)
+
 ## Other icons
 
-[Svelte-Icon-Sets](https://svelte-svg-icons.vercel.app/)
+[Svelte-Icon-Sets](https://svelte-svg-icons.codewithshin.com/)
