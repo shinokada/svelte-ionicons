@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/shinokada/svelte-ionicons/compare/v1.1.1...v1.1.2) (2024-03-01)
+
+
+### Bug Fixes
+
+* @typescript-eslint/eslint-plugin update ([fc6ac22](https://github.com/shinokada/svelte-ionicons/commit/fc6ac220d02f97d4e33b59c0af5faafafe2cf70e))
+
 ### [1.1.1](https://github.com/shinokada/svelte-ionicons/compare/v1.1.0...v1.1.1) (2024-03-01)
 
 
