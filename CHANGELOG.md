@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/shinokada/svelte-ionicons/compare/v1.1.0...v1.1.1) (2024-03-01)
+
+
+### Bug Fixes
+
+* layout update add class to NavHamburger ([34819ef](https://github.com/shinokada/svelte-ionicons/commit/34819efe38036c49129e815b2a41353ef695e615))
+* remove active from NavLi and add activeUrl to NavUl ([9b4133a](https://github.com/shinokada/svelte-ionicons/commit/9b4133a11104e573f8c642047071d0df329cb60a))
+
 ## [1.1.0](https://github.com/shinokada/svelte-ionicons/compare/v0.7.2...v1.1.0) (2024-01-27)
 
 ### Features
