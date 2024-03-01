@@ -4,16 +4,14 @@ All notable changes to this project will be documented in this file. See [standa
 
 ## [1.1.0](https://github.com/shinokada/svelte-ionicons/compare/v0.7.2...v1.1.0) (2024-01-27)
 
-
 ### Features
 
-* add context ([234574e](https://github.com/shinokada/svelte-ionicons/commit/234574ebb4841b1455a691efba4186c1d8287eb7))
-* add sidebar menu ([ba45b1f](https://github.com/shinokada/svelte-ionicons/commit/ba45b1f1bc9fadbb3af1a1e55a38e7cff4a4b3ed))
-
+- add context ([234574e](https://github.com/shinokada/svelte-ionicons/commit/234574ebb4841b1455a691efba4186c1d8287eb7))
+- add sidebar menu ([ba45b1f](https://github.com/shinokada/svelte-ionicons/commit/ba45b1f1bc9fadbb3af1a1e55a38e7cff4a4b3ed))
 
 ### Bug Fixes
 
-* add aria-label ([46447d7](https://github.com/shinokada/svelte-ionicons/commit/46447d782d131da7175ad80efe99e273f616cd05))
+- add aria-label ([46447d7](https://github.com/shinokada/svelte-ionicons/commit/46447d782d131da7175ad80efe99e273f616cd05))
 
 ### [0.7.2](https://github.com/shinokada/svelte-ionicons/compare/v0.7.1...v0.7.2) (2023-09-01)
 

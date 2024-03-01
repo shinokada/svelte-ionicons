@@ -5443,6 +5443,7 @@
     "./WomanSharp.svelte": {
       "types": "./dist/WomanSharp.svelte.d.ts",
       "svelte": "./dist/WomanSharp.svelte"
-    }
+    },
+    "./package.json": "./package.json"
   }
 }
