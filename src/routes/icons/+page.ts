@@ -6,11 +6,11 @@ export const load = () => {
     description: 'Icons',
     og: {
       title: 'Icons - Svelte Ionicons',
-      description: 'Icons',
+      description: 'Icons'
     },
     twitter: {
       title: 'Icons - Svelte Ionicons',
-      description: 'Icons',
+      description: 'Icons'
     }
   }) satisfies MetaProps;
   return { pageMetaTags };

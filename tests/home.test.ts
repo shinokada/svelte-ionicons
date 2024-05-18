@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('index page has expected h1', async ({ page }) => {
-	await expect(page.getByRole('heading', { name: 'Svelte Ionicons', level: 1 })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Svelte Ionicons', level: 1 })).toBeVisible();
 });
 
 test('index page has expected meta title', async ({ page }) => {
@@ -15,19 +15,28 @@ test('index page has expected meta title', async ({ page }) => {
 
 test('index page has expected meta description', async ({ page }) => {
   const metaDescription = page.locator('meta[name="description"]');
-  await expect(metaDescription).toHaveAttribute('content', '1330+ Ionicon SVG icons for Svelte/SveltKit');
+  await expect(metaDescription).toHaveAttribute(
+    'content',
+    '1330+ Ionicon SVG icons for Svelte/SveltKit'
+  );
 });
 
 test('index page has expected meta keywords', async ({ page }) => {
   const metaKeywords = page.locator('meta[name="keywords"]');
-  await expect(metaKeywords).toHaveAttribute('content', 'svelte, runes, Ionicons, svg icons, icons, sveltekit');
+  await expect(metaKeywords).toHaveAttribute(
+    'content',
+    'svelte, runes, Ionicons, svg icons, icons, sveltekit'
+  );
 });
 
 test('index page has expected meta og', async ({ page }) => {
   const metaOgTitle = page.locator('meta[property="og:title"]');
   await expect(metaOgTitle).toHaveAttribute('content', 'Svelte Ionicons');
   const metaOgDescription = page.locator('meta[property="og:description"]');
-  await expect(metaOgDescription).toHaveAttribute('content', '1330+ Ionicon SVG icons for Svelte/SveltKit');
+  await expect(metaOgDescription).toHaveAttribute(
+    'content',
+    '1330+ Ionicon SVG icons for Svelte/SveltKit'
+  );
   const metaOgUrl = page.locator('meta[property="og:url"]');
   await expect(metaOgUrl).toHaveAttribute('content', 'http://localhost:4173/');
   const metaOgImage = page.locator('meta[property="og:image"]');
@@ -41,7 +50,10 @@ test('index page has expected meta twitter', async ({ page }) => {
   const metaTwitterTitle = page.locator('meta[name="twitter:title"]');
   await expect(metaTwitterTitle).toHaveAttribute('content', 'Svelte Ionicons');
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
-  await expect(metaTwitterDescription).toHaveAttribute('content', '1330+ Ionicon SVG icons for Svelte/SveltKit');
+  await expect(metaTwitterDescription).toHaveAttribute(
+    'content',
+    '1330+ Ionicon SVG icons for Svelte/SveltKit'
+  );
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
   await expect(metaTwitterImage).toHaveAttribute(
     'content',

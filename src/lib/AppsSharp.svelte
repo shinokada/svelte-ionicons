@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import { getContext } from 'svelte';
   type TitleType = {
     id?: string;
@@ -20,25 +20,25 @@
   }
   interface CtxType extends BaseProps {}
   const ctx: CtxType = getContext('iconCtx') ?? {};
-  interface Props extends BaseProps{
+  interface Props extends BaseProps {
     title?: TitleType;
     desc?: DescType;
     ariaLabel?: string;
   }
 
-  let { 
-    size = ctx.size || '24', 
-    role = ctx.role || 'img', 
-    color = ctx.color || 'currentColor', 
-    withEvents = ctx.withEvents || false, 
-    title, 
-    desc, 
-    class: classname, 
-    ariaLabel =  "apps sharp" , 
-    onclick, 
-    onkeydown, 
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    withEvents = ctx.withEvents || false,
+    title,
+    desc,
+    class: classname,
+    ariaLabel = 'apps sharp',
+    onclick,
+    onkeydown,
     onkeyup,
-    ...restProps 
+    ...restProps
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
@@ -57,17 +57,45 @@
     aria-label={ariaLabel}
     aria-describedby={hasDescription ? ariaDescribedby : undefined}
     viewBox="0 0 512 512"
-    onclick={onclick}
-    onkeydown={onkeydown}
-    onkeyup={onkeyup}
+    {onclick}
+    {onkeydown}
+    {onkeyup}
   >
     {#if title?.id && title.title}
-      <title id="{title.id}">{title.title}</title>
+      <title id={title.id}>{title.title}</title>
     {/if}
     {#if desc?.id && desc.desc}
-      <desc id="{desc.id}">{desc.desc}</desc>
+      <desc id={desc.id}>{desc.desc}</desc>
     {/if}
-      <rect x="48" y="48" width="112" height="112" rx="8" ry="8"/><rect x="200" y="48" width="112" height="112" rx="8" ry="8"/><rect x="352" y="48" width="112" height="112" rx="8" ry="8"/><rect x="48" y="200" width="112" height="112" rx="8" ry="8"/><rect x="200" y="200" width="112" height="112" rx="8" ry="8"/><rect x="352" y="200" width="112" height="112" rx="8" ry="8"/><rect x="48" y="352" width="112" height="112" rx="8" ry="8"/><rect x="200" y="352" width="112" height="112" rx="8" ry="8"/><rect x="352" y="352" width="112" height="112" rx="8" ry="8"/>
+    <rect x="48" y="48" width="112" height="112" rx="8" ry="8" /><rect
+      x="200"
+      y="48"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="352" y="48" width="112" height="112" rx="8" ry="8" /><rect
+      x="48"
+      y="200"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="200" y="200" width="112" height="112" rx="8" ry="8" /><rect
+      x="352"
+      y="200"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="48" y="352" width="112" height="112" rx="8" ry="8" /><rect
+      x="200"
+      y="352"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="352" y="352" width="112" height="112" rx="8" ry="8" />
   </svg>
 {:else}
   <svg
@@ -83,11 +111,46 @@
     viewBox="0 0 512 512"
   >
     {#if title?.id && title.title}
-      <title id="{title.id}">{title.title}</title>
+      <title id={title.id}>{title.title}</title>
     {/if}
     {#if desc?.id && desc.desc}
-      <desc id="{desc.id}">{desc.desc}</desc>
+      <desc id={desc.id}>{desc.desc}</desc>
     {/if}
-      <rect x="48" y="48" width="112" height="112" rx="8" ry="8"/><rect x="200" y="48" width="112" height="112" rx="8" ry="8"/><rect x="352" y="48" width="112" height="112" rx="8" ry="8"/><rect x="48" y="200" width="112" height="112" rx="8" ry="8"/><rect x="200" y="200" width="112" height="112" rx="8" ry="8"/><rect x="352" y="200" width="112" height="112" rx="8" ry="8"/><rect x="48" y="352" width="112" height="112" rx="8" ry="8"/><rect x="200" y="352" width="112" height="112" rx="8" ry="8"/><rect x="352" y="352" width="112" height="112" rx="8" ry="8"/>
+    <rect x="48" y="48" width="112" height="112" rx="8" ry="8" /><rect
+      x="200"
+      y="48"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="352" y="48" width="112" height="112" rx="8" ry="8" /><rect
+      x="48"
+      y="200"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="200" y="200" width="112" height="112" rx="8" ry="8" /><rect
+      x="352"
+      y="200"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="48" y="352" width="112" height="112" rx="8" ry="8" /><rect
+      x="200"
+      y="352"
+      width="112"
+      height="112"
+      rx="8"
+      ry="8"
+    /><rect x="352" y="352" width="112" height="112" rx="8" ry="8" />
   </svg>
 {/if}
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

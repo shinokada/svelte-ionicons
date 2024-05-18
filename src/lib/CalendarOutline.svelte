@@ -1,4 +1,4 @@
-<script lang='ts'>
+<script lang="ts">
   import { getContext } from 'svelte';
   type TitleType = {
     id?: string;
@@ -20,25 +20,25 @@
   }
   interface CtxType extends BaseProps {}
   const ctx: CtxType = getContext('iconCtx') ?? {};
-  interface Props extends BaseProps{
+  interface Props extends BaseProps {
     title?: TitleType;
     desc?: DescType;
     ariaLabel?: string;
   }
 
-  let { 
-    size = ctx.size || '24', 
-    role = ctx.role || 'img', 
-    color = ctx.color || 'currentColor', 
-    withEvents = ctx.withEvents || false, 
-    title, 
-    desc, 
-    class: classname, 
-    ariaLabel =  "calendar outline" , 
-    onclick, 
-    onkeydown, 
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    withEvents = ctx.withEvents || false,
+    title,
+    desc,
+    class: classname,
+    ariaLabel = 'calendar outline',
+    onclick,
+    onkeydown,
     onkeyup,
-    ...restProps 
+    ...restProps
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
@@ -57,17 +57,68 @@
     aria-label={ariaLabel}
     aria-describedby={hasDescription ? ariaDescribedby : undefined}
     viewBox="0 0 512 512"
-    onclick={onclick}
-    onkeydown={onkeydown}
-    onkeyup={onkeyup}
+    {onclick}
+    {onkeydown}
+    {onkeyup}
   >
     {#if title?.id && title.title}
-      <title id="{title.id}">{title.title}</title>
+      <title id={title.id}>{title.title}</title>
     {/if}
     {#if desc?.id && desc.desc}
-      <desc id="{desc.id}">{desc.desc}</desc>
+      <desc id={desc.id}>{desc.desc}</desc>
     {/if}
-      <rect fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" x="48" y="80" width="416" height="384" rx="48"/><circle cx="296" cy="232" r="24"/><circle cx="376" cy="232" r="24"/><circle cx="296" cy="312" r="24"/><circle cx="376" cy="312" r="24"/><circle cx="136" cy="312" r="24"/><circle cx="216" cy="312" r="24"/><circle cx="136" cy="392" r="24"/><circle cx="216" cy="392" r="24"/><circle cx="296" cy="392" r="24"/><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" stroke-linecap="round" x1="128" y1="48" x2="128" y2="80"/><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" stroke-linecap="round" x1="384" y1="48" x2="384" y2="80"/><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" x1="464" y1="160" x2="48" y2="160"/>
+    <rect
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      x="48"
+      y="80"
+      width="416"
+      height="384"
+      rx="48"
+    /><circle cx="296" cy="232" r="24" /><circle cx="376" cy="232" r="24" /><circle
+      cx="296"
+      cy="312"
+      r="24"
+    /><circle cx="376" cy="312" r="24" /><circle cx="136" cy="312" r="24" /><circle
+      cx="216"
+      cy="312"
+      r="24"
+    /><circle cx="136" cy="392" r="24" /><circle cx="216" cy="392" r="24" /><circle
+      cx="296"
+      cy="392"
+      r="24"
+    /><line
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      stroke-linecap="round"
+      x1="128"
+      y1="48"
+      x2="128"
+      y2="80"
+    /><line
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      stroke-linecap="round"
+      x1="384"
+      y1="48"
+      x2="384"
+      y2="80"
+    /><line
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      x1="464"
+      y1="160"
+      x2="48"
+      y2="160"
+    />
   </svg>
 {:else}
   <svg
@@ -83,11 +134,69 @@
     viewBox="0 0 512 512"
   >
     {#if title?.id && title.title}
-      <title id="{title.id}">{title.title}</title>
+      <title id={title.id}>{title.title}</title>
     {/if}
     {#if desc?.id && desc.desc}
-      <desc id="{desc.id}">{desc.desc}</desc>
+      <desc id={desc.id}>{desc.desc}</desc>
     {/if}
-      <rect fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" x="48" y="80" width="416" height="384" rx="48"/><circle cx="296" cy="232" r="24"/><circle cx="376" cy="232" r="24"/><circle cx="296" cy="312" r="24"/><circle cx="376" cy="312" r="24"/><circle cx="136" cy="312" r="24"/><circle cx="216" cy="312" r="24"/><circle cx="136" cy="392" r="24"/><circle cx="216" cy="392" r="24"/><circle cx="296" cy="392" r="24"/><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" stroke-linecap="round" x1="128" y1="48" x2="128" y2="80"/><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" stroke-linecap="round" x1="384" y1="48" x2="384" y2="80"/><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" x1="464" y1="160" x2="48" y2="160"/>
+    <rect
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      x="48"
+      y="80"
+      width="416"
+      height="384"
+      rx="48"
+    /><circle cx="296" cy="232" r="24" /><circle cx="376" cy="232" r="24" /><circle
+      cx="296"
+      cy="312"
+      r="24"
+    /><circle cx="376" cy="312" r="24" /><circle cx="136" cy="312" r="24" /><circle
+      cx="216"
+      cy="312"
+      r="24"
+    /><circle cx="136" cy="392" r="24" /><circle cx="216" cy="392" r="24" /><circle
+      cx="296"
+      cy="392"
+      r="24"
+    /><line
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      stroke-linecap="round"
+      x1="128"
+      y1="48"
+      x2="128"
+      y2="80"
+    /><line
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      stroke-linecap="round"
+      x1="384"
+      y1="48"
+      x2="384"
+      y2="80"
+    /><line
+      fill="none"
+      stroke="currentColor"
+      stroke-linejoin="round"
+      stroke-width="32"
+      x1="464"
+      y1="160"
+      x2="48"
+      y2="160"
+    />
   </svg>
 {/if}
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

@@ -24,7 +24,10 @@ test('Guide home page has expected meta og', async ({ page }) => {
   const metaOgDescription = page.locator('meta[property="og:description"]');
   await expect(metaOgDescription).toHaveAttribute('content', 'Getting Started - Svelte Ionicons');
   const metaOgUrl = page.locator('meta[property="og:url"]');
-  await expect(metaOgUrl).toHaveAttribute('content', 'http://localhost:4173/guide/svelte-4/getting-started');
+  await expect(metaOgUrl).toHaveAttribute(
+    'content',
+    'http://localhost:4173/guide/svelte-4/getting-started'
+  );
   const metaOgImage = page.locator('meta[property="og:image"]');
   await expect(metaOgImage).toHaveAttribute(
     'content',
@@ -36,7 +39,10 @@ test('Guide home page has expected meta twitter', async ({ page }) => {
   const metaTwitterTitle = page.locator('meta[name="twitter:title"]');
   await expect(metaTwitterTitle).toHaveAttribute('content', 'Getting Started - Svelte Ionicons');
   const metaTwitterDescription = page.locator('meta[name="twitter:description"]');
-  await expect(metaTwitterDescription).toHaveAttribute('content', 'Getting Started - Svelte Ionicons');
+  await expect(metaTwitterDescription).toHaveAttribute(
+    'content',
+    'Getting Started - Svelte Ionicons'
+  );
   const metaTwitterImage = page.locator('meta[name="twitter:image"]');
   await expect(metaTwitterImage).toHaveAttribute(
     'content',
