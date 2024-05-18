@@ -27,8 +27,16 @@ See the [Svelte Ionicons documentation](https://svelte-ionicons.codewithshin.com
 
 ## Installation
 
+### Svelte 4/5
+
 ```sh
 pnpm i -D svelte-ionicons
+```
+
+### Svelte 5:Runes
+
+```sh
+pnpm i -D svelte-ionicons@next
 ```
 
 ## Original source
