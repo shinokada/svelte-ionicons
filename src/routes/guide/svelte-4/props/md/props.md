@@ -1,0 +1,4 @@
+- size = ctx.size || ‘24’;
+- role = ctx.role || ‘img’;
+- color = ctx.color || ‘currentColor’;
+- ariaLabel = ‘<icon file name>’;

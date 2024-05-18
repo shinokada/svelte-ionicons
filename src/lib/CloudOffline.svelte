@@ -1,46 +1,93 @@
-<script>
+<script lang='ts'>
   import { getContext } from 'svelte';
-  const ctx = getContext('iconCtx') ?? {};
-  export let size = ctx.size || '24';
-  export let role = ctx.role || 'img';
-  export let color = ctx.color || 'currentColor';
-  export let ariaLabel = 'CloudOffline';
+  type TitleType = {
+    id?: string;
+    title?: string;
+  };
+  type DescType = {
+    id?: string;
+    desc?: string;
+  };
+  interface BaseProps {
+    size?: string;
+    role?: string;
+    color?: string;
+    withEvents?: boolean;
+    onclick?: (event: MouseEvent) => void;
+    onkeydown?: (event: KeyboardEvent) => void;
+    onkeyup?: (event: KeyboardEvent) => void;
+    class?: string;
+  }
+  interface CtxType extends BaseProps {}
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+  interface Props extends BaseProps{
+    title?: TitleType;
+    desc?: DescType;
+    ariaLabel?: string;
+  }
+
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    withEvents = ctx.withEvents || false, 
+    title, 
+    desc, 
+    class: classname, 
+    ariaLabel =  "cloud offline" , 
+    onclick, 
+    onkeydown, 
+    onkeyup,
+    ...restProps 
+  }: Props = $props();
+
+  let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
+  const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 512 512"
-  {...$$restProps}
-  {role}
-  width={size}
-  height={size}
-  fill={color}
-  aria-label={ariaLabel}
-  class={$$props.class}
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
-  ><path
-    d="M448,464a15.92,15.92,0,0,1-11.31-4.69l-384-384A16,16,0,0,1,75.31,52.69l384,384A16,16,0,0,1,448,464Z"
-  /><path
-    d="M38.72,196.78C13.39,219.88,0,251.42,0,288c0,36,14.38,68.88,40.49,92.59C65.64,403.43,99.56,416,136,416H328.8a8,8,0,0,0,5.66-13.66L100.88,168.76a8,8,0,0,0-8-2C72,173.15,53.4,183.38,38.72,196.78Z"
-  /><path
-    d="M476.59,391.23C499.76,372.78,512,345.39,512,312c0-57.57-42-90.58-87.56-100.75a16,16,0,0,1-12.12-12.39c-7.68-36.68-24.45-68.15-49.18-92A153.57,153.57,0,0,0,256,64c-31.12,0-60.12,9-84.62,26.1a8,8,0,0,0-1.14,12.26L461.68,393.8a8,8,0,0,0,10.2.93Q474.31,393.05,476.59,391.23Z"
-  /></svg
->
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com)
-## Props
-@prop export let size = ctx.size || '24';
-@prop export let role = ctx.role || 'img';
-@prop export let color = ctx.color || 'currentColor';
-@prop export let ariaLabel = 'CloudOffline';
--->
+{#if withEvents}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+    onclick={onclick}
+    onkeydown={onkeydown}
+    onkeyup={onkeyup}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      <path d="M448,464a15.92,15.92,0,0,1-11.31-4.69l-384-384A16,16,0,0,1,75.31,52.69l384,384A16,16,0,0,1,448,464Z"/><path d="M38.72,196.78C13.39,219.88,0,251.42,0,288c0,36,14.38,68.88,40.49,92.59C65.64,403.43,99.56,416,136,416H328.8a8,8,0,0,0,5.66-13.66L100.88,168.76a8,8,0,0,0-8-2C72,173.15,53.4,183.38,38.72,196.78Z"/><path d="M476.59,391.23C499.76,372.78,512,345.39,512,312c0-57.57-42-90.58-87.56-100.75a16,16,0,0,1-12.12-12.39c-7.68-36.68-24.45-68.15-49.18-92A153.57,153.57,0,0,0,256,64c-31.12,0-60.12,9-84.62,26.1a8,8,0,0,0-1.14,12.26L461.68,393.8a8,8,0,0,0,10.2.93Q474.31,393.05,476.59,391.23Z"/>
+  </svg>
+{:else}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      <path d="M448,464a15.92,15.92,0,0,1-11.31-4.69l-384-384A16,16,0,0,1,75.31,52.69l384,384A16,16,0,0,1,448,464Z"/><path d="M38.72,196.78C13.39,219.88,0,251.42,0,288c0,36,14.38,68.88,40.49,92.59C65.64,403.43,99.56,416,136,416H328.8a8,8,0,0,0,5.66-13.66L100.88,168.76a8,8,0,0,0-8-2C72,173.15,53.4,183.38,38.72,196.78Z"/><path d="M476.59,391.23C499.76,372.78,512,345.39,512,312c0-57.57-42-90.58-87.56-100.75a16,16,0,0,1-12.12-12.39c-7.68-36.68-24.45-68.15-49.18-92A153.57,153.57,0,0,0,256,64c-31.12,0-60.12,9-84.62,26.1a8,8,0,0,0-1.14,12.26L461.68,393.8a8,8,0,0,0,10.2.93Q474.31,393.05,476.59,391.23Z"/>
+  </svg>
+{/if}

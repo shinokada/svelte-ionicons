@@ -1,44 +1,93 @@
-<script>
+<script lang='ts'>
   import { getContext } from 'svelte';
-  const ctx = getContext('iconCtx') ?? {};
-  export let size = ctx.size || '24';
-  export let role = ctx.role || 'img';
-  export let color = ctx.color || 'currentColor';
-  export let ariaLabel = 'LogoGitlab';
+  type TitleType = {
+    id?: string;
+    title?: string;
+  };
+  type DescType = {
+    id?: string;
+    desc?: string;
+  };
+  interface BaseProps {
+    size?: string;
+    role?: string;
+    color?: string;
+    withEvents?: boolean;
+    onclick?: (event: MouseEvent) => void;
+    onkeydown?: (event: KeyboardEvent) => void;
+    onkeyup?: (event: KeyboardEvent) => void;
+    class?: string;
+  }
+  interface CtxType extends BaseProps {}
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+  interface Props extends BaseProps{
+    title?: TitleType;
+    desc?: DescType;
+    ariaLabel?: string;
+  }
+
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    withEvents = ctx.withEvents || false, 
+    title, 
+    desc, 
+    class: classname, 
+    ariaLabel =  "logo gitlab" , 
+    onclick, 
+    onkeydown, 
+    onkeyup,
+    ...restProps 
+  }: Props = $props();
+
+  let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
+  const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
-<svg
-  id="Layer_1"
-  data-name="Layer 1"
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 512 512"
-  {...$$restProps}
-  {role}
-  width={size}
-  height={size}
-  fill={color}
-  aria-label={ariaLabel}
-  class={$$props.class}
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
-  ><path
-    d="M494.07,281.6l-25.18-78.08a11,11,0,0,0-.61-2.1L417.78,44.48a20.08,20.08,0,0,0-19.17-13.82A19.77,19.77,0,0,0,379.66,44.6L331.52,194.15h-152L131.34,44.59a19.76,19.76,0,0,0-18.86-13.94h-.11a20.15,20.15,0,0,0-19.12,14L42.7,201.73c0,.14-.11.26-.16.4L16.91,281.61a29.15,29.15,0,0,0,10.44,32.46L248.79,476.48a11.25,11.25,0,0,0,13.38-.07L483.65,314.07a29.13,29.13,0,0,0,10.42-32.47m-331-64.51L224.8,408.85,76.63,217.09m209.64,191.8,59.19-183.84,2.55-8h86.52L300.47,390.44M398.8,59.31l43.37,134.83H355.35M324.16,217l-43,133.58L255.5,430.14,186.94,217M112.27,59.31l43.46,134.83H69M40.68,295.58a6.19,6.19,0,0,1-2.21-6.9l19-59L197.08,410.27M470.34,295.58,313.92,410.22l.52-.69L453.5,229.64l19,59a6.2,6.2,0,0,1-2.19,6.92"
-  /></svg
->
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com)
-## Props
-@prop export let size = ctx.size || '24';
-@prop export let role = ctx.role || 'img';
-@prop export let color = ctx.color || 'currentColor';
-@prop export let ariaLabel = 'LogoGitlab';
--->
+{#if withEvents}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+    onclick={onclick}
+    onkeydown={onkeydown}
+    onkeyup={onkeyup}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+       <path d="M488.028 207.68L487.354 205.949L422.019 34.7949C420.69 31.4404 418.336 28.5947 415.296 26.6663C412.254 24.7705 408.705 23.8575 405.129 24.0504C401.554 24.2433 398.123 25.5329 395.301 27.7451C392.51 30.0207 390.485 33.1043 389.502 36.5762L345.388 172.054H166.756L122.641 36.5762C121.685 33.0854 119.655 29.9864 116.843 27.72C114.02 25.5078 110.59 24.2182 107.014 24.0253C103.438 23.8324 99.8898 24.7454 96.8475 26.6412C93.8139 28.5774 91.4622 31.4206 90.1241 34.7698L24.6648 205.848L24.015 207.579C14.6098 232.246 13.4489 259.314 20.7073 284.701C27.9656 310.089 43.2498 332.419 64.2553 348.326L64.4803 348.501L65.0801 348.928L164.606 423.742L213.844 461.149L243.837 483.879C247.345 486.553 251.629 488 256.034 488C260.439 488 264.723 486.553 268.231 483.879L298.224 461.149L347.462 423.742L447.588 348.476L447.838 348.276C468.796 332.366 484.045 310.059 491.292 284.706C498.54 259.353 497.394 232.323 488.028 207.68Z" />  
+  </svg>
+{:else}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+       <path d="M488.028 207.68L487.354 205.949L422.019 34.7949C420.69 31.4404 418.336 28.5947 415.296 26.6663C412.254 24.7705 408.705 23.8575 405.129 24.0504C401.554 24.2433 398.123 25.5329 395.301 27.7451C392.51 30.0207 390.485 33.1043 389.502 36.5762L345.388 172.054H166.756L122.641 36.5762C121.685 33.0854 119.655 29.9864 116.843 27.72C114.02 25.5078 110.59 24.2182 107.014 24.0253C103.438 23.8324 99.8898 24.7454 96.8475 26.6412C93.8139 28.5774 91.4622 31.4206 90.1241 34.7698L24.6648 205.848L24.015 207.579C14.6098 232.246 13.4489 259.314 20.7073 284.701C27.9656 310.089 43.2498 332.419 64.2553 348.326L64.4803 348.501L65.0801 348.928L164.606 423.742L213.844 461.149L243.837 483.879C247.345 486.553 251.629 488 256.034 488C260.439 488 264.723 486.553 268.231 483.879L298.224 461.149L347.462 423.742L447.588 348.476L447.838 348.276C468.796 332.366 484.045 310.059 491.292 284.706C498.54 259.353 497.394 232.323 488.028 207.68Z" />  
+  </svg>
+{/if}

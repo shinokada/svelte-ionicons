@@ -1,55 +1,93 @@
-<script>
+<script lang='ts'>
   import { getContext } from 'svelte';
-  const ctx = getContext('iconCtx') ?? {};
-  export let size = ctx.size || '24';
-  export let role = ctx.role || 'img';
-  export let color = ctx.color || 'currentColor';
-  export let ariaLabel = 'ServerOutline';
+  type TitleType = {
+    id?: string;
+    title?: string;
+  };
+  type DescType = {
+    id?: string;
+    desc?: string;
+  };
+  interface BaseProps {
+    size?: string;
+    role?: string;
+    color?: string;
+    withEvents?: boolean;
+    onclick?: (event: MouseEvent) => void;
+    onkeydown?: (event: KeyboardEvent) => void;
+    onkeyup?: (event: KeyboardEvent) => void;
+    class?: string;
+  }
+  interface CtxType extends BaseProps {}
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+  interface Props extends BaseProps{
+    title?: TitleType;
+    desc?: DescType;
+    ariaLabel?: string;
+  }
+
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    withEvents = ctx.withEvents || false, 
+    title, 
+    desc, 
+    class: classname, 
+    ariaLabel =  "server outline" , 
+    onclick, 
+    onkeydown, 
+    onkeyup,
+    ...restProps 
+  }: Props = $props();
+
+  let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
+  const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 512 512"
-  {...$$restProps}
-  {role}
-  width={size}
-  height={size}
-  fill={color}
-  aria-label={ariaLabel}
-  class={$$props.class}
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
-  ><ellipse
-    cx="256"
-    cy="128"
-    rx="192"
-    ry="80"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
-  /><path
-    d="M448,214c0,44.18-86,80-192,80S64,258.18,64,214"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
-  /><path
-    d="M448,300c0,44.18-86,80-192,80S64,344.18,64,300"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
-  /><path
-    d="M64,127.24V384.76C64,428.52,150,464,256,464s192-35.48,192-79.24V127.24"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
-  /></svg
->
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com)
-## Props
-@prop export let size = ctx.size || '24';
-@prop export let role = ctx.role || 'img';
-@prop export let color = ctx.color || 'currentColor';
-@prop export let ariaLabel = 'ServerOutline';
--->
+{#if withEvents}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+    onclick={onclick}
+    onkeydown={onkeydown}
+    onkeyup={onkeyup}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+       <ellipse cx="256" cy="112" rx="176" ry="80" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/> <path d="M432 112C432 112 432 376.055 432 400C432 444.183 353.202 480 256 480C158.798 480 80 444.183 80 400C80 378.169 80 112 80 112" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/> <path d="M432 256C432 300.183 353.202 336 256 336C158.798 336 80 300.183 80 256" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>  
+  </svg>
+{:else}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+       <ellipse cx="256" cy="112" rx="176" ry="80" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/> <path d="M432 112C432 112 432 376.055 432 400C432 444.183 353.202 480 256 480C158.798 480 80 444.183 80 400C80 378.169 80 112 80 112" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/> <path d="M432 256C432 300.183 353.202 336 256 336C158.798 336 80 300.183 80 256" stroke="currentColor" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>  
+  </svg>
+{/if}

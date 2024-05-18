@@ -1,42 +1,93 @@
-<script>
+<script lang='ts'>
   import { getContext } from 'svelte';
-  const ctx = getContext('iconCtx') ?? {};
-  export let size = ctx.size || '24';
-  export let role = ctx.role || 'img';
-  export let color = ctx.color || 'currentColor';
-  export let ariaLabel = 'MusicalNotesSharp';
+  type TitleType = {
+    id?: string;
+    title?: string;
+  };
+  type DescType = {
+    id?: string;
+    desc?: string;
+  };
+  interface BaseProps {
+    size?: string;
+    role?: string;
+    color?: string;
+    withEvents?: boolean;
+    onclick?: (event: MouseEvent) => void;
+    onkeydown?: (event: KeyboardEvent) => void;
+    onkeyup?: (event: KeyboardEvent) => void;
+    class?: string;
+  }
+  interface CtxType extends BaseProps {}
+  const ctx: CtxType = getContext('iconCtx') ?? {};
+  interface Props extends BaseProps{
+    title?: TitleType;
+    desc?: DescType;
+    ariaLabel?: string;
+  }
+
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    withEvents = ctx.withEvents || false, 
+    title, 
+    desc, 
+    class: classname, 
+    ariaLabel =  "musical notes sharp" , 
+    onclick, 
+    onkeydown, 
+    onkeyup,
+    ...restProps 
+  }: Props = $props();
+
+  let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
+  const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 512 512"
-  {...$$restProps}
-  {role}
-  width={size}
-  height={size}
-  fill={color}
-  aria-label={ariaLabel}
-  class={$$props.class}
-  on:click
-  on:keydown
-  on:keyup
-  on:focus
-  on:blur
-  on:mouseenter
-  on:mouseleave
-  on:mouseover
-  on:mouseout
-  ><path
-    d="M429.46,32.07c-23.6,6.53-205.55,58.81-250.54,71.43a4,4,0,0,0-2.92,3.83v247a2,2,0,0,1-1.33,1.89l-27.85,9.55c-19,7.44-66.82,16.68-66.82,59.19,0,35.54,24.63,51.54,45.86,54.28a52.06,52.06,0,0,0,7.81.8c7.37,0,36.38-7.08,53.3-18.08C208,448.25,208,448,208,412V202c0-.9.62-.84,1.48-1.07l188-51.92a2,2,0,0,1,2.53,2V306.55a2,2,0,0,1-1.36,1.89c-8.9,3-19.23,6.5-26.48,9.12C341.39,328.68,304,335.65,304,376c0,38.51,28.26,54.58,46.3,55.83a87.37,87.37,0,0,0,21.33-1c9-1.38,24.09-5.9,38.14-14.86C432,401.79,432,401.51,432,360V34A2,2,0,0,0,429.46,32.07Z"
-  /></svg
->
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com)
-## Props
-@prop export let size = ctx.size || '24';
-@prop export let role = ctx.role || 'img';
-@prop export let color = ctx.color || 'currentColor';
-@prop export let ariaLabel = 'MusicalNotesSharp';
--->
+{#if withEvents}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+    onclick={onclick}
+    onkeydown={onkeydown}
+    onkeyup={onkeyup}
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      <path d="M429.46,32.07c-23.6,6.53-205.55,58.81-250.54,71.43a4,4,0,0,0-2.92,3.83v247a2,2,0,0,1-1.33,1.89l-27.85,9.55c-19,7.44-66.82,16.68-66.82,59.19,0,35.54,24.63,51.54,45.86,54.28a52.06,52.06,0,0,0,7.81.8c7.37,0,36.38-7.08,53.3-18.08C208,448.25,208,448,208,412V202c0-.9.62-.84,1.48-1.07l188-51.92a2,2,0,0,1,2.53,2V306.55a2,2,0,0,1-1.36,1.89c-8.9,3-19.23,6.5-26.48,9.12C341.39,328.68,304,335.65,304,376c0,38.51,28.26,54.58,46.3,55.83a87.37,87.37,0,0,0,21.33-1c9-1.38,24.09-5.9,38.14-14.86C432,401.79,432,401.51,432,360V34A2,2,0,0,0,429.46,32.07Z"/>
+  </svg>
+{:else}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    {...restProps}
+    {role}
+    width={size}
+    height={size}
+    class={classname}
+    fill={color}
+    aria-label={ariaLabel}
+    aria-describedby={hasDescription ? ariaDescribedby : undefined}
+    viewBox="0 0 512 512"
+  >
+    {#if title?.id && title.title}
+      <title id="{title.id}">{title.title}</title>
+    {/if}
+    {#if desc?.id && desc.desc}
+      <desc id="{desc.id}">{desc.desc}</desc>
+    {/if}
+      <path d="M429.46,32.07c-23.6,6.53-205.55,58.81-250.54,71.43a4,4,0,0,0-2.92,3.83v247a2,2,0,0,1-1.33,1.89l-27.85,9.55c-19,7.44-66.82,16.68-66.82,59.19,0,35.54,24.63,51.54,45.86,54.28a52.06,52.06,0,0,0,7.81.8c7.37,0,36.38-7.08,53.3-18.08C208,448.25,208,448,208,412V202c0-.9.62-.84,1.48-1.07l188-51.92a2,2,0,0,1,2.53,2V306.55a2,2,0,0,1-1.36,1.89c-8.9,3-19.23,6.5-26.48,9.12C341.39,328.68,304,335.65,304,376c0,38.51,28.26,54.58,46.3,55.83a87.37,87.37,0,0,0,21.33-1c9-1.38,24.09-5.9,38.14-14.86C432,401.79,432,401.51,432,360V34A2,2,0,0,0,429.46,32.07Z"/>
+  </svg>
+{/if}

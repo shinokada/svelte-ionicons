@@ -1,0 +1,1 @@
+<Accessibility on:click="{handleClick}" />
