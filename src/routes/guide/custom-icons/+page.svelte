@@ -11,7 +11,7 @@
 <h1>Custom Default Icons</h1>
 
 <p>
-  You can create a custom default icon, by using <Code>IconSolid</Code> or <Code>IconOutline</Code>:
+  You can create a custom default icon, by using <Code>Icon</Code>:
 </p>
 
 <H2>Create a custom component</H2>
