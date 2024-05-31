@@ -1,16 +1,21 @@
 import type { MetaProps } from 'runes-meta-tags';
+const title = 'Props - Svelte Ionicons v2'
+const description = 'How to use Svelte Ionicons v2 props'
+const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-ionicons'
 
 export const load = () => {
   const pageMetaTags = Object.freeze({
-    title: 'Svelte 5 Props example - Svelte Ionicons',
-    description: 'Svelte 5 Props example',
+    title,
+    description,
     og: {
-      title: 'Svelte 5 Props example - Svelte Ionicons',
-      description: 'Svelte 5 Props example'
+      title,
+      description,
+      image: imgUrl
     },
     twitter: {
-      title: 'Svelte 5 Props example - Svelte Ionicons',
-      description: 'Svelte 5 Props example'
+      title,
+      description,
+      image: imgUrl
     }
   }) satisfies MetaProps;
   return { pageMetaTags };

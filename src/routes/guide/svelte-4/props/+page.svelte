@@ -15,7 +15,7 @@
   });
 </script>
 
-<h1>Props: Svelte Ionicons v1</h1>
+<h1>Props - Svelte Ionicons v1</h1>
 
 <H2>Prop</H2>
 

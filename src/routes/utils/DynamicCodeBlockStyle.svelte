@@ -6,7 +6,7 @@
 
   // @ts-ignore
   let selected: string = $state(
-    browser && (localStorage.getItem(localStorageName) ?? 'brogrammer')
+    browser && (localStorage.getItem(localStorageName) ?? 'dracula')
   );
 
   const styles = Object.entries(stylesImport).map(([path, importFn]) => ({
