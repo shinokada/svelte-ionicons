@@ -9,7 +9,7 @@
 <a href="https://www.npmjs.com/package/svelte-ionicons" rel="nofollow" target="_blank"><img src="https://img.shields.io/npm/dw/svelte-ionicons.svg" alt="npm"></a>
 </div>
 
-1330+ Ionicon SVG icons for Svelte/SveltKit.
+1330+ Ionicon SVG icons for Svelte 4, 5, and Runes.
 
 Thank you for considering my open-source package. If you use it in a commercial project, please support me by sponsoring me on GitHub: https://github.com/sponsors/shinokada. Your support helps me maintain and improve this package for the benefit of the community.
 
