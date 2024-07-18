@@ -1,17 +1,17 @@
-<script lang='ts'>
+<script lang="ts">
   import { getContext } from 'svelte';
-  import type { CtxType, Props } from './types'
-  
+  import type { CtxType, Props } from './types';
+
   const ctx: CtxType = getContext('iconCtx') ?? {};
 
-  let { 
-    size = ctx.size || '24', 
-    role = ctx.role || 'img', 
-    color = ctx.color || 'currentColor', 
-    title, 
-    desc, 
-    ariaLabel =  "play back sharp" , 
-    ...restProps 
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    title,
+    desc,
+    ariaLabel = 'play back sharp',
+    ...restProps
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
@@ -30,10 +30,19 @@
   viewBox="0 0 512 512"
 >
   {#if title?.id && title.title}
-    <title id="{title.id}">{title.title}</title>
+    <title id={title.id}>{title.title}</title>
   {/if}
   {#if desc?.id && desc.desc}
-    <desc id="{desc.id}">{desc.desc}</desc>
+    <desc id={desc.id}>{desc.desc}</desc>
   {/if}
-    <polygon points="496 400 256 256 496 112 496 400"/><polygon points="256 400 16 256 256 112 256 400"/>
+  <polygon points="496 400 256 256 496 112 496 400" /><polygon
+    points="256 400 16 256 256 112 256 400"
+  />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

@@ -4,5 +4,5 @@
   "initialVersions": {
     "svelte-ionicons": "2.0.0-next.0"
   },
-  "changesets": ["clever-suits-breathe"]
+  "changesets": ["clever-suits-breathe", "hungry-ties-peel"]
 }

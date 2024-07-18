@@ -2,7 +2,7 @@
   import { HighlightCompo, CodeWrapper, Code, H2, H3 } from 'runes-webkit';
   import { A, P } from 'svelte-5-ui-lib';
   import { Accessibility } from '$lib';
-    import CodeWorking from '$lib/CodeWorking.svelte';
+  import CodeWorking from '$lib/CodeWorking.svelte';
   const modules = import.meta.glob('./md/*.md', {
     query: '?raw',
     import: 'default',
@@ -107,11 +107,11 @@
   >.
 </P>
 <CodeWrapper>
-  <Accessibility 
-  id="my-svg" 
-  transform="rotate(45)"
-  class="hover:cursor-pointer dark:text-white"
-  onclick={() => alert('hello')}
-/>
+  <Accessibility
+    id="my-svg"
+    transform="rotate(45)"
+    class="hover:cursor-pointer dark:text-white"
+    onclick={() => alert('hello')}
+  />
 </CodeWrapper>
 <HighlightCompo codeLang="ts" code={modules['./md/passing-down-other-attributes.md'] as string} />

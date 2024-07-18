@@ -1,7 +1,7 @@
 import type { MetaProps } from 'runes-meta-tags';
-const title = 'Props - Svelte Ionicons v2'
-const description = 'How to use Svelte Ionicons v2 props'
-const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-ionicons'
+const title = 'Props - Svelte Ionicons v2';
+const description = 'How to use Svelte Ionicons v2 props';
+const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-ionicons';
 
 export const load = () => {
   const pageMetaTags: MetaProps = {

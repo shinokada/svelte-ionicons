@@ -1,17 +1,17 @@
-<script lang='ts'>
+<script lang="ts">
   import { getContext } from 'svelte';
-  import type { CtxType, Props } from './types'
-  
+  import type { CtxType, Props } from './types';
+
   const ctx: CtxType = getContext('iconCtx') ?? {};
 
-  let { 
-    size = ctx.size || '24', 
-    role = ctx.role || 'img', 
-    color = ctx.color || 'currentColor', 
-    title, 
-    desc, 
-    ariaLabel =  "bar chart outline" , 
-    ...restProps 
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    title,
+    desc,
+    ariaLabel = 'bar chart outline',
+    ...restProps
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
@@ -30,10 +30,44 @@
   viewBox="0 0 512 512"
 >
   {#if title?.id && title.title}
-    <title id="{title.id}">{title.title}</title>
+    <title id={title.id}>{title.title}</title>
   {/if}
   {#if desc?.id && desc.desc}
-    <desc id="{desc.id}">{desc.desc}</desc>
+    <desc id={desc.id}>{desc.desc}</desc>
   {/if}
-    <path d="M32,32V464a16,16,0,0,0,16,16H480" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><rect x="96" y="224" width="80" height="192" rx="20" ry="20" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><rect x="240" y="176" width="80" height="240" rx="20" ry="20" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><rect x="383.64" y="112" width="80" height="304" rx="20" ry="20" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
+  <path
+    d="M32,32V464a16,16,0,0,0,16,16H480"
+    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+  /><rect
+    x="96"
+    y="224"
+    width="80"
+    height="192"
+    rx="20"
+    ry="20"
+    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+  /><rect
+    x="240"
+    y="176"
+    width="80"
+    height="240"
+    rx="20"
+    ry="20"
+    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+  /><rect
+    x="383.64"
+    y="112"
+    width="80"
+    height="304"
+    rx="20"
+    ry="20"
+    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+  />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

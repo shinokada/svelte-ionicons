@@ -1,17 +1,17 @@
-<script lang='ts'>
+<script lang="ts">
   import { getContext } from 'svelte';
-  import type { CtxType, Props } from './types'
-  
+  import type { CtxType, Props } from './types';
+
   const ctx: CtxType = getContext('iconCtx') ?? {};
 
-  let { 
-    size = ctx.size || '24', 
-    role = ctx.role || 'img', 
-    color = ctx.color || 'currentColor', 
-    title, 
-    desc, 
-    ariaLabel =  "navigate circle" , 
-    ...restProps 
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    title,
+    desc,
+    ariaLabel = 'navigate circle',
+    ...restProps
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
@@ -30,10 +30,19 @@
   viewBox="0 0 512 512"
 >
   {#if title?.id && title.title}
-    <title id="{title.id}">{title.title}</title>
+    <title id={title.id}>{title.title}</title>
   {/if}
   {#if desc?.id && desc.desc}
-    <desc id="{desc.id}">{desc.desc}</desc>
+    <desc id={desc.id}>{desc.desc}</desc>
   {/if}
-    <path d="M258.9,48C141.92,46.42,46.42,141.92,48,258.9,49.56,371.09,140.91,462.44,253.1,464c117,1.6,212.48-93.9,210.88-210.88C462.44,140.91,371.09,49.56,258.9,48ZM351,175.24,268.76,361.76c-4.79,10.47-20.78,7-20.78-4.56V268a4,4,0,0,0-4-4H154.8c-11.52,0-15-15.87-4.57-20.67L336.76,161A10.73,10.73,0,0,1,351,175.24Z"/>
+  <path
+    d="M258.9,48C141.92,46.42,46.42,141.92,48,258.9,49.56,371.09,140.91,462.44,253.1,464c117,1.6,212.48-93.9,210.88-210.88C462.44,140.91,371.09,49.56,258.9,48ZM351,175.24,268.76,361.76c-4.79,10.47-20.78,7-20.78-4.56V268a4,4,0,0,0-4-4H154.8c-11.52,0-15-15.87-4.57-20.67L336.76,161A10.73,10.73,0,0,1,351,175.24Z"
+  />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

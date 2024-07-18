@@ -2,11 +2,10 @@ import type { MetaProps } from 'runes-meta-tags';
 import { ANALYTICS_ID_TWO } from '$env/static/private';
 import { metaTitle, metaDescription, metaImg } from 'runes-meta-tags';
 
-const title = 'Svelte Ionicons'
-const description = '1330+ Ionicon SVG icons for Svelte 4, 5, and Runes'
-const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-ionicons'
-const keywords = 'svelte, runes, Ionicons, svg icons, icons, sveltekit'
-
+const title = 'Svelte Ionicons';
+const description = '1330+ Ionicon SVG icons for Svelte 4, 5, and Runes';
+const imgUrl = 'https://open-graph-vercel.vercel.app/api/svelte-ionicons';
+const keywords = 'svelte, runes, Ionicons, svg icons, icons, sveltekit';
 
 export const load = ({ url }) => {
   const layoutMetaTags: MetaProps = {

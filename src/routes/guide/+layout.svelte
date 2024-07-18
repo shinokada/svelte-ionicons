@@ -7,6 +7,6 @@
   let { children }: Props = $props();
 </script>
 
-<DocPage classDiv3='pb-0'>
+<DocPage classDiv3="pb-0">
   {@render children()}
 </DocPage>
