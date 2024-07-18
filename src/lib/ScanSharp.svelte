@@ -1,108 +1,39 @@
-<script lang="ts">
+<script lang='ts'>
   import { getContext } from 'svelte';
-  type TitleType = {
-    id?: string;
-    title?: string;
-  };
-  type DescType = {
-    id?: string;
-    desc?: string;
-  };
-  interface BaseProps {
-    size?: string;
-    role?: string;
-    color?: string;
-    withEvents?: boolean;
-    onclick?: (event: MouseEvent) => void;
-    onkeydown?: (event: KeyboardEvent) => void;
-    onkeyup?: (event: KeyboardEvent) => void;
-    class?: string;
-  }
-  interface CtxType extends BaseProps {}
+  import type { CtxType, Props } from './types'
+  
   const ctx: CtxType = getContext('iconCtx') ?? {};
-  interface Props extends BaseProps {
-    title?: TitleType;
-    desc?: DescType;
-    ariaLabel?: string;
-  }
 
-  let {
-    size = ctx.size || '24',
-    role = ctx.role || 'img',
-    color = ctx.color || 'currentColor',
-    withEvents = ctx.withEvents || false,
-    title,
-    desc,
-    class: classname,
-    ariaLabel = 'scan sharp',
-    onclick,
-    onkeydown,
-    onkeyup,
-    ...restProps
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    title, 
+    desc, 
+    ariaLabel =  "scan sharp" , 
+    ...restProps 
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
   const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
-{#if withEvents}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    {...restProps}
-    {role}
-    width={size}
-    height={size}
-    class={classname}
-    fill={color}
-    aria-label={ariaLabel}
-    aria-describedby={hasDescription ? ariaDescribedby : undefined}
-    viewBox="0 0 512 512"
-    {onclick}
-    {onkeydown}
-    {onkeyup}
-  >
-    {#if title?.id && title.title}
-      <title id={title.id}>{title.title}</title>
-    {/if}
-    {#if desc?.id && desc.desc}
-      <desc id={desc.id}>{desc.desc}</desc>
-    {/if}
-    <path d="M388,466H320V422h68a34,34,0,0,0,34-34V320h44v68A78.09,78.09,0,0,1,388,466Z" /><path
-      d="M466,192H422V124a34,34,0,0,0-34-34H320V46h68a78.09,78.09,0,0,1,78,78Z"
-    /><path d="M192,466H124a78.09,78.09,0,0,1-78-78V320H90v68a34,34,0,0,0,34,34h68Z" /><path
-      d="M90,192H46V124a78.09,78.09,0,0,1,78-78h68V90H124a34,34,0,0,0-34,34Z"
-    />
-  </svg>
-{:else}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    {...restProps}
-    {role}
-    width={size}
-    height={size}
-    class={classname}
-    fill={color}
-    aria-label={ariaLabel}
-    aria-describedby={hasDescription ? ariaDescribedby : undefined}
-    viewBox="0 0 512 512"
-  >
-    {#if title?.id && title.title}
-      <title id={title.id}>{title.title}</title>
-    {/if}
-    {#if desc?.id && desc.desc}
-      <desc id={desc.id}>{desc.desc}</desc>
-    {/if}
-    <path d="M388,466H320V422h68a34,34,0,0,0,34-34V320h44v68A78.09,78.09,0,0,1,388,466Z" /><path
-      d="M466,192H422V124a34,34,0,0,0-34-34H320V46h68a78.09,78.09,0,0,1,78,78Z"
-    /><path d="M192,466H124a78.09,78.09,0,0,1-78-78V320H90v68a34,34,0,0,0,34,34h68Z" /><path
-      d="M90,192H46V124a78.09,78.09,0,0,1,78-78h68V90H124a34,34,0,0,0-34,34Z"
-    />
-  </svg>
-{/if}
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com/)
-## Props
-@props: 
--->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  {...restProps}
+  {role}
+  width={size}
+  height={size}
+  fill={color}
+  aria-label={ariaLabel}
+  aria-describedby={hasDescription ? ariaDescribedby : undefined}
+  viewBox="0 0 512 512"
+>
+  {#if title?.id && title.title}
+    <title id="{title.id}">{title.title}</title>
+  {/if}
+  {#if desc?.id && desc.desc}
+    <desc id="{desc.id}">{desc.desc}</desc>
+  {/if}
+    <path d="M388,466H320V422h68a34,34,0,0,0,34-34V320h44v68A78.09,78.09,0,0,1,388,466Z"/><path d="M466,192H422V124a34,34,0,0,0-34-34H320V46h68a78.09,78.09,0,0,1,78,78Z"/><path d="M192,466H124a78.09,78.09,0,0,1-78-78V320H90v68a34,34,0,0,0,34,34h68Z"/><path d="M90,192H46V124a78.09,78.09,0,0,1,78-78h68V90H124a34,34,0,0,0-34,34Z"/>
+</svg>
