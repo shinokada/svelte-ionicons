@@ -1,17 +1,17 @@
-<script lang="ts">
+<script lang='ts'>
   import { getContext } from 'svelte';
-  import type { CtxType, Props } from './types';
-
+  import type { CtxType, Props } from './types'
+  
   const ctx: CtxType = getContext('iconCtx') ?? {};
 
-  let {
-    size = ctx.size || '24',
-    role = ctx.role || 'img',
-    color = ctx.color || 'currentColor',
-    title,
-    desc,
-    ariaLabel = 'list circle outline',
-    ...restProps
+  let { 
+    size = ctx.size || '24', 
+    role = ctx.role || 'img', 
+    color = ctx.color || 'currentColor', 
+    title, 
+    desc, 
+    ariaLabel =  "list circle outline" , 
+    ...restProps 
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
@@ -30,53 +30,10 @@
   viewBox="0 0 512 512"
 >
   {#if title?.id && title.title}
-    <title id={title.id}>{title.title}</title>
+    <title id="{title.id}">{title.title}</title>
   {/if}
   {#if desc?.id && desc.desc}
-    <desc id={desc.id}>{desc.desc}</desc>
+    <desc id="{desc.id}">{desc.desc}</desc>
   {/if}
-  <line
-    x1="224"
-    y1="184"
-    x2="352"
-    y2="184"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-  /><line
-    x1="224"
-    y1="256"
-    x2="352"
-    y2="256"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-  /><line
-    x1="224"
-    y1="327"
-    x2="352"
-    y2="327"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-  /><path
-    d="M448,258c0-106-86-192-192-192S64,152,64,258s86,192,192,192S448,364,448,258Z"
-    style="fill:none;stroke:{color};stroke-miterlimit:10;stroke-width:32px"
-  /><circle
-    cx="168"
-    cy="184"
-    r="8"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-  /><circle
-    cx="168"
-    cy="257"
-    r="8"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-  /><circle
-    cx="168"
-    cy="328"
-    r="8"
-    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-  />
+    <line x1="224" y1="184" x2="352" y2="184" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="224" y1="256" x2="352" y2="256" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><line x1="224" y1="327" x2="352" y2="327" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><path d="M448,258c0-106-86-192-192-192S64,152,64,258s86,192,192,192S448,364,448,258Z" style="fill:none;stroke:{color};stroke-miterlimit:10;stroke-width:32px"/><circle cx="168" cy="184" r="8" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><circle cx="168" cy="257" r="8" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/><circle cx="168" cy="328" r="8" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
 </svg>
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com/)
-## Props
-@props: 
--->
