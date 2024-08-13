@@ -37,3 +37,10 @@
   {/if}
     <polygon points="496 400 256 256 496 112 496 400"/><polygon points="256 400 16 256 256 112 256 400"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

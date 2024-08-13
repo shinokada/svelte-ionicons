@@ -18,3 +18,10 @@
   {color}
   {ariaLabel}
 />
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

@@ -37,3 +37,10 @@
   {/if}
     <polyline points="268 112 412 256 268 400" style="fill:none;stroke:{color};stroke-linecap:square;stroke-miterlimit:10;stroke-width:48px"/><line x1="392" y1="256" x2="100" y2="256" style="fill:none;stroke:{color};stroke-linecap:square;stroke-miterlimit:10;stroke-width:48px"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

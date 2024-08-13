@@ -37,3 +37,10 @@
   {/if}
     <line x1="118" y1="304" x2="394" y2="304" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:44px"/><line x1="118" y1="208" x2="394" y2="208" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:44px"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

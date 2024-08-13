@@ -37,3 +37,10 @@
   {/if}
     <rect x="32" y="96" width="448" height="272" rx="32.14" ry="32.14" style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"/><line x1="128" y1="416" x2="384" y2="416" style="stroke:{color};stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

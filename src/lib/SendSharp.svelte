@@ -37,3 +37,10 @@
   {/if}
     <path d="M16,464,496,256,16,48V208l320,48L16,304Z"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

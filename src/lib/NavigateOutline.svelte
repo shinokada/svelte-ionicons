@@ -37,3 +37,10 @@
   {/if}
     <path d="M448,64,64,240.14H264a8,8,0,0,1,8,8V448Z" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

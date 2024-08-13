@@ -37,3 +37,10 @@
   {/if}
     <rect x="48" y="48" width="416" height="416"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

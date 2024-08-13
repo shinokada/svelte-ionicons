@@ -37,3 +37,10 @@
   {/if}
     <path fill-rule="evenodd" d="M256,48,496,464H16Z"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

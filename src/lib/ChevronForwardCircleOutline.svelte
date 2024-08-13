@@ -37,3 +37,10 @@
   {/if}
     <path d="M64,256c0,106,86,192,192,192s192-86,192-192S362,64,256,64,64,150,64,256Z" style="fill:none;stroke:{color};stroke-miterlimit:10;stroke-width:32px"/><polyline points="216 352 312 256 216 160" style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"/>
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: 
+-->

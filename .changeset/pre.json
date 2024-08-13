@@ -4,5 +4,10 @@
   "initialVersions": {
     "svelte-ionicons": "2.0.0-next.0"
   },
-  "changesets": ["clever-suits-breathe", "fluffy-cameras-pull", "hungry-ties-peel"]
+  "changesets": [
+    "clever-suits-breathe",
+    "fluffy-cameras-pull",
+    "hungry-ties-peel",
+    "silver-falcons-cover"
+  ]
 }

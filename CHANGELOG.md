@@ -1,5 +1,11 @@
 # svelte-ionicons
 
+## 2.0.0-next.4
+
+### Patch Changes
+
+- fix: remove svelte:component from Icon.svelte ([`8322a5185208dafd5508689aed13bf268495662b`](https://github.com/shinokada/svelte-ionicons/commit/8322a5185208dafd5508689aed13bf268495662b))
+
 ## 2.0.0-next.3
 
 ### Patch Changes
