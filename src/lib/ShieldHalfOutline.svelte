@@ -44,3 +44,15 @@
     stroke-width="32"
   /><path d="M256,48C175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'shield half outline';
+-->

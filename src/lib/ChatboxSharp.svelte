@@ -39,3 +39,15 @@
     d="M128,464V384H56a24,24,0,0,1-24-24V72A24,24,0,0,1,56,48H456a24,24,0,0,1,24,24V360a24,24,0,0,1-24,24H245.74ZM456,80h0Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'chatbox sharp';
+-->

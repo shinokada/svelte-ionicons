@@ -39,3 +39,15 @@
     d="M142,320c-36.52,0-66,30.63-66,68.57,0,25.43-31,45.72-44,45.72C52.24,462.17,86.78,480,120,480c48.62,0,88-40.91,88-91.43C208,350.63,178.52,320,142,320Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'brush sharp';
+-->

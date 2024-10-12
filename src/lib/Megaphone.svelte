@@ -43,3 +43,15 @@
     d="M240,320V152a8,8,0,0,0-8-8H136a8,8,0,0,0-8,8V456a24,24,0,0,0,24,24h52.45a32.66,32.66,0,0,0,25.93-12.45,31.65,31.65,0,0,0,5.21-29.05c-1.62-5.18-3.63-11-5.77-17.19-7.91-22.9-18.34-37.07-21.12-69.32A32,32,0,0,0,240,320Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'megaphone';
+-->

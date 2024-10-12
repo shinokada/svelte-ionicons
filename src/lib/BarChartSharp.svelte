@@ -39,3 +39,15 @@
     d="M192,432H80V208H192Z"
   /><path d="M336,432H224V160H336Z" /><path d="M479.64,432h-112V96h112Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'bar chart sharp';
+-->

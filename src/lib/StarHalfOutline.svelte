@@ -40,3 +40,15 @@
     style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
   /><polygon points="256 48 256 364 118 464 172 304 32 208 204 208 256 48" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'star half outline';
+-->

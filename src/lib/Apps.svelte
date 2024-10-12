@@ -45,3 +45,15 @@
     d="M256,464a56,56,0,1,1,56-56A56.06,56.06,0,0,1,256,464Z"
   /><path d="M408,464a56,56,0,1,1,56-56A56.06,56.06,0,0,1,408,464Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'apps';
+-->

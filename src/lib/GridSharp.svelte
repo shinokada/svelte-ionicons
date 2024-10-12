@@ -39,3 +39,15 @@
     d="M240,480H32V272H240Z"
   /><path d="M480,480H272V272H480Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'grid sharp';
+-->

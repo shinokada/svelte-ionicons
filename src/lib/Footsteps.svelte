@@ -45,3 +45,15 @@
     d="M339,400a61,61,0,0,1-11.68-1.13c-17.56-3.44-32.84-14.75-43-31.86-9.47-15.9-13.67-35.43-11.83-55h0c1.6-17,7-28.52,16.62-35.33,14.33-10.17,31.69-5.89,48.47-1.74,4.48,1.1,9.1,2.24,13.62,3.11l6.29,1.17c19.63,3.61,38.17,7,48.5,22.17,6.36,9.33,8.07,21,5.22,35.64a79.78,79.78,0,0,1-33.52,50.61C365.56,395.78,352.17,400,339,400Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'footsteps';
+-->

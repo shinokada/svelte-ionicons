@@ -41,3 +41,15 @@
     d="M32.0001 31.9999L196.364 32L196.364 64L86.6274 63.9999L130.264 107.636H107.636V130.264L64.0001 86.6275L64.0001 196.364H32.0001L32.0001 31.9999ZM296 318.627L107.636 130.264L107.636 480L480 480L480 107.636L130.264 107.636L318.628 296L296 318.627Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'arrow up left box sharp';
+-->

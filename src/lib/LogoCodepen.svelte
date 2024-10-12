@@ -49,3 +49,15 @@
     d="M316.25,273.23q-22.59,15.34-45.39,30.34c-2.41,1.58-2.89,3.31-2.86,6.19V361.1l93-62-38.53-25.88C320.17,271.61,318.58,271.65,316.25,273.23Z"
   /><polygon points="370 276.68 370 237.06 340.41 256.93 370 276.68" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'logo codepen';
+-->

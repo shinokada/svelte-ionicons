@@ -65,3 +65,15 @@
     d="M110.69,203.81a56.76,56.76,0,0,1,2.78-5.3A56.76,56.76,0,0,0,110.69,203.81Z"
   /><path d="M194.68,284.88a65.39,65.39,0,0,0,15.76-16.57A65.39,65.39,0,0,1,194.68,284.88Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'people circle';
+-->

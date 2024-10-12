@@ -48,3 +48,15 @@
     d="M413.5 166C442.495 166 466 142.495 466 113.5C466 84.5055 442.495 61.0004 413.5 61.0004C384.505 61.0004 361 84.5055 361 113.5C361 142.495 384.505 166 413.5 166Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'logo ionic';
+-->

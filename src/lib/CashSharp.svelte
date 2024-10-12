@@ -48,3 +48,15 @@
     d="M416,336v16h80V272H480A64.07,64.07,0,0,0,416,336Z"
   /><circle cx="256" cy="208" r="64" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'cash sharp';
+-->

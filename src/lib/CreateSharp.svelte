@@ -43,3 +43,15 @@
     points="208 304 239.49 304 400 143.16 400 112 368.85 112 208 272.51 208 304"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'create sharp';
+-->

@@ -65,3 +65,15 @@
     d="M254.79,158.87a7,7,0,0,0-6.94,7L245,308.75l2.85,51.87a6.94,6.94,0,1,0,13.87-.06v.06l3.09-51.87-3.09-142.93a7,7,0,0,0-6.93-6.95Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'logo soundcloud';
+-->

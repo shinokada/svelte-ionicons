@@ -37,3 +37,15 @@
   {/if}
   <path d="M256,16,16,352,256,496,496,352Zm-20,96.82V437.35L73.73,340Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'prism sharp';
+-->

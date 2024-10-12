@@ -39,3 +39,15 @@
     d="M408,32H350V480h58a24,24,0,0,0,24-24V56A24,24,0,0,0,408,32Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'journal sharp';
+-->

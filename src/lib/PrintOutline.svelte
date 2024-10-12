@@ -51,3 +51,15 @@
     style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
   /><circle cx="392" cy="184" r="24" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'print outline';
+-->

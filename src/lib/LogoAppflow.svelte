@@ -42,3 +42,15 @@
     d="M312 346.039C312 376.967 286.928 402.039 256 402.039C225.072 402.039 200 376.967 200 346.039C200 315.111 225.072 290.039 256 290.039C286.928 290.039 312 315.111 312 346.039Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'logo appflow';
+-->

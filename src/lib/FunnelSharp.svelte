@@ -37,3 +37,15 @@
   {/if}
   <polygon points="0 48 192 288 192 416 320 464 320 288 512 48 0 48" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'funnel sharp';
+-->

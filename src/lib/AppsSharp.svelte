@@ -65,3 +65,15 @@
     ry="8"
   /><rect x="352" y="352" width="112" height="112" rx="8" ry="8" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'apps sharp';
+-->

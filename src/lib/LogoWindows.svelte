@@ -39,3 +39,15 @@
     d="M480,32,232,67.4V249H480V32Z"
   /><path d="M216,69.7,32,96V249H216V69.7Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'logo windows';
+-->

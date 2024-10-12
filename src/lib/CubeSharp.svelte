@@ -39,3 +39,15 @@
     d="M272,480,464,366.92V170L272,284ZM448,357.64h0Z"
   /><polygon points="448 144 256 32 64 144 256 256 448 144" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'cube sharp';
+-->

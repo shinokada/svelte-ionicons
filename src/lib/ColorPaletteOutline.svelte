@@ -44,3 +44,15 @@
     r="32"
   /><circle cx="256" cy="367" r="48" /><circle cx="328" cy="144" r="32" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'color palette outline';
+-->

@@ -48,3 +48,15 @@
     style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
   /><path d="M368,320a32,32,0,1,1,32-32A32,32,0,0,1,368,320Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'wallet outline';
+-->

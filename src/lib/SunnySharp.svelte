@@ -66,3 +66,15 @@
     transform="translate(-52.15 125.89) rotate(-45)"
   /><path d="M256,358A102,102,0,1,1,358,256,102.12,102.12,0,0,1,256,358Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'sunny sharp';
+-->

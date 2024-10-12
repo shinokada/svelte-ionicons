@@ -50,3 +50,15 @@
     d="M400,244c0-25.7-3-39.2-9.1-49.6C382.3,180,368.5,172,352,172H334.6c2.9-8.3,5.4-19.8,3.5-30.9-3.2-18.8-19.1-30-43.1-30v16c21,0,26.1,9.1,27.4,16.7,2.5,14.5-6.8,32.1-6.9,32.3a8,8,0,0,0,.1,7.9,8.06,8.06,0,0,0,6.9,3.9H352c10.9,0,19.4,4.9,25.1,14.6,3.1,5.3,6.9,13.5,6.9,41.4h16Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'logo no smoking';
+-->

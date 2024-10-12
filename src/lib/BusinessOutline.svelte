@@ -73,3 +73,15 @@
     d="M336,320a16,16,0,1,0,16,16,16,16,0,0,0-16-16Z"
   /><path d="M336,240a16,16,0,1,0,16,16,16,16,0,0,0-16-16Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'business outline';
+-->

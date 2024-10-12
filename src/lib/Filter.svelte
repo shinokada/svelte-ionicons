@@ -39,3 +39,15 @@
     d="M392,280H120a24,24,0,0,1,0-48H392a24,24,0,0,1,0,48Z"
   /><path d="M296,392H216a24,24,0,0,1,0-48h80a24,24,0,0,1,0,48Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'filter';
+-->

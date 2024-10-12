@@ -1,5 +1,11 @@
 # svelte-ionicons
 
+## 2.0.0-next.5
+
+### Patch Changes
+
+- fix: type update ([`9af636eb0c5c90b56dc1dd8316df76dd9d671d68`](https://github.com/shinokada/svelte-ionicons/commit/9af636eb0c5c90b56dc1dd8316df76dd9d671d68))
+
 ## 2.0.0-next.4
 
 ### Patch Changes

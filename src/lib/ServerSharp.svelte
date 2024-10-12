@@ -45,3 +45,15 @@
     d="M64 309.024V400C64 432.224 92.0043 456.169 124.928 471.134C159.297 486.756 205.653 496 256 496C306.347 496 352.703 486.756 387.072 471.134C419.996 456.169 448 432.224 448 400V309.024C437.558 320.244 424.937 330.892 410.724 338.623C370.714 360.39 316.082 376 256 376C195.918 376 141.286 360.39 101.276 338.623C87.0634 330.892 74.4417 320.244 64 309.024Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'server sharp';
+-->

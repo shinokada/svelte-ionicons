@@ -19,3 +19,14 @@
 </script>
 
 <Icon {...restProps} {role} {size} {color} {ariaLabel} />
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: Icon: any;
+@props:size: any = '24';
+@props:color: any = 'currentColor';
+@props:role: any = 'img';
+@props:ariaLabel: any = 'Icon';
+-->

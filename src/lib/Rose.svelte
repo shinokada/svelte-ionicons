@@ -45,3 +45,15 @@
     d="M209.33,60.79c7.3-4.77,14.74-9.22,22.25-13.31a2,2,0,0,0,.24-3.36c-26-19.57-49.73-27-51.15-27.42a16,16,0,0,0-17.56,5.82A217.63,217.63,0,0,0,143.83,54.9a2,2,0,0,0,1.29,2.81C158.73,61.28,174.52,66,190.73,72a2,2,0,0,0,1.79-.2Z"
   />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'rose';
+-->

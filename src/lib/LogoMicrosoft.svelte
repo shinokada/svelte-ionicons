@@ -39,3 +39,15 @@
     d="M31.87,265.61H244.7v212.8H31.87Z"
   /><path d="M266.89,265.61H479.7v212.8H266.89Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'logo microsoft';
+-->

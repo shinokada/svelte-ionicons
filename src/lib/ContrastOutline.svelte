@@ -42,3 +42,15 @@
     style="fill:none;stroke:{color};stroke-linejoin:round;stroke-width:32px"
   /><path d="M256,464C141.12,464,48,370.88,48,256S141.12,48,256,48Z" />
 </svg>
+
+<!--
+@component
+[Go to docs](https://svelte-ionicons.codewithshin.com/)
+## Props
+@props: size: any = ctx.size || '24';
+@props:role: any = ctx.role || 'img';
+@props:color: any = ctx.color || 'currentColor';
+@props:title: any;
+@props:desc: any;
+@props:ariaLabel: any = 'contrast outline';
+-->
