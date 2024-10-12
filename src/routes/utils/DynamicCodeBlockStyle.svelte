@@ -2,10 +2,12 @@
   import { browser } from '$app/environment';
   import { toUpperSnakeCase } from 'runes-webkit';
   const stylesImport = import.meta.glob('./highlight/styles/*.css');
+  /*eslint no-undef: "off"*/
   const localStorageName = toUpperSnakeCase(__NAME__) + '_CODE_BLOCK_STYLE';
 
-  // @ts-ignore
-  let selected: string = $state(browser && (localStorage.getItem(localStorageName) ?? 'dracula'));
+  let selected: string = $state(
+    browser ? (localStorage.getItem(localStorageName) ?? 'dracula') : 'dracula'
+  );
 
   const styles = Object.entries(stylesImport).map(([path, importFn]) => ({
     value: path.slice(path.lastIndexOf('/') + 1, -4),

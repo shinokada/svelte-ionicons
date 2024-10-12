@@ -8,20 +8,14 @@
     role?: string;
     ariaLabel?: string;
   }
-  let {Icon, size = '24', color = 'currentColor', role = 'img', ariaLabel = 'Icon', ...restProps}: Props = $props()
+  let {
+    Icon,
+    size = '24',
+    color = 'currentColor',
+    role = 'img',
+    ariaLabel = 'Icon',
+    ...restProps
+  }: Props = $props();
 </script>
 
-<Icon
-  {...restProps} 
-  {role}
-  {size}
-  {color}
-  {ariaLabel}
-/>
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com/)
-## Props
-@props: 
--->
+<Icon {...restProps} {role} {size} {color} {ariaLabel} />

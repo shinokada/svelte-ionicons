@@ -1,17 +1,17 @@
-<script lang='ts'>
+<script lang="ts">
   import { getContext } from 'svelte';
-  import type { CtxType, Props } from './types'
-  
-  const ctx: CtxType = getContext('iconCtx') ?? {};
+  import type { BaseProps, Props } from './types';
 
-  let { 
-    size = ctx.size || '24', 
-    role = ctx.role || 'img', 
-    color = ctx.color || 'currentColor', 
-    title, 
-    desc, 
-    ariaLabel =  "reorder three sharp" , 
-    ...restProps 
+  const ctx: BaseProps = getContext('iconCtx') ?? {};
+
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    title,
+    desc,
+    ariaLabel = 'reorder three sharp',
+    ...restProps
   }: Props = $props();
 
   let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
@@ -30,17 +30,28 @@
   viewBox="0 0 512 512"
 >
   {#if title?.id && title.title}
-    <title id="{title.id}">{title.title}</title>
+    <title id={title.id}>{title.title}</title>
   {/if}
   {#if desc?.id && desc.desc}
-    <desc id="{desc.id}">{desc.desc}</desc>
+    <desc id={desc.id}>{desc.desc}</desc>
   {/if}
-    <line x1="102" y1="256" x2="410" y2="256" style="fill:none;stroke:{color};stroke-linecap:square;stroke-linejoin:round;stroke-width:44px"/><line x1="102" y1="176" x2="410" y2="176" style="fill:none;stroke:{color};stroke-linecap:square;stroke-linejoin:round;stroke-width:44px"/><line x1="102" y1="336" x2="410" y2="336" style="fill:none;stroke:{color};stroke-linecap:square;stroke-linejoin:round;stroke-width:44px"/>
+  <line
+    x1="102"
+    y1="256"
+    x2="410"
+    y2="256"
+    style="fill:none;stroke:{color};stroke-linecap:square;stroke-linejoin:round;stroke-width:44px"
+  /><line
+    x1="102"
+    y1="176"
+    x2="410"
+    y2="176"
+    style="fill:none;stroke:{color};stroke-linecap:square;stroke-linejoin:round;stroke-width:44px"
+  /><line
+    x1="102"
+    y1="336"
+    x2="410"
+    y2="336"
+    style="fill:none;stroke:{color};stroke-linecap:square;stroke-linejoin:round;stroke-width:44px"
+  />
 </svg>
-
-<!--
-@component
-[Go to docs](https://svelte-ionicons.codewithshin.com/)
-## Props
-@props: 
--->

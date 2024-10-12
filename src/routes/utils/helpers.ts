@@ -1,6 +1,6 @@
 import type { Component } from 'svelte';
 import type { ListType } from 'runes-webkit';
-import { ExpandOutline, CogOutline, sidebarList } from 'runes-webkit'
+import { ExpandOutline, CogOutline, sidebarList } from 'runes-webkit';
 
 const extra: ListType[] = [
   {
