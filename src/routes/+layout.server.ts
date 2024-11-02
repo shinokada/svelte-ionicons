@@ -1,6 +1,5 @@
 import type { MetaProps } from 'runes-meta-tags';
 import { ANALYTICS_ID_TWO } from '$env/static/private';
-import { metaTitle, metaDescription, metaImg } from 'runes-meta-tags';
 
 const title = 'Svelte Ionicons';
 const description = '1330+ Ionicon SVG icons for Svelte 4, 5, and Runes';

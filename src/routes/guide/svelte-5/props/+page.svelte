@@ -2,7 +2,6 @@
   import { HighlightCompo, CodeWrapper, Code, H2, H3 } from 'runes-webkit';
   import { A, P } from 'svelte-5-ui-lib';
   import { Accessibility } from '$lib';
-  import CodeWorking from '$lib/CodeWorking.svelte';
   const modules = import.meta.glob('./md/*.md', {
     query: '?raw',
     import: 'default',
