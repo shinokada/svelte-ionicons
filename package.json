@@ -31,7 +31,7 @@
     "copy:packagejson": "svelte-lib-helpers package",
     "gen:docs5": "svelte-lib-helpers docs5FromType",
     "lib-helpers": "pnpm format && pnpm gen:docs5 && pnpm run package && pnpm gen:exports && pnpm copy:packagejson",
-    "c": "npx changeset",
+    "ch": "npx changeset",
     "cv": "npx changeset version",
     "cp": "npx changeset publish"
   },
