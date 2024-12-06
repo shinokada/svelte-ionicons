@@ -1,5 +1,34 @@
 <script lang="ts">
   import { HighlightCompo, Code, H2 } from 'runes-webkit';
+  import { GitHubSponsor, type GitHubSponsorPropsType,  NpmVersion, type NpmVersionPropsType, License, type LicensePropsType, NpmDownload, type NpmDownloadPropsType } from 'svelte-shields';
+
+  const sponsor: GitHubSponsorPropsType = {
+    user: 'shinokada',
+    logo:'github',
+    link: ['https://github.com/sponsors/shinokada', 'https://github.com/sponsors/shinokada']
+  };
+  const npmversion: NpmVersionPropsType = {
+    packageName: 'svelte-ionicons',
+    tag:'v1-latest',
+    logo:'svelte',
+    link: [
+      'https://www.npmjs.com/package/svelte-ionicons',
+      'https://www.npmjs.com/package/svelte-ionicons?activeTab=versions'
+    ]
+  };
+  const license: LicensePropsType = {
+    source: 'github',
+    github_user: 'shinokada',
+    github_repo: 'svelte-ionicons',
+    link: [
+      'https://github.com/shinokada/svelte-ionicons/blob/master/LICENSE',
+      'https://github.com/shinokada/svelte-ionicons/blob/master/LICENSE'
+    ]
+  };
+  const downloads: NpmDownloadPropsType = {
+    packageName: 'svelte-ionicons',
+    link: ['https://www.npmjs.com/package/svelte-ionicons']
+  };
 
   const modules = import.meta.glob('./md/*.md', {
     query: '?raw',
@@ -11,37 +40,10 @@
 <h1>Getting Started - Svelte Ionicons v1</h1>
 
 <div class="my-8 flex gap-2">
-  <a
-    href="https://github.com/sponsors/shinokada"
-    target="_blank"
-    rel="nofollow"
-    aria-label="Sponsor me"
-    ><img
-      src="https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86"
-      alt="sponsor"
-    /></a
-  >
-  <a
-    href="https://www.npmjs.com/package/svelte-ionicons"
-    rel="nofollow"
-    target="_blank"
-    aria-label="npm svelte-ionicons"
-    ><img src="https://img.shields.io/npm/v/svelte-ionicons" alt="npm" /></a
-  >
-  <a
-    href="https://opensource.org/licenses/MIT"
-    rel="nofollow"
-    target="_blank"
-    aria-label="MIT License"
-    ><img src="https://img.shields.io/github/license/shinokada/svelte-ionicons" alt="License" /></a
-  >
-  <a
-    href="https://www.npmjs.com/package/svelte-ionicons"
-    rel="nofollow"
-    target="_blank"
-    aria-label="npm svelte-ionicons"
-    ><img src="https://img.shields.io/npm/dw/svelte-ionicons.svg" alt="npm" /></a
-  >
+  <GitHubSponsor {...sponsor} />
+  <NpmVersion {...npmversion} />
+  <License {...license} />
+  <NpmDownload {...downloads} />
 </div>
 
 <H2>Requirements</H2>
