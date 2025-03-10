@@ -14,4 +14,8 @@ const extra: ListType[] = [
     href: 'https://svelte-svg-icons.codewithshin.com/'
   }
 ];
-export const newSidebarList: ListType[] = [...sidebarList, ...extra];
+
+export const newSidebarList: ListType[] = [
+	...(Array.isArray(sidebarList) ? sidebarList : []),
+	...extra
+];
