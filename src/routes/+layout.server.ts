@@ -14,7 +14,7 @@ export const load = ({ url }) => {
     twitter: {
       card: 'summary_large_image',
       site: '@shinokada',
-      handle: '@shinokada',
+      creator: '@shinokada',
       title,
       description,
       image: imgUrl,
