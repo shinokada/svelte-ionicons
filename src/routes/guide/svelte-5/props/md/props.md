@@ -3,5 +3,5 @@
 - color = ctx.color || 'currentColor'
 - title
 - desc
-- ariaLabel =  "accessibility outline"
+- ariaLabel = "accessibility outline"
 - ...restProps (class, id, name, role, and all other props from SVGAttributes )
