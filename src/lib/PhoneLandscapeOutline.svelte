@@ -1,53 +1,56 @@
 <script lang="ts">
-	import { getContext } from 'svelte';
-	import type { BaseProps, Props } from './types';
+  import { getContext } from 'svelte';
+  import type { BaseProps, Props } from './types';
 
-	const ctx: BaseProps = getContext('iconCtx') ?? {};
+  const ctx: BaseProps = getContext('iconCtx') ?? {};
 
-	let {
-		size = ctx.size || '24',
-		role = ctx.role || 'img',
-		color = ctx.color || 'currentColor',
-		title,
-		desc,
-		ariaLabel = 'phone landscape outline',
-		...restProps
-	}: Props = $props();
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    title,
+    desc,
+    focusable = 'false',
+    ariaLabel,
+    ...restProps
+  }: Props = $props();
 
-	let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
-	const hasDescription = $derived(!!(title?.id || desc?.id));
+  let ariaDescribedby = $derived(`${title?.id || ''} ${desc?.id || ''}`.trim());
+  const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
 <svg
-	xmlns="http://www.w3.org/2000/svg"
-	{...restProps}
-	{role}
-	width={size}
-	height={size}
-	fill={color}
-	aria-label={ariaLabel}
-	aria-describedby={hasDescription ? ariaDescribedby : undefined}
-	viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+  {...restProps}
+  {role}
+  width={size}
+  height={size}
+  fill={color}
+  {focusable}
+  aria-label={title?.id ? undefined : ariaLabel}
+  aria-labelledby={title?.id || undefined}
+  aria-describedby={hasDescription ? ariaDescribedby : undefined}
+  viewBox="0 0 512 512"
 >
-	{#if title?.id && title.title}
-		<title id={title.id}>{title.title}</title>
-	{/if}
-	{#if desc?.id && desc.desc}
-		<desc id={desc.id}>{desc.desc}</desc>
-	{/if}
-	<rect
-		x="128"
-		y="16"
-		width="256"
-		height="480"
-		rx="48"
-		ry="48"
-		transform="translate(0 512) rotate(-90)"
-		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-	/><path
-		d="M16,336V312a8,8,0,0,1,8-8h0a16,16,0,0,0,16-16V224a16,16,0,0,0-16-16h0a8,8,0,0,1-8-8V176"
-		style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
-	/>
+  {#if title?.id && title.title}
+    <title id={title.id}>{title.title}</title>
+  {/if}
+  {#if desc?.id && desc.desc}
+    <desc id={desc.id}>{desc.desc}</desc>
+  {/if}
+  <rect
+    x="128"
+    y="16"
+    width="256"
+    height="480"
+    rx="48"
+    ry="48"
+    transform="translate(0 512) rotate(-90)"
+    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+  /><path
+    d="M16,336V312a8,8,0,0,1,8-8h0a16,16,0,0,0,16-16V224a16,16,0,0,0-16-16h0a8,8,0,0,1-8-8V176"
+    style="fill:none;stroke:{color};stroke-linecap:round;stroke-linejoin:round;stroke-width:32px"
+  />
 </svg>
 
 <!--
@@ -59,5 +62,6 @@
 @props:color: any = ctx.color || 'currentColor';
 @props:title: any;
 @props:desc: any;
-@props:ariaLabel: any = 'phone landscape outline';
+@props:focusable: any = 'false';
+@props:ariaLabel: any;
 -->

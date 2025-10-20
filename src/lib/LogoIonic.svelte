@@ -1,52 +1,55 @@
 <script lang="ts">
-	import { getContext } from 'svelte';
-	import type { BaseProps, Props } from './types';
+  import { getContext } from 'svelte';
+  import type { BaseProps, Props } from './types';
 
-	const ctx: BaseProps = getContext('iconCtx') ?? {};
+  const ctx: BaseProps = getContext('iconCtx') ?? {};
 
-	let {
-		size = ctx.size || '24',
-		role = ctx.role || 'img',
-		color = ctx.color || 'currentColor',
-		title,
-		desc,
-		ariaLabel = 'logo ionic',
-		...restProps
-	}: Props = $props();
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    title,
+    desc,
+    focusable = 'false',
+    ariaLabel,
+    ...restProps
+  }: Props = $props();
 
-	let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
-	const hasDescription = $derived(!!(title?.id || desc?.id));
+  let ariaDescribedby = $derived(`${title?.id || ''} ${desc?.id || ''}`.trim());
+  const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
 <svg
-	xmlns="http://www.w3.org/2000/svg"
-	{...restProps}
-	{role}
-	width={size}
-	height={size}
-	fill={color}
-	aria-label={ariaLabel}
-	aria-describedby={hasDescription ? ariaDescribedby : undefined}
-	viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+  {...restProps}
+  {role}
+  width={size}
+  height={size}
+  fill={color}
+  {focusable}
+  aria-label={title?.id ? undefined : ariaLabel}
+  aria-labelledby={title?.id || undefined}
+  aria-describedby={hasDescription ? ariaDescribedby : undefined}
+  viewBox="0 0 512 512"
 >
-	{#if title?.id && title.title}
-		<title id={title.id}>{title.title}</title>
-	{/if}
-	{#if desc?.id && desc.desc}
-		<desc id={desc.id}>{desc.desc}</desc>
-	{/if}
-	<path
-		d="M73.5999 256C73.5999 155.263 155.263 73.6 256 73.6C296.552 73.6 333.992 86.8115 364.286 109.203C372.232 90.5013 388.244 76.0537 407.956 70.227C366.589 36.3569 313.656 16 256 16C123.451 16 16 123.452 16 256C16 388.548 123.451 496 256 496C388.548 496 495.999 388.548 495.999 256C495.999 228.259 491.281 201.573 482.592 176.731C470.768 192.716 452.164 203.38 431.028 204.473C435.823 220.792 438.399 238.078 438.399 256C438.399 356.737 356.736 438.4 256 438.4C155.263 438.4 73.5999 356.737 73.5999 256Z"
-	/>
-	<path
-		d="M491.065 207.374C488.908 196.899 486.068 186.667 482.592 176.731C470.769 192.715 452.164 203.38 431.028 204.473C434.42 216.016 436.702 228.043 437.747 240.437C460.006 237.7 479.247 225.211 491.065 207.374Z"
-	/>
-	<path
-		d="M256 361.001C313.853 361.001 361 313.944 361 256.001C361 198.147 313.943 151.001 256 151.001C198.057 151.001 151 198.147 151 256.001C151 313.854 198.147 361.001 256 361.001Z"
-	/>
-	<path
-		d="M413.5 166C442.495 166 466 142.495 466 113.5C466 84.5055 442.495 61.0004 413.5 61.0004C384.505 61.0004 361 84.5055 361 113.5C361 142.495 384.505 166 413.5 166Z"
-	/>
+  {#if title?.id && title.title}
+    <title id={title.id}>{title.title}</title>
+  {/if}
+  {#if desc?.id && desc.desc}
+    <desc id={desc.id}>{desc.desc}</desc>
+  {/if}
+  <path
+    d="M73.5999 256C73.5999 155.263 155.263 73.6 256 73.6C296.552 73.6 333.992 86.8115 364.286 109.203C372.232 90.5013 388.244 76.0537 407.956 70.227C366.589 36.3569 313.656 16 256 16C123.451 16 16 123.452 16 256C16 388.548 123.451 496 256 496C388.548 496 495.999 388.548 495.999 256C495.999 228.259 491.281 201.573 482.592 176.731C470.768 192.716 452.164 203.38 431.028 204.473C435.823 220.792 438.399 238.078 438.399 256C438.399 356.737 356.736 438.4 256 438.4C155.263 438.4 73.5999 356.737 73.5999 256Z"
+  />
+  <path
+    d="M491.065 207.374C488.908 196.899 486.068 186.667 482.592 176.731C470.769 192.715 452.164 203.38 431.028 204.473C434.42 216.016 436.702 228.043 437.747 240.437C460.006 237.7 479.247 225.211 491.065 207.374Z"
+  />
+  <path
+    d="M256 361.001C313.853 361.001 361 313.944 361 256.001C361 198.147 313.943 151.001 256 151.001C198.057 151.001 151 198.147 151 256.001C151 313.854 198.147 361.001 256 361.001Z"
+  />
+  <path
+    d="M413.5 166C442.495 166 466 142.495 466 113.5C466 84.5055 442.495 61.0004 413.5 61.0004C384.505 61.0004 361 84.5055 361 113.5C361 142.495 384.505 166 413.5 166Z"
+  />
 </svg>
 
 <!--
@@ -58,5 +61,6 @@
 @props:color: any = ctx.color || 'currentColor';
 @props:title: any;
 @props:desc: any;
-@props:ariaLabel: any = 'logo ionic';
+@props:focusable: any = 'false';
+@props:ariaLabel: any;
 -->

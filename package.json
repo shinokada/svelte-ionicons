@@ -1,7 +1,7 @@
 {
   "name": "svelte-ionicons",
-  "version": "2.0.2",
-  "description": "1350+ Ionicon SVG icons for Svelte 4, 5, and Runes",
+  "version": "3.0.0",
+  "description": "Ionicon SVG icons for Svelte 4, 5, and Runes",
   "license": "MIT",
   "homepage": "https://svelte-ionicons.codewithshin.com/",
   "author": {
@@ -24,7 +24,8 @@
   "contributors": [
     {
       "name": "ionic-team/ionicons",
-      "url": "https://github.com/ionic-team/ionicons"
+      "url": "https://github.com/ionic-team/ionicons",
+      "iconVersion": "8.0.13"
     }
   ],
   "scripts": {
@@ -112,6 +113,11 @@
     ".": {
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/types.js",
+      "default": "./dist/types.js"
     },
     "./Accessibility.svelte": {
       "types": "./dist/Accessibility.svelte.d.ts",
@@ -3348,6 +3354,10 @@
     "./LogoTableau.svelte": {
       "types": "./dist/LogoTableau.svelte.d.ts",
       "svelte": "./dist/LogoTableau.svelte"
+    },
+    "./LogoThreads.svelte": {
+      "types": "./dist/LogoThreads.svelte.d.ts",
+      "svelte": "./dist/LogoThreads.svelte"
     },
     "./LogoTiktok.svelte": {
       "types": "./dist/LogoTiktok.svelte.d.ts",

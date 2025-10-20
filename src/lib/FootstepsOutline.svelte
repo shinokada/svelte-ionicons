@@ -1,65 +1,68 @@
 <script lang="ts">
-	import { getContext } from 'svelte';
-	import type { BaseProps, Props } from './types';
+  import { getContext } from 'svelte';
+  import type { BaseProps, Props } from './types';
 
-	const ctx: BaseProps = getContext('iconCtx') ?? {};
+  const ctx: BaseProps = getContext('iconCtx') ?? {};
 
-	let {
-		size = ctx.size || '24',
-		role = ctx.role || 'img',
-		color = ctx.color || 'currentColor',
-		title,
-		desc,
-		ariaLabel = 'footsteps outline',
-		...restProps
-	}: Props = $props();
+  let {
+    size = ctx.size || '24',
+    role = ctx.role || 'img',
+    color = ctx.color || 'currentColor',
+    title,
+    desc,
+    focusable = 'false',
+    ariaLabel,
+    ...restProps
+  }: Props = $props();
 
-	let ariaDescribedby = `${title?.id || ''} ${desc?.id || ''}`;
-	const hasDescription = $derived(!!(title?.id || desc?.id));
+  let ariaDescribedby = $derived(`${title?.id || ''} ${desc?.id || ''}`.trim());
+  const hasDescription = $derived(!!(title?.id || desc?.id));
 </script>
 
 <svg
-	xmlns="http://www.w3.org/2000/svg"
-	{...restProps}
-	{role}
-	width={size}
-	height={size}
-	fill={color}
-	aria-label={ariaLabel}
-	aria-describedby={hasDescription ? ariaDescribedby : undefined}
-	viewBox="0 0 512 512"
+  xmlns="http://www.w3.org/2000/svg"
+  {...restProps}
+  {role}
+  width={size}
+  height={size}
+  fill={color}
+  {focusable}
+  aria-label={title?.id ? undefined : ariaLabel}
+  aria-labelledby={title?.id || undefined}
+  aria-describedby={hasDescription ? ariaDescribedby : undefined}
+  viewBox="0 0 512 512"
 >
-	{#if title?.id && title.title}
-		<title id={title.id}>{title.title}</title>
-	{/if}
-	{#if desc?.id && desc.desc}
-		<desc id={desc.id}>{desc.desc}</desc>
-	{/if}
-	<path
-		d="M200,246.84c8.81,58.62-7.33,90.67-52.91,97.41-50.65,7.49-71.52-26.44-80.33-85.06-11.85-78.88,16-127.94,55.71-131.1C158.61,125.22,191.18,188.23,200,246.84Z"
-		fill="none"
-		stroke="currentColor"
-		stroke-miterlimit="10"
-		stroke-width="32"
-	/><path
-		d="M223.65,409.53c3.13,33.28-14.86,64.34-42,69.66-27.4,5.36-58.71-16.37-65.09-49.19s17.75-34.56,47.32-40.21S219.87,369.39,223.65,409.53Z"
-		fill="none"
-		stroke="currentColor"
-		stroke-miterlimit="10"
-		stroke-width="32"
-	/><path
-		d="M312,150.83c-8.81,58.62,7.33,90.67,52.9,97.41,50.66,7.49,71.52-26.44,80.33-85.06,11.86-78.89-16-128.22-55.7-131.1C353.13,29.44,320.82,92.21,312,150.83Z"
-		fill="none"
-		stroke="currentColor"
-		stroke-miterlimit="10"
-		stroke-width="32"
-	/><path
-		d="M288.35,313.53c-3.13,33.27,14.86,64.34,42,69.66,27.4,5.36,58.71-16.37,65.09-49.19s-17.75-34.56-47.32-40.22S292.13,273.38,288.35,313.53Z"
-		fill="none"
-		stroke="currentColor"
-		stroke-miterlimit="10"
-		stroke-width="32"
-	/>
+  {#if title?.id && title.title}
+    <title id={title.id}>{title.title}</title>
+  {/if}
+  {#if desc?.id && desc.desc}
+    <desc id={desc.id}>{desc.desc}</desc>
+  {/if}
+  <path
+    d="M200,246.84c8.81,58.62-7.33,90.67-52.91,97.41-50.65,7.49-71.52-26.44-80.33-85.06-11.85-78.88,16-127.94,55.71-131.1C158.61,125.22,191.18,188.23,200,246.84Z"
+    fill="none"
+    stroke="currentColor"
+    stroke-miterlimit="10"
+    stroke-width="32"
+  /><path
+    d="M223.65,409.53c3.13,33.28-14.86,64.34-42,69.66-27.4,5.36-58.71-16.37-65.09-49.19s17.75-34.56,47.32-40.21S219.87,369.39,223.65,409.53Z"
+    fill="none"
+    stroke="currentColor"
+    stroke-miterlimit="10"
+    stroke-width="32"
+  /><path
+    d="M312,150.83c-8.81,58.62,7.33,90.67,52.9,97.41,50.66,7.49,71.52-26.44,80.33-85.06,11.86-78.89-16-128.22-55.7-131.1C353.13,29.44,320.82,92.21,312,150.83Z"
+    fill="none"
+    stroke="currentColor"
+    stroke-miterlimit="10"
+    stroke-width="32"
+  /><path
+    d="M288.35,313.53c-3.13,33.27,14.86,64.34,42,69.66,27.4,5.36,58.71-16.37,65.09-49.19s-17.75-34.56-47.32-40.22S292.13,273.38,288.35,313.53Z"
+    fill="none"
+    stroke="currentColor"
+    stroke-miterlimit="10"
+    stroke-width="32"
+  />
 </svg>
 
 <!--
@@ -71,5 +74,6 @@
 @props:color: any = ctx.color || 'currentColor';
 @props:title: any;
 @props:desc: any;
-@props:ariaLabel: any = 'footsteps outline';
+@props:focusable: any = 'false';
+@props:ariaLabel: any;
 -->

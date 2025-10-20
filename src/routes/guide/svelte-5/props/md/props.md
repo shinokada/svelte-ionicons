@@ -3,5 +3,6 @@
 - color = ctx.color || 'currentColor'
 - title
 - desc
-- ariaLabel = "accessibility outline"
-- ...restProps (class, id, name, role, and all other props from SVGAttributes )
+- focusable = 'false',
+- ariaLabel,
+- ...restProps

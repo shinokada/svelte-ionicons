@@ -807,6 +807,7 @@ export { default as LogoStackoverflow } from './LogoStackoverflow.svelte';
 export { default as LogoSteam } from './LogoSteam.svelte';
 export { default as LogoStencil } from './LogoStencil.svelte';
 export { default as LogoTableau } from './LogoTableau.svelte';
+export { default as LogoThreads } from './LogoThreads.svelte';
 export { default as LogoTiktok } from './LogoTiktok.svelte';
 export { default as LogoTrapeze } from './LogoTrapeze.svelte';
 export { default as LogoTumblr } from './LogoTumblr.svelte';
