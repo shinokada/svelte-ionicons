@@ -37,7 +37,7 @@
   };
   const downloads: NpmDownloadPropsType = {
     packageName: 'svelte-ionicons',
-    link: ['https://www.npmjs.com/package/svelte-ionicons']
+    link: ['https://www.npmjs.com/package/svelte-ionicons', 'https://svelte-ionicons.codewithshin.com/']
   };
 
   const modules = import.meta.glob('./md/*.md', {
