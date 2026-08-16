@@ -98,7 +98,7 @@
 <Navbar
   breakpoint="lg"
   fluid
-  class="dark-bg-theme fixed top-0 left-0 py-0 z-50 border-b border-gray-100 bg-white sm:px-12 lg:py-0 dark:border-gray-700"
+  class="dark-bg-theme fixed top-0 left-0 z-50 border-b border-gray-100 bg-white py-0 sm:px-12 lg:py-0 dark:border-gray-700"
   navContainerClass="lg:justify-between"
 >
   <NavBrand href="/">
