@@ -1,6 +1,6 @@
 {
   "name": "svelte-ionicons",
-  "version": "3.0.1",
+  "version": "3.1.0",
   "description": "Ionicon SVG icons for Svelte 4, 5, and Runes",
   "license": "MIT",
   "homepage": "https://svelte-ionicons.codewithshin.com/",
@@ -25,7 +25,8 @@
     {
       "name": "ionic-team/ionicons",
       "url": "https://github.com/ionic-team/ionicons",
-      "iconVersion": "8.0.13"
+      "iconVersion": "8.1.0",
+      "dateUpdated": "2026-08-20"
     }
   ],
   "scripts": {
@@ -44,7 +45,7 @@
     "gen:exports": "svelte-lib-helpers exports",
     "copy:packagejson": "svelte-lib-helpers package",
     "gen:docs5": "svelte-lib-helpers docs5FromType",
-    "lib-helpers": "pnpm format && pnpm gen:docs5 && pnpm run package && pnpm gen:exports && pnpm copy:packagejson",
+    "lib-helpers": "pnpm format && pnpm run package && pnpm gen:exports && pnpm copy:packagejson",
     "ch": "npx changeset",
     "cv": "npx changeset version",
     "cp": "npx changeset publish"

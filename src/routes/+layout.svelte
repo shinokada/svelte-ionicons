@@ -103,7 +103,7 @@
 >
   <NavBrand href="/">
     <span
-      class="text-primary-900 dark:text-primary-500 self-center text-xl font-semibold whitespace-nowrap lg:ml-8 lg:text-3xl"
+      class="text-primary-900 dark:text-primary-500 ml-8 self-center text-xl font-semibold whitespace-nowrap lg:text-3xl"
       >Svelte Ionicons</span
     >
   </NavBrand>
@@ -151,7 +151,7 @@
   {#if urlsToIncludeSwitcherAndSidebar.some((path) => activeUrl.startsWith(path))}
     <SidebarButton
       onclick={sidebarUi.toggle}
-      class="fixed top-3 left-0
+      class="fixed top-0 left-0
      z-100"
       breakpoint="lg"
     />

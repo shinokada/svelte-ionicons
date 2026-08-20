@@ -15,8 +15,7 @@
     ...restProps
   }: Props = $props();
 
-  const ariaDescribedby = $derived(`${title?.id || ''} ${desc?.id || ''}`.trim());
-  const hasDescription = $derived(!!(title?.id || desc?.id));
+  const ariaDescribedby = $derived(desc?.id && desc.desc ? desc.id : undefined);
 </script>
 
 <svg
@@ -29,7 +28,7 @@
   {focusable}
   aria-label={title?.id ? undefined : ariaLabel}
   aria-labelledby={title?.id || undefined}
-  aria-describedby={hasDescription ? ariaDescribedby : undefined}
+  aria-describedby={ariaDescribedby}
   viewBox="0 0 512 512"
 >
   {#if title?.id && title.title}
@@ -85,13 +84,14 @@
 
 <!--
 @component
-[Go to docs](https://svelte-ionicons.codewithshin.com/)
+[Go to docs](https://svelte-awesome-icons.codewithshin.com/)
 ## Props
-@props: size: any = ctx.size || '24';
-@props:role: any = ctx.role || 'img';
-@props:color: any = ctx.color || 'currentColor';
-@props:title: any;
-@props:desc: any;
-@props:focusable: any = 'false';
-@props:ariaLabel: any;
+@prop size = ctx.size || '24'
+@prop role = ctx.role || 'img'
+@prop color = ctx.color || 'currentColor'
+@prop title
+@prop desc
+@prop focusable = 'false'
+@prop ariaLabel
+@prop ...restProps
 -->

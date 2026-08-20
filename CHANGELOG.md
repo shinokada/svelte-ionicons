@@ -1,5 +1,11 @@
 # svelte-ionicons
 
+## 3.1.0
+
+### Minor Changes
+
+- feat: ionicons@8.1.0
+
 ## 3.0.1
 
 ### Patch Changes
