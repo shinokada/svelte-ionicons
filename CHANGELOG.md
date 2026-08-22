@@ -1,5 +1,11 @@
 # svelte-ionicons
 
+## 3.1.1
+
+### Patch Changes
+
+- fix: peerDependencies svelte to ^5.0.0
+
 ## 3.1.0
 
 ### Minor Changes
